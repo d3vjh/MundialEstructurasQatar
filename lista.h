@@ -1,53 +1,71 @@
 /**
- * \mainpage ListsSort
+ * \mainpage pilasEjercicio2
  * \author Jhonatan Moreno - Santiago Avila
  * \date Octubre - 2022
  */
 
 
-#ifndef LISTA_H
-#define LISTA_H
-# import "structs.h"
+#ifndef LIST_H
+#define LIST_H
 
 template <class T>
-struct Nodo{T info;
-	Nodo<T> *sig;
+struct NodoL{T info;
+	NodoL<T> *sig;
 };
 
 using namespace std;
 
 template <class T>
-class Lista{Nodo<T>*cab = new Nodo<T>;
+class List{NodoL<T>*cab = new NodoL<T>;
 			int tam;
-	public: Lista (){
+	public: List (){
 			cab=NULL;
 			tam=0;}
 			bool isEmptyList();
 			int sizeList();
 			bool insertOnList(T dato, int pos); 
 			bool deleteFromList(int pos);
-			T printList(int pos);
+			T printList();
 			void sortList();
-			T getDato(int pos);
-//			~Lista();
+			void sortDescendingList();
+			T getData(int pos);
+			void replaceInList(T nuevo, T antiguo);
+			~List();
 
 	};
-	
-	
-/** \fn bool Lista<T>::isEmptyList()
- * \brief Indica si la lista est? vacia mediante un booleano
+
+
+/** \fn List<T>::List<T>::~List()
+ * \brief Es el destructor, sirve para liberar memoria
  * \param 
- * \return Devuelve un booleano, si esta vac?a, o no.
+ * \return 
+ *
+ * 
+ */
+template <class T>	
+List<T>::~List(){
+	NodoL<T> *aux;
+	aux = cab; 
+	while(aux->sig){
+	delete aux;
+	}
+}
+	
+	
+/** \fn bool List<T>::isEmptyList()
+ * \brief Indica si la lista esta vacia mediante un booleano
+ * \param 
+ * \return Devuelve un booleano, si esta vacia, o no.
  *
  * 
  */
 template <class T>
-bool Lista<T>::isEmptyList(){
+bool List<T>::isEmptyList(){
 	return (tam==0);
 }
 
 
-/** \fn int Lista<T>::sizeList()
+/** \fn int List<T>::sizeList()
  * \brief Indica el tama?o actual de la lista
  * \param 
  * \return Devuelve un entero.
@@ -55,12 +73,12 @@ bool Lista<T>::isEmptyList(){
  * 
  */
 template <class T>
-int Lista<T>::sizeList(){
+int List<T>::sizeList(){
 	return tam;
 }
 
 
-/** \fn bool Lista<T>::insertOnList(T dato, int pos)
+/** \fn bool List<T>::insertOnList(T dato, int pos)
  * \brief Inserta el elemento en la posicion indicada
  * \param T dato -> Elemento a ingresar; int pos -> Posicion a sustituir
  * \return Devuelve un booleano, si fue posible el insertar, o no.
@@ -68,14 +86,14 @@ int Lista<T>::sizeList(){
  * 
  */
 template <class T>
-bool Lista<T>::insertOnList(T dato, int pos){
+bool List<T>::insertOnList(T dato, int pos){
 
 	if(pos>tam+1){
 		return false;
 	}
-	Nodo<T> *nn = new Nodo<T>;
-	Nodo<T> *aux = new Nodo<T>;
-	Nodo<T> *aux2 = new Nodo<T>;
+	NodoL<T> *nn = new NodoL<T>;
+	NodoL<T> *aux = new NodoL<T>;
+	NodoL<T> *aux2 = new NodoL<T>;
 	nn->info =dato;
 
 	if(pos==1){													
@@ -110,31 +128,32 @@ bool Lista<T>::insertOnList(T dato, int pos){
 				tam++;
 				}	
 		}
-	//Imprime el paso a paso del ingreso a la lista		
-//	Nodo<T> *aux3 = new Nodo<T>;
-//	aux3=cab;
-//	for(int i=1; i<=tam; i++){
-//		cout<<aux3->info<<"-";
-//		aux3=aux3->sig;
-//	}
-	
+
+/*
+Imprime el paso a paso del ingreso a la lista		
+	NodoL<T> *aux3 = new NodoL<T>;
+	aux3=cab;
+	for(int i=1; i<=tam; i++){
+		cout<<aux3->info<<"-";
+		aux3=aux3->sig;
+	}
+*/
 	return true;
 }
 
 
 
-/** \fn bool Lista<T>::deleteFromList(int pos)
+/** \fn bool List<T>::deleteFromList(int pos)
  * \brief Elimina el dato que se encuentre en la posicion indicada
  * \param T dato -> int pos -> Posicion a eliminar
  * \return Devuelve un booleano, si fue posible el eliminar, o no.
  *
  * 
  */
-
 template <class T>
-bool Lista<T>::deleteFromList(int pos){
-	Nodo<T> *aux = new Nodo<T>;
-	Nodo<T> *aux2 = new Nodo<T>;
+bool List<T>::deleteFromList(int pos){
+	NodoL<T> *aux = new NodoL<T>;
+	NodoL<T> *aux2 = new NodoL<T>;
 	aux = cab;
 	
 	if(pos==1){
@@ -162,7 +181,7 @@ bool Lista<T>::deleteFromList(int pos){
 
 
 
-/** \fn T Lista<T>::printList()
+/** \fn T List<T>::printList()
  * \brief Imprime por consola, la lista separada por un gui?n
  * \param 
  * \return Devuelve los elementos tipo T.
@@ -170,29 +189,18 @@ bool Lista<T>::deleteFromList(int pos){
  * 
  */
 template <class T>
-T Lista<T>::printList(int pos){
-	Nodo<T> *aux = new Nodo<T>;
+T List<T>::printList(){
+	NodoL<T> *aux = new NodoL<T>;
 	aux=cab;
-	if(pos==1){
-		return aux->info;
-		
-	}else if(pos>1){
-				for(int i=1; i<pos; i++){
-			aux = aux->sig;
-		}	
-	
-		return aux->info;
+	cout<<">> ";
+	for(int i=1; i<=tam; i++){
+		cout<<aux->info<<"-";
+		aux=aux->sig;
 	}
-	//Si se sale del rango de pos. Pero no esta funcionando
-//	else {
-//		
-//		cout<<"\n[!] Se está saliendo del rango \n"<<endl;
-//		return NULL;
-//		
-//	}	
+	cout<<"  "<<endl;		
 }
 
-/** \fn void Lista<T>::sortList()
+/** \fn void List<T>::sortList()
  * \brief Organiza los elementos de la lista
  * \param 
  * \return 
@@ -200,9 +208,9 @@ T Lista<T>::printList(int pos){
  * 
  */
 template <class T>
-void Lista<T>::sortList(){
-	Nodo<T> *aux = new Nodo<T>;
-	Nodo<T> *aux2 = new Nodo<T>;
+void List<T>::sortList(){
+	NodoL<T> *aux = new NodoL<T>;
+	NodoL<T> *aux2 = new NodoL<T>;
 	
 	int i, j;
     T actual;
@@ -231,36 +239,96 @@ void Lista<T>::sortList(){
 
 
 template <class T>
-T Lista<T>::getDato(int pos){
+T List<T>::getData(int pos){
 	
-	Nodo<T> *aux = new Nodo<T>;
+	NodoL<T> *aux = new NodoL<T>;
 	aux = cab;	
 	
 	if(pos==1){
 		return aux->info;
 		
+	}else if(pos > tam || pos < 0){
+		
+		cout<<"[!] Pide un dato inválido"<<endl;
+		return NULL;		
 	}
-//else if(pos > tam || pos < 0){
-//		
-//		//cout<<"\n[!] Se está saliendo del rango \n"<<endl;
-//		return NULL;
-//		
-//	}
 	else{
-
 		for(int i=1; i<pos; i++){
 			aux = aux->sig;
 		}	
-	
 		return aux->info;
 	}
-
-
-	
-	
-	
-	
 }
+
+
+template <class T>
+void List<T>::sortDescendingList(){
+	NodoL<T> *aux = new NodoL<T>;
+	NodoL<T> *aux2 = new NodoL<T>;
+	
+	int i, j;
+    T actual;
+ 	aux=cab;
+ 	aux2=cab;
+ 	T arr[tam];
+ 	
+ 	for(i=1; i<=tam; i++){      //Guarda los info dentro del arreglo
+ 		arr[i]=aux->info;
+ 		aux=aux->sig;
+	}
+	
+    for (i = 1; i <= tam; i++) { //Ordena el arreglo
+        actual = arr[i];
+        for (j = i; j > 1 && arr[j - 1] < actual; j--) {
+            arr[j] = arr[j - 1];
+        }
+        arr[j] = actual;
+    }
+    
+
+    
+    cout<<endl;
+    // Asignar a los nodos los respectivos info
+    for(i=1; i<=tam; i++){
+    	aux2->info=arr[i];
+    	aux2=aux2->sig;
+	}
+}
+	
+
+/** \fn void List<T>::replaceInList(T nuevo, T antiguo)
+ * \brief Reemplaza un valor, por otro, de la lista
+ * \param T nuevo, T antiguo
+ * \return 
+ *
+ * 
+ */
+template <class T>
+void List<T>::replaceInList(T nuevo, T antiguo){
+	NodoL<T> *aux = new NodoL<T>;
+	NodoL<T> *aux2 = new NodoL<T>;
+	int i, j;
+	aux=cab;
+	aux2=cab;
+ 	T arr[tam];
+ 	
+ 	for(i=1; i<=tam; i++){      //Guarda los info dentro del arreglo
+ 		arr[i]=aux->info;
+ 		aux=aux->sig;
+	}
+	for(i=1; i<=tam; i++){	
+	//Verificar si está en la lista, y si está reemplazar
+		if(arr[i]==antiguo){
+			arr[i]=nuevo;			
+		}	
+	}
+	
+	for(j=1; j<=tam; j++){
+    	aux2->info=arr[j];
+    	aux2=aux2->sig;
+	}
+}
+
 
 #endif
 
