@@ -1,0 +1,9 @@
+Nombre del estadio Capacidad Ciudad
+Estadio Al bayt 60000 Al khor
+Estadio Al Janoub 40000 Wakrah
+Estadio Ahmad Bin Ali 40000 Al Rayyan 
+Estadio Al Thumama 40000 Doha
+Estadio Education City 40000 Al Rayyan 
+Estadio Internacional Khalifa 40000 Doha
+Estadio Lusail 80000 Lusail
+Estadio 974 40000 Doha
