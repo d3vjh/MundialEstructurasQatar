@@ -1,14 +1,14 @@
 País Confedereación
-Argentina CONMEBOL
-Australia AFC
-Bélgica UEFA
-Brasil CONMEBOL
-Camerún CAF
-Canadá CONCACAF
-Costa Rica CONCACAF
-Croacia UEFA
-Dinamarca UEFA  
-Ecuador CONMEBOL
+Argentina	CONMEBOL
+Australia	AFC
+Bélgica	UEFA
+Brasil	CONMEBOL
+Camerún	CAF
+Canadá	CONCACAF
+Costa Rica	CONCACAF
+Croacia	UEFA
+Dinamarca	UEFA  
+Ecuador	CONMEBOL
 Inglaterra UEFA
 Francia UEFA
 Alemania UEFA

@@ -247,11 +247,12 @@ T List<T>::getData(int pos){
 	if(pos==1){
 		return aux->info;
 		
-	}else if(pos > tam || pos < 0){
-		
-		cout<<"[!] Pide un dato inválido"<<endl;
-		return NULL;		
 	}
+//	else if(pos > tam || pos < 0){
+//		
+//		cout<<"[!] Pide un dato inválido"<<endl;
+//		return NULL;		
+//	}
 	else{
 		for(int i=1; i<pos; i++){
 			aux = aux->sig;
