@@ -1,33 +1,33 @@
-País Confedereación
-Argentina	CONMEBOL
-Australia	AFC
-Bélgica	UEFA
-Brasil	CONMEBOL
-Camerún	CAF
-Canadá	CONCACAF
-Costa Rica	CONCACAF
-Croacia	UEFA
-Dinamarca	UEFA  
-Ecuador	CONMEBOL
-Inglaterra UEFA
-Francia UEFA
-Alemania UEFA
-Ghana CAF
-Irán AFC
-Japón AFC
-República de Corea AFC
-México CONCACAF
-Marruecos CAF
-Países Bajos UEFA
-Polonia UEFA
-Portugal UEFA
-Catar AFC
-Arabia Saudí AFC
-Senegal CAF
-Serbia UEFA
-España UEFA
-Suiza UEFA
-Túnez CAF
-Estados Unidos CONCACAF
-Uruguay CONMEBOL
-Gales UEFA 
+
+Argentina	CONMEBOL	
+Australia	AFC	
+Belgica	UEFA	
+Brasil	CONMEBOL	
+Camerun	CAF	
+Canada	CONCACAF	
+Costa Rica	CONCACAF	
+Croacia	UEFA	
+Dinamarca	UEFA	
+Ecuador	CONMEBOL	
+Inglaterra	UEFA	
+Francia	UEFA	
+Alemania	UEFA	
+Ghana	CAF	
+Iran	AFC	
+Japon	AFC	
+Republica de Corea	AFC	
+Mexico	CONCACAF	
+Marruecos	CAF	
+Paises Bajos	UEFA	
+Polonia	UEFA	
+Portugal	UEFA	
+Catar	AFC	
+Arabia Saudi	AFC	
+Senegal	CAF	
+Serbia	UEFA	
+Espana	UEFA	
+Suiza	UEFA	
+Tunez	CAF	
+Estados Unidos	CONCACAF	
+Uruguay	CONMEBOL	
+Gales	UEFA

@@ -30,10 +30,11 @@ class List{NodoL<T>*cab = new NodoL<T>;
 			void sortDescendingList();
 			T getData(int pos);
 			void replaceInList(T nuevo, T antiguo);
-			~List();
+
 
 	};
 
+//Se comenta, porque al momento de inicializar una variable de tipo List, se queda pensando y finaliza el programa
 
 /** \fn List<T>::List<T>::~List()
  * \brief Es el destructor, sirve para liberar memoria
@@ -42,15 +43,15 @@ class List{NodoL<T>*cab = new NodoL<T>;
  *
  * 
  */
-template <class T>	
-List<T>::~List(){
-	NodoL<T> *aux;
-	aux = cab; 
-	while(aux->sig){
-	delete aux;
-	}
-}
-	
+//template <class T>	
+//List<T>::~List(){
+//	NodoL<T> *aux;
+//	aux = cab; 
+//	while(aux->sig){
+//	delete aux;
+//	}
+//}
+//	
 	
 /** \fn bool List<T>::isEmptyList()
  * \brief Indica si la lista esta vacia mediante un booleano

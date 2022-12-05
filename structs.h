@@ -11,12 +11,27 @@ struct estadio{
 	string ciudad;
 };
 
+struct jugador{
+	string nombre;
+	string nacionalidad;
+	string fechaDeNacimiento;
+	int estatura;
+	int edad;
+	string club;
+	string posicion;
+	int golesAnotados;
+	int fechasSancion; //Se almacena N fechas Fifa
+};
+
+
+
+
 struct equipo{
 	string nombre;
 	string entrenador;
 	string confederacion;
 	
-//	Lista<jugador> j;
+	List<jugador> futbolistas;
 };
 
 struct programacion{
@@ -27,17 +42,6 @@ struct programacion{
 		
 };
 
-struct jugador{
-	string nombre;
-	string nacionalidad;
-	string fechaDeNacimiento;
-	int estatura;
-	float edad;
-	string club;
-	string posicion;
-	int golesAnotados;
-	int fechasSancion; //Se almacena N fechas Fifa
-};
 
 
 //
