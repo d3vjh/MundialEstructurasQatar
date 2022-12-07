@@ -1,7 +1,7 @@
 Jugador	Posición	Club
 Justin Bijlow	Portero	Feyenoord (Países Bajos)
 Andries Noppert	Portero	Heerenveen (Países Bajos)
-Remko Pasveer	Portero	Ajax (Países Bajos)
+Remko Pasveer	P	Ajax (Países Bajos)
 Nathan Aké	Defensor	Manchester City (Inglaterra)
 Virgil van Dijk	Defensor	Liverpool (Inglaterra)
 Jeremie Frimpong	Defensor	Bayer Leverkusen (Alemania)
