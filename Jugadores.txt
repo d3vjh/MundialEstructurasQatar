@@ -1,7 +1,7 @@
 nombres y apellidos	nacionalidad	fechaDeNacimiento(dd-mm-yyyy)	estatura(999cm)	edad(99)	club	posicion(Completa)	0	0
 Argentina
 Lionel Andres Messi Cuccitini	Argentina	24-06-1985	158	35	Barcelona	Mediocampista	0	0
-
+jua asda	argentina	23-56-3432	233	43	Lazio	Defensa	0	0
 
 
 
