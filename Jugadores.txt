@@ -1,4 +1,5 @@
-Jugador	Posición	Club
+nombres y apellidos	nacionalidad	fechaDeNacimiento(dd-mm-yyyy)	estatura(999cm)	edad(99)	club	posicion(Completa)	0	0
+
 Justin Bijlow	Portero	Feyenoord (Países Bajos)
 Andries Noppert	Portero	Heerenveen (Países Bajos)
 Remko Pasveer	P	Ajax (Países Bajos)
