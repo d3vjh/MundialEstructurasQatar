@@ -1,12 +1,13 @@
 nombres y apellidos	nacionalidad	fechaDeNacimiento(dd-mm-yyyy)	estatura(999cm)	edad(99)	club	posicion(Completa)	0	0
 Argentina
-Lionel Andres Messi Cuccitini	Argentina	24-06-1985	158	35	Barcelona	Mediocampista	0	0
-jua asda	argentina	23-56-3432	233	43	Lazio	Defensa	0	0
-
-
-
-
-
+emiliano martinez	argentina	02-09-1992	195	30	aston villa	portero	0	0
+geronimo rulli	argentina	20-05-1992	189	30	villarreal	portero	0	0
+franco armani	argentina	16-08-1986	189	36	river	portero	0	0
+Nahuel Molina	argentina	06-04-1998	175	24	atletico madrid	defensor	0	0
+gonzalo montiel	argentina	01-01-1997	175	25	sevilla	defensor	0	0
+marcos acuña	argentina	28-08-1991	172	31	sevilla	defensor	0	0
+nicolas otamendi	argentina	12-02-1988	183	benfica	defensor	0	0
+german pezzella	argentina	26-06-1991	187	betis	defensor	0	0
 
 
 
