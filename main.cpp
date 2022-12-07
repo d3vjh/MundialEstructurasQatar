@@ -345,19 +345,19 @@ do{
 		cout<<"Nombre "<<j<<": "<<EquipoAux.nombre<<endl;	
 		cout<<"Confederacion "<<j<<": "<<EquipoAux.confederacion<<endl;	
 		cout<<"Jugadores: "<<endl;
-//		for(int k=1; k<2; k++){
-//			JugadorAux = EquipoAux.futbolistas.getData(k);
-//			cout<<"=> Jugador"<<k<<"<="<<endl;
-//			cout<<"Nombre: "<<JugadorAux.nombre<<endl;
-//			cout<<"Nacionalidad: "<<JugadorAux.nacionalidad<<endl;			
-//			cout<<"Fecha: "<<JugadorAux.fechaDeNacimiento<<endl;
-//			cout<<"Estatura: "<<JugadorAux.estatura<<endl;
-//			cout<<"Edad: "<<JugadorAux.edad<<endl;
-//			cout<<"Club: "<<JugadorAux.club<<endl;
-//			cout<<"Posicion: "<<JugadorAux.posicion<<endl;
-//			cout<<"Goles: "<<JugadorAux.golesAnotados<<endl;
-//			cout<<"Fechas Sancion: "<<JugadorAux.fechasSancion<<endl;
-//		}
+		for(int k=1; k<2; k++){
+			JugadorAux = EquipoAux.futbolistas.getData(k);
+			cout<<"=> Jugador"<<k<<"<="<<endl;
+			cout<<"Nombre: "<<JugadorAux.nombre<<endl;
+			cout<<"Nacionalidad: "<<JugadorAux.nacionalidad<<endl;			
+			cout<<"Fecha: "<<JugadorAux.fechaDeNacimiento<<endl;
+			cout<<"Estatura: "<<JugadorAux.estatura<<endl;
+			cout<<"Edad: "<<JugadorAux.edad<<endl;
+			cout<<"Club: "<<JugadorAux.club<<endl;
+			cout<<"Posicion: "<<JugadorAux.posicion<<endl;
+			cout<<"Goles: "<<JugadorAux.golesAnotados<<endl;
+			cout<<"Fechas Sancion: "<<JugadorAux.fechasSancion<<endl;
+		}
 	}
 	
   	cout<<"Presione cualquier tecla..."; getch();cout<<endl;

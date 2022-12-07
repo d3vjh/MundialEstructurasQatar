@@ -1,5 +1,5 @@
 
-Universidad Distrital	60000	Al khor	
+Estadio el campin	60000	Al khor	
 Estadio Al Janoub	40000	Wakrah	
 Estadio Ahmad Bin Ali	40000	Al Rayyan	
 Estadio Al Thumama	40000	Doha	

@@ -30,11 +30,10 @@ class List{NodoL<T>*cab = new NodoL<T>;
 			void sortDescendingList();
 			T getData(int pos);
 			void replaceInList(T nuevo, T antiguo);
-
+			~List();
 
 	};
 
-//Se comenta, porque al momento de inicializar una variable de tipo List, se queda pensando y finaliza el programa
 
 /** \fn List<T>::List<T>::~List()
  * \brief Es el destructor, sirve para liberar memoria
@@ -43,15 +42,15 @@ class List{NodoL<T>*cab = new NodoL<T>;
  *
  * 
  */
-//template <class T>	
-//List<T>::~List(){
-//	NodoL<T> *aux;
-//	aux = cab; 
-//	while(aux->sig){
-//	delete aux;
-//	}
-//}
-//	
+template <class T>	
+List<T>::~List(){
+	NodoL<T> *aux;
+	aux = cab; 
+	while(aux->sig){
+	delete aux;
+	}
+}
+	
 	
 /** \fn bool List<T>::isEmptyList()
  * \brief Indica si la lista esta vacia mediante un booleano
@@ -248,12 +247,11 @@ T List<T>::getData(int pos){
 	if(pos==1){
 		return aux->info;
 		
+	}else if(pos > tam || pos < 0){
+		
+		cout<<"[!] Pide un dato inv?lido"<<endl;
+		return NULL;		
 	}
-//	else if(pos > tam || pos < 0){
-//		
-//		cout<<"[!] Pide un dato inválido"<<endl;
-//		return NULL;		
-//	}
 	else{
 		for(int i=1; i<pos; i++){
 			aux = aux->sig;
@@ -319,7 +317,7 @@ void List<T>::replaceInList(T nuevo, T antiguo){
  		aux=aux->sig;
 	}
 	for(i=1; i<=tam; i++){	
-	//Verificar si está en la lista, y si está reemplazar
+	//Verificar si est? en la lista, y si est? reemplazar
 		if(arr[i]==antiguo){
 			arr[i]=nuevo;			
 		}	
