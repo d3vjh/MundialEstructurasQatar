@@ -1,49 +1,59 @@
 nombres y apellidos	nacionalidad	fechaDeNacimiento(dd-mm-yyyy)	estatura(999cm)	edad(99)	club	posicion(Completa)	0	0
 Argentina
-emiliano martinez	argentina	02-09-1992	195	30	aston villa	portero	0	0
-geronimo rulli	argentina	20-05-1992	189	30	villarreal	portero	0	0
-franco armani	argentina	16-08-1986	189	36	river	portero	0	0
-Nahuel Molina	argentina	06-04-1998	175	24	atletico madrid	defensor	0	0
-gonzalo montiel	argentina	01-01-1997	175	25	sevilla	defensor	0	0
-marcos acuña	argentina	28-08-1991	172	31	sevilla	defensor	0	0
-nicolas otamendi	argentina	12-02-1988	34	183	benfica	defensor	0	0
-german pezzella	argentina	26-06-1991	187	31	betis	defensor	0	0
-cristian romero	argentina	27-04-1998	185	24	tottenham	defensor	0	0
-rodrigo de paul	argentina	24-05-1994	180	28	atletico madrid	mediocampista	0	0
-angel di maria	argentina	14-02-1988	180	34	juventus	mediocampista	0	0
-lisandro martinez	argentina	18-01-1998	175	24	manchester united	defensor	0	0
-nicolas tagliafico	argentina	31-08-1992	172	30	lyon	defensor	0	0
-juan foyth	argentina	12-01-1998	187	24	villarreal	defensor	0	0
-leandro paredes	argentina	26-06-1994	180	28	juventus	mediocampista	0	0
-alexis mac allister	argentina	24-12-1998	176	23	brighton	mediocampista	0	0
-guido rodriguez	argentina	12-04-1994	187	28	Betis	mediocampista	0	0
-alejandro gomez	argentina	15-02-1988	167	34	sevilla	mediocampista	0	0
-enzo fernandez	argentina	17-01-2001	178	21	benfica	mediocampista	0	0
-exequiel palacios	argentina	05-10-1998	177	24	leverkusen	mediocampista	0	0
-thiago almada	argentina	26-04-2001	171	21	atlanta	mediocampista	0	0
-lautaro martinez	argentina	22-08-1997	174	25	inter milan	delantero	0	0
-julian alvarez	argentina	31-01-2000	170	22	manchester city	delantero	0	0
-paulo dybala	argentina	15-11-1993	177	29	roma	delantero	0	0
-angel correa	argentina	09-03-1995	171	27	atletico madrid	delantero	0	0
-lionel messi	argentina	24-06-1987	169	35	psg	delantero	0	0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+emiliano martinez	argentina	02-09-1992	195	30	aston villa	portero	0	0	
+geronimo rulli	argentina	20-05-1992	189	30	villarreal	portero	0	0	
+franco armani	argentina	16-08-1986	189	36	river	portero	0	0	
+Nahuel Molina	argentina	06-04-1998	175	24	atletico madrid	defensor	0	0	
+gonzalo montiel	argentina	01-01-1997	175	25	sevilla	defensor	0	0	
+marcos acuna	argentina	28-08-1991	172	31	sevilla	defensor	0	0	
+nicolas otamendi	argentina	12-02-1988	34	183	benfica	defensor	0	0	
+german pezzella	argentina	26-06-1991	187	31	betis	defensor	0	0	
+cristian romero	argentina	27-04-1998	185	24	tottenham	defensor	0	0	
+rodrigo de paul	argentina	24-05-1994	180	28	atletico madrid	mediocampista	0	0	
+angel di maria	argentina	14-02-1988	180	34	juventus	mediocampista	0	0	
+lisandro martinez	argentina	18-01-1998	175	24	manchester united	defensor	0	0	
+nicolas tagliafico	argentina	31-08-1992	172	30	lyon	defensor	0	0	
+juan foyth	argentina	12-01-1998	187	24	villarreal	defensor	0	0	
+leandro paredes	argentina	26-06-1994	180	28	juventus	mediocampista	0	0	
+alexis mac allister	argentina	24-12-1998	176	23	brighton	mediocampista	0	0	
+guido rodriguez	argentina	12-04-1994	187	28	Betis	mediocampista	0	0	
+alejandro gomez	argentina	15-02-1988	167	34	sevilla	mediocampista	0	0	
+enzo fernandez	argentina	17-01-2001	178	21	benfica	mediocampista	0	0	
+exequiel palacios	argentina	05-10-1998	177	24	leverkusen	mediocampista	0	0	
+thiago almada	argentina	26-04-2001	171	21	atlanta	mediocampista	0	0	
+lautaro martinez	argentina	22-08-1997	174	25	inter milan	delantero	0	0	
+julian alvarez	argentina	31-01-2000	170	22	manchester city	delantero	0	0	
+paulo dybala	argentina	15-11-1993	177	29	roma	delantero	0	0	
+angel correa	argentina	09-03-1995	171	27	atletico madrid	delantero	0	0	
+lionel messi	argentina	24-06-1987	169	35	psg	delantero	0	0	
+Australia
+Mathew Ryan	australia	08-04-1992	184	30	Copenhague	portero	0	0	
+Andrew Redmayne	australia	13-01-1989	194	33	Sydney FC	portero	0	0	
+Danny Vukovic	australia	27-03-1985	187	37	Central Coast Mariners	portero	0	0	
+Aziz Behich	australia	16-12-1990	172	31	Dundee United	defensor	0	0	
+Milos Degenek	australia	28-04-1994	187	28	Columbus Crew	defensor	0	0	
+Thomas Deng	australia	20-03-1997	182	25	Aibirex Niigata	defensor	0	0	
+Joel King	australia	30-10-2000	179	22	Odense Boldklub	defensor	0	0	
+Nathaniel Atkinson	australia	13-06-1999	181	23	Hearts	defensor	0	0	
+Fran Karacic	australia	12-05-1996	181	26	Brescia	defensor	0	0	
+Harry Souttar	australia	22-10-1998	198	24	Stoke City	defensor	0	0	
+Kye Rowles	australia	24-06-1998	185	24	Hearts	defensor	0	0	
+Craig Goodwin	australia	16-12-1991	180	30	Adelaide United	defensor	0	0	
+Aaron Mooy	australia	15-09-1990	175	32	Celtic	mediocampista	0	0	
+Jackson Irvine	australia	07-03-1993	189	29	St Pauli	mediocampista	0	0	
+Ajdin Hrustic	australia	05-07-1996	183	26	Hellas Verona	mediocampista	0	0	
+Bailey Wright	australia	28-07-1992	175	30	Sunderland	mediocampista	0	0	
+Cameron Devlin	australia	07-06-1998	170	24	Hearts	mediocampista	0	0	
+Riley McGree	australia	02-11-1998	175	24	Middlesbrough	mediocampista	0	0	
+Keanu Baccus	australia	07-06-1998	178	24	St Mirren	mediocampista	0	0	
+Awer Mabil	australia	15-09-1995	178	27	Cadiz	delantero	0	0	
+Mathew Leckie	australia	04-02-1991	181	31	Melbourne City	delantero	0	0	
+Martin Boyle	australia	25-04-1993	172	29	Hibernian	delantero	0	0	
+James Maclaren	australia	29-07-1993	179	29	Melbourne City	delantero	0	0	
+Jason Cummings	australia	01-08-1995	1878	27	Central Coast Mariners	delantero	0	0	
+Mitchell Duke	australia	18-01-1991	185	31	Fagiano Okayama	delantero	0	0	
+Garang Kuol	australia	15-09-2004	175	18	Coast Mariners	delantero	0	0	
+Paises Bajos
 Justin Bijlow	Portero	Feyenoord (Países Bajos)
 Andries Noppert	Portero	Heerenveen (Países Bajos)
 Remko Pasveer	P	Ajax (Países Bajos)
