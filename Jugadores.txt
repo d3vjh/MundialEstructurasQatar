@@ -160,6 +160,167 @@ Jonathan David	canada	14-01-2000	180	22	Lille	delantero	0	0
 Cyle Larin	canada	17-04-1995	188	27	Brujas	delantero	0	0	
 Alphonso Davies	canada	02-11-2000	183	22	Bayern Munich	delantero	0	0	
 Junior Hoilett	canada	05-06-1990	173	32	Reading FC	delantero	0	0	
+Costa Rica
+Keylor Antonio Navas Gamboa	Costarricense	15-12-1986	185	35	París Saint-Germain F. C.	Portero	0	0	
+Esteban Alvarado Brown	Costarricense	28-04-1989	193	33	C. S. Herediano	Portero	0	0	
+Patrick Gilmar Sequeira Mejías	Costarricense	01-03-1999	190	23	Club Deportivo Lugo	Portero	0	0	
+Francisco Javier Calvo Quesada	Costarricense	08-12-1992	181	30	Konyaspor	Defensor	0	0	
+Juan Pablo Vargas Campos	Costarricense	06-06-1995	192	27	Millonarios	Defensor	0	0	
+Kendall Jamaal Waston Manley	Costarricense	01-01-1988	196	34	Deportivo Saprissa	Defensor	0	0	
+Óscar Esaú Duarte Gaitán	Costarricense	03-06-1989	186	33	Al Wehda F.C.	Defensor	0	0	
+Daniel Alonso Chacón Salas	Costarricense	11-04-2001	183	21	Colorado Rapids 2	Defensor	0	0	
+Keysher Fuller Spence	Costarricense	12-06-1994	183	28	C. S. Herediano	Defensor	0	0	
+Carlos Manuel Martínez Castro	Costarricense	30-04-1999	175	23	L.D Alajuelense	Defensor	0	0	
+Bryan Josué Oviedo Jiménez	Costarricense	18-02-1990	172	32	Real Salt Lake	Defensor	0	0	
+Ronald Alberto Matarrita Ulate	Costarricense	05-09-1994	175	28	F. C. Cincinnati	Defensor	0	0	
+Yeltsin Ignacio Tejeda Valverde	Costarricense	17-03-1992	179	30	C. S. Herediano	Volante	0	0	
+Celso Borges Mora	Costarricense	27-05-1988	183	34	L. D. Alajuelense	Volante	0	0	
+Youstin Delfín Salas Gómez	Costarricense	17-06-1996	168	26	Deportivo Saprissa	Volante	0	0	
+Roan Roberto Wilson Gordon	Costarricense	01-04-2002	184	20	Municipal Grecia	Volante	0	0	
+Gerson Torres Barrantes	Costarricense	28-08-1997	176	25	C. S. Herediano	Volante	0	0	
+Douglas Andrey López Araya	Costarricense	21-09-1998	190	24	Club Sport Herediano	Volante	0	0	
+Jewison Francisco Bennette Villegas	Costarricense	15-06-2004	175	18	Sunderland AFC	Volante	0	0	
+Álvaro José Zamora Mata	Costarricense	09-03-2002	180	20	Deportivo Saprissa	Volante	0	0	
+Anthony William Hernández González	Costarricense	11-10-2001	179	21	Puntarenas FC	Volante	0	0	
+Brandon Aguilera Zamora	Costarricense	28-06-2003	181	19	A.D Guanacasteca	Volante	0	0	
+Bryan Jafet Ruiz González	Costarricense	18-08-1985	188	37	L. D. Alajuelense	Volante	0	0	
+Joel Nathaniel Campbell Samuels	Costarricense	26-06-1992	178	30	Club León	Delantero	0	0	
+Anthony Daniel Contreras Enríquez	Costarricense	29-02-2000	180	22	Club Sport Herediano	Delantero	0	0	
+Johan Alberto Venegas Ulloa	Costarricense	27-11-1988	183	34	L. D. Alajuelense	Delantero	0	0	
+Croacia
+Dominik Livaković	Croata	09-01-1995	187	27	G. N. K. Dinamo de Zagreb	Portero	0	0	
+Ivica Ivušić	Croata	01-02-1995	195	27	Osijek	Portero	0	0	
+Ivo Grbic	Croata	18-01-1996	195	26	Atlético de Madrid	Portero	0	0	
+Josip Stanisic	Croata	02-04-2000	187	22	Bayern de Múnich	Defensor	0	0	
+Borna Barišić	Croata	10-11-1992	186	30	Rangers F. C.	Defensor	0	0	
+Josip Sutalo	Croata	28-02-2000	190	22	G. N. K. Dinamo de Zagreb	Defensor	0	0	
+Dejan Lovren	Croata	05-07-1989	188	33	Zenit de San Petersburgo	Defensor	0	0	
+Borna Sosa	Croata	21-01-1998	187	24	VfB Stuttgart	Defensor	0	0	
+Josko Gvardiol	Croata	23-01-2002	185	20	R. B. Leipzig	Defensor	0	0	
+Domagoj Vida	Croata	29-04-1989	184	33	AEK Atenas F. C.	Defensor	0	0	
+Josip Juranovic	Croata	16-08-1995	175	27	Celtic F. C.	Defensor	0	0	
+Martin Erlic	Croata	24-01-1998	192	24	U. S. Sassuolo Calcio	Defensor	0	0	
+Lovro Majer	Croata	17-01-1998	179	24	Stade Rennais F. C.	Volante	0	0	
+Mateo Kovacic	Croata	06-05-1994	179	28	Chelsea F. C.	Volante	0	0	
+Luka Modric	Croata	09-09-1985	172	37	Real Madrid C. F. 	Volante	0	0	
+Marcelo Brozovic	Croata	16-11-1992	181	30	Inter de Milán	Volante	0	0	
+Mario Pasalic	Croata	09-02-1995	188	27	Atalanta B. C.	Volante	0	0	
+Nikola Vlasic	Croata	04-10-1997	178	25	Torino F. C.	Volante	0	0	
+Luka Sucic	Croata	08-09-2002	185	20	Red Bull Salzburgo	Volante	0	0	
+Kristijan Jakic	Croata	14-05-1997	187	25	Eintracht Frankfurt	Volante	0	0	
+Ivan Perisic	Croata	02-02-1989	186	33	Tottenham Hotspur F. C.	Delantero	0	0	
+Andrej Kramaric	Croata	19-06-1991	178	31	TSG 1899 Hoffenheim	Delantero	0	0	
+Marko Livaja	Croata	26-08-1993	182	29	H. N. K. Hajduk Split	Delantero	0	0	
+Bruno Petkovic	Croata	16-09-1994	193	28	G. N. K. Dinamo Zagreb	Delantero	0	0	
+Ante Budimir	Croata	22-07-1991	190	31	Club Atlético Osasuna	Delantero	0	0	
+Mislav Orsic	Croata	29-12-1992	178	29	G. N. K. Dinamo Zagreb	Delantero	0	0	
+Dinamarca
+Kasper Peter Schmeichel	Danes	05-11-1986	189	36	O. G. C. Niza	Portero	0	0	
+Frederik Ronnow	Danes	04-08-1992	190	30	Unión Berlín	Portero	0	0	
+Oliver Christensen	Danes	22-03-1999	190	23	Hertha BSC	Portero	0	0	
+Simon Thorup Kjær	Danes	26-03-1989	191	33	A. C. Milan	Defensor	0	0	
+Andreas Bødtker Christensen	Danes	10-04-1996	187	26	F. C. Barcelona	Defensor	0	0	
+Jens Stryger Larsen	Danes	21-02-1991	180	31	Trabzonspor	Defensor	0	0	
+Daniel Wass	Danes	31-05-1989	181	33	Brøndby I. F.	Defensor	0	0	
+Joakim Mæhle Pedersen	Danes	20-04-1997	186	25	Atalanta B. C.	Defensor	0	0	
+Joachim Andersen	Danes	31-05-1996	192	26	Crystal Palace F. C.	Defensor	0	0	
+Rasmus Nissen Kristensen	Danes	11-06-1997	186	25	Leeds United F. C.	Defensor	0	0	
+Victor Nelsson	Danes	14-10-1998	187	24	Galatasaray S. K.	Defensor	0	0	
+Alexander Bah	Danes	09-12-1997	180	24	S. L. Benfica	Defensor	0	0	
+Christian Dannemann Eriksen	Danes	14-02-1992	182	30	Manchester United F. C.	Volante	0	0	
+Thomas Joseph Delaney Hansen	Danes	03-09-1991	180	31	Sevilla F. C.	Volante	0	0	
+Pierre-Emile Kordt Højbjerg	Danes	05-08-1995	185	27	Tottenham Hotspur F. C.	Volante	0	0	
+Mathias Jensen	Danes	01-01-1996	180	26	Brentford F. C.	Volante	0	0	
+Christian Nørgaard	Danes	10-03-1994	187	28	Brentford F. C.	Volante	0	0	
+Yussuf Yurary Poulsen	Danes	15-06-1994	193	28	R. B. Leipzig	Delantero	0	0	
+Martin Christensen Braithwaite	Danes	05-06-1991	180	31	R. C. D. Espanyol	Delantero	0	0	
+Andreas Evald Cornelius	Danes	16-03-1993	195	29	F. C. Copenhague	Delantero	0	0	
+Kasper Dolberg Rasmussen	Danes	06-10-1997	187	25	Sevilla F. C.	Delantero	0	0	
+Andreas Skov Olsen	Danes	29-12-1999	187	22	Club Brujas	Delantero	0	0	
+Mikkel Krogh Damsgaard	Danes	03-07-2000	180	22	Brentford F. C.	Delantero	0	0	
+Jonas Wind	Danes	07-02-1999	190	23	VfL Wolfsburgo	Delantero	0	0	
+Robert Faxe Skov	Danes	20-05-1996	185	26	TSG 1899 Hoffenheim	Delantero	0	0	
+Jesper Grænge Lindstrøm	Danes	29-02-2000	181	22	Eintracht Fráncfort	Delantero	0	0	
+Ecuador
+Wellington Moisés Ramírez Preciado	Ecuatoriano	09-09-2000	186	22	Independiente del Valle	Portero	0	0	
+Alexander Domínguez Carabalí	Ecuatoriano	05-06-1987	196	35	Liga de Quito	Portero	0	0	
+Hernán Ismael Galíndez	Ecuatoriano	30-03-1987	189	35	Aucas	Portero	0	0	
+Piero Martín Hincapié Reyna	Ecuatoriano	09-01-2002	184	20	Bayer Leverkusen	Defensor	0	0	
+Robert Arboleda	Ecuatoriano	22-10-1991	188	31	São Paulo F. C.	Defensor	0	0	
+Pervis Josué Estupiñán Tenorio	Ecuatoriano	21-01-1998	175	24	Brighton & Hove Albion F. C.	Defensor	0	0	
+Angelo Smit Preciado Quiñónez	Ecuatoriano	18-02-1998	173	24	K. R. C. Genk	Defensor	0	0	
+Jackson Gabriel Porozo Vernaza	Ecuatoriano	04-08-2000	192	22	E. S. Troyes A. C.	Defensor	0	0	
+Xavier Arreaga	Ecuatoriano	28-09-1994	184	28	Seattle Sounders	Defensor	0	0	
+Diego Palacios	Ecuatoriano	12-07-1999	169	23	Los Angeles F. C.	Defensor	0	0	
+Félix Torres Caicedo	Ecuatoriano	11-01-1997	187	25	Santos Laguna	Defensor	0	0	
+William Joel Pacho Tenorio	Ecuatoriano	16-10-2001	187	21	Royal Antwerp F. C.	Defensor	0	0	
+Carlos Armando Gruezo Arboleda	Ecuatoriano	19-04-1995	173	27	F. C. Augsburgo	Mediocampista	0	0	
+José Adoni Cifuentes Charcopa	Ecuatoriano	12-03-1999	175	23	Los Angeles F. C.	Mediocampista	0	0	
+Alan Javier Franco	Ecuatoriano	11-10-1996	183	26	Atlanta United	Mediocampista	0	0	
+Moisés Isaac Caicedo Corozo	Ecuatoriano	02-11-2001	178	21	Brighton & Hove Albion F. C.	Mediocampista	0	0	
+Ángel Israel Mena Delgado	Ecuatoriano	21-01-1988	168	34	C. León	Mediocampista	0	0	
+Jeremy Leonel Sarmiento Morante	Ecuatoriano	16-06-2002	173	20	Brighton & Hove Albion F. C.	Mediocampista	0	0	
+Jhegson Sebastián Méndez Carabalí	Ecuatoriano	26-04-1997	175	25	Los Angeles F. C.	Mediocampista	0	0	
+Eduar Ayrton Preciado García	Ecuatoriano	17-07-1994	180	28	Santos Laguna	Mediocampista	0	0	
+Gonzalo Jordy Plata Jiménez	Ecuatoriano	01-11-2000	178	22	Real Valladolid C. F.	Mediocampista	0	0	
+Romario Andrés Ibarra Mina	Ecuatoriano	24-09-1994	176	28	C. F. Pachuca	Mediocampista	0	0	
+Djorkaeff Reasco	Ecuatoriano	18-01-1999	172	23	Newell's Old Boys	Delantero	0	0	
+Kevin José Rodríguez Cortez	Ecuatoriano	04-03-2000	182	22	Independiente del Valle	Delantero	0	0	
+Michael Estrada	Ecuatoriano	07-04-1996	188	26	Cruz Azul	Delantero	0	0	
+Enner Remberto Valencia Lastra	Ecuatoriano	04-11-1989	177	33	Fenerbahçe S. K.	Delantero	0	0	
+Inglaterra
+Jordan Lee Pickford	Britanico	07-03-1994	185	28	Everton F. C.	Portero	0	0	
+Nicholas David Pope	Britanico	19-04-1992	191	30	Newcastle United F. C.	Portero	0	0	
+Aaron Christopher Ramsdale	Britanico	14-04-1998	188	24	Arsenal F. C.	Portero	0	0	
+Kyle Andrew Walker	Britanico	28-05-1990	183	32	Manchester City F. C.	Defensor	0	0	
+John Stones	Britanico	28-05-1994	188	28	Manchester City F. C.	Defensor	0	0	
+Jacob Harry Maguire	Britanico	05-03-1993	194	29	Manchester United F. C.	Defensor	0	0	
+Eric Jeremy Edgar Dier	Britanico	15-01-1994	188	28	Tottenham Hotspur F. C.	Defensor	0	0	
+Kieran John Trippier	Britanico	19-09-1990	173	32	Newcastle United F. C.	Defensor	0	0	
+Luke Paul Hoare Shaw	Britanico	12-07-1995	178	27	Manchester United F. C.	Defensor	0	0	
+Trent John Alexander-Arnold	Britanico	07-10-1998	175	24	Liverpool F. C.	Defensor	0	0	
+Conor David Coady	Britanico	Britanico	25-02-1993	184	29	Everton F. C.	Defensor	0	0	
+Benjamin William White	Britanico	08-10-1997	185	25	Arsenal F. C.	Defensor	0	0	
+Jordan Brian Henderson	Britanico	17-06-1990	182	32	Liverpool F. C.	Mediocampista	0	0	
+Declan Rice	Britanico	14-01-1999	185	23	West Ham United F. C.	Mediocampista	0	0	
+Mason Tony Mount	Britanico	10-01-1999	180	23	Chelsea F. C.	Mediocampista	0	0	
+Kalvin Mark Phillips	Britanico	02-12-1995	178	27	Manchester City F. C.	Mediocampista	0	0	
+Jude Victor William Bellingham	Britanico	29-06-2003	186	19	Borussia Dortmund	Mediocampista	0	0	
+Conor Gallagher	Britanico	06-02-2000	182	22	Chelsea F. C.	Mediocampista	0	0	
+James Daniel Maddison	Britanico	23-11-1996	175	26	Leicester City F. C.	Delantero	0	0	
+Jack Grealish	Britanico	10-09-1995	180	27	Manchester City F. C.	Delantero	0	0	
+Philip Walter Foden	Britanico	28-05-2000	171	22	Manchester City F. C.	Delantero	0	0	
+Harry Edward Kane	Britanico	28-07-1993	188	29	Tottenham Hotspur F. C.	Delantero	0	0	
+Raheem Shaquille Sterling	Britanico	08-12-1994	170	27	Chelsea F. C.	Delantero	0	0	
+Marcus Rashford	Britanico	31-10-1997	180	25	Manchester United F. C.	Delantero	0	0	
+Bukayo Saka	Britanico	05-09-2001	178	21	Arsenal F. C.	Delantero	0	0	
+Callum Eddie Graham Wilson	Britanico	27-02-1992	180	30	Newcastle United F. C.	Delantero	0	0	
+Francia
+Hugo Hadrien Dominique Lloris	Frances	26-12-1986	188	35	Tottenham Hotspur F. C.	Portero	0	0	
+Steve Mandanda Mpidi	Frances	28-03-1985	185	37	Stade Rennais F. C.	Portero	0	0	
+Alphonse Francis Areola	Frances	27-02-1993	195	29	West Ham United F. C.	Portero	0	0	
+Raphaël Varane	Frances	25-04-1993	191	29	Manchester United F. C.	Defensor	0	0	
+Jules Olivier Koundé	Frances	12-11-1998	178	24	F. C. Barcelona	Defensor	0	0	
+Theo Hernandez	Frances	06-10-1997	184	25	AC Milan	Defensor	0	0	
+Dayot Upamecano	Frances	27-10-1998	186	24	Bayern de Múnich	Defensor	0	0	
+Ibrahima Konaté	Frances	25-05-1999	194	23	Liverpool F. C.	Defensor	0	0	
+Axel Disasi 	Frances	11-03-1998	190	24	A. S. Mónaco F. C.	Defensor	0	0	
+William Alain André Gabriel Saliba	Frances	24-03-2001	193	21	Arsenal F. C.	Defensor	0	0	
+Benjamin Jacques Marcel Pavard	Frances	28-03-1996	186	26	F. C. Bayern de Múnich	Defensor	0	0	
+Lucas François Bernard Hernández	Frances	14-02-1996	184	26	Bayern de Múnich	Defensor	0	0	
+Eduardo Celmi Camavinga 	Frances	10-11-2002	182	20	Real Madrid C. F. 	Volante	0	0	
+Aurélien Djani Tchouaméni	Frances	27-01-2000	187	22	Real Madrid C. F. 	Volante	0	0	
+Kingsley Junior Coman 	Frances	13-06-1996	180	26	Bayern de Múnich	Volante	0	0	
+Adrien Rabiot-Provost	Frances	03-04-1995	191	27	Juventus F. C.	Volante	0	0	
+Youssouf Fofana	Frances	10-01-1999	178	23	A. S. Monaco F. C.	Volante	0	0	
+Mattéo Elias Kenzo Guendouzi Olié	Frances 	14-04-1999	185	23	Olympique de Marsella	Volante	0	0	
+Jordan Marcel Gilbert Veretout	Frances	01-03-1993	177	29	Olympique de Marsella	Volante	0	0	
+Kylian Mbappé Lottin	Frances	20-12-1998	178	23	Paris Saint-Germain F. C.	Delantero	0	0	
+Antoine Griezmann		Frances	21-03-1991	176	31	Atlético de Madrid	Delantero	0	0	
+Masour Ousmane Dembélé	Frances	15-05-1997	178	25	F. C. Barcelona	Delantero	0	0	
+Olivier Jonathan Giroud	Frances	30-09-1986	193	36	A. C. Milan	Delantero	0	0	
+Marcus Lilian Thuram-Ulien	Frances	06-08-1997	192	25	Borussia Mönchengladbach	Delantero	0	0	
+Randal Kolo Muani	Frances	05-12-1998	191	24	Eintracht Fráncfort	Delantero	0	0	
 Paises Bajos
 Justin Bijlow	Portero	Feyenoord (Países Bajos)
 Andries Noppert	Portero	Heerenveen (Países Bajos)
