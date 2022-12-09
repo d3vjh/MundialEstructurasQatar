@@ -321,30 +321,30 @@ Masour Ousmane Dembélé	Frances	15-05-1997	178	25	F. C. Barcelona	Delantero	0	0
 Olivier Jonathan Giroud	Frances	30-09-1986	193	36	A. C. Milan	Delantero	0	0	
 Marcus Lilian Thuram-Ulien	Frances	06-08-1997	192	25	Borussia Mönchengladbach	Delantero	0	0	
 Randal Kolo Muani	Frances	05-12-1998	191	24	Eintracht Fráncfort	Delantero	0	0	
-Paises Bajos
-Justin Bijlow	Portero	Feyenoord (Países Bajos)
-Andries Noppert	Portero	Heerenveen (Países Bajos)
-Remko Pasveer	Portero	Ajax (Países Bajos)
-Nathan Aké	Defensor	Manchester City (Inglaterra)
-Virgil van Dijk	Defensor	Liverpool (Inglaterra)
-Jeremie Frimpong	Defensor	Bayer Leverkusen (Alemania)
-Stefan de Vrij	Defensor	Inter (Italia)
-Daley Blind	Defensor	Ajax (Países Bajos)
-Matthijs de Ligt	Defensor	Bayern Múnich (Alemania)
-Tyrell Malacia	Defensor	Manchester United (Inglaterra)
-Jurrien Timber	Defensor	Ajax (Países Bajos)
-Denzel Dumfries	Defensor	Inter (Italia)
-Frenkie De Jong	Mediocampista	Barcelona (España)
-Davy Klaassen	Mediocampista	Ajax (Países Bajos)
-Xavi Simons	Mediocampista	PSV (Países Bajos)
-Steven Berghuis	Mediocampista	Ajax (Países Bajos)
-Marten de Roon	Mediocampista	Atalanta (Italia)
-Kenneth Taylor	Mediocampista	Ajax (Países Bajos)
-Teun Koopmeiners	Mediocampista	Atalanta (Italia)
-Memphis Depay	Delantero	Barcelona (España)
-Steven Bergwijn	Delantero	Ajax (Países Bajos)
-Cody Gakpo	Delantero	PSV (Países Bajos)
-Wout Weghorst	Delantero	Besiktas (Turquía)
-Vincent Janssen	Delantero	Royal Antwerp (Bélgica)
-Luuk de Jong	Delantero	PSV (Países Bajos)
-Noa Lang	Delantero	Brujas (Bélgica)
+Alemania
+Manuel Neuer	Alemana	27-03-1986	193	36	Bayern Munich	Portero	0	0	
+Marc-Andre ter Stegen	Alemana	30-04-1992	187	30	Barcelona	Portero	0	0	
+Kevin Trapp	Alemana	08-07-1990	189	32	Eintracht Frankfurt	Portero	0	0	
+Armel Bella-Kotchap	Alemana	11-12-2001	190	20	Southampton	Defensa	0	0	
+Matthias Ginter	Alemana	19-01-1994	191	28	SC Freiburg	Defensa	0	0	
+Christian Gunter	Alemana	28-02-1993	184	29	SC Freiburg	Defensa	0	0	
+Thilo Kehrer	Alemana	21-09-1996	186	26	West Ham United	Defensa	0	0	
+Lukas Klostermann	Alemana	03-06-1996	187	26	RB Leipzig	Defensa	0	0	
+David Raum	Alemana	22-04-1998	180	24	RB Leipzig	Defensa	0	0	
+Antonio Rudiger	Alemana	03-03-1993	190	29	Real Madrid	Defensa	0	0	
+Nico Schlotterbeck	Alemana	01-12-1999	191	23	Borussia Dortmund	Defensa	0	0	
+Niklas Sule	Alemana	03-09-1995	195	27	Borussia Dortmund	Defensa	0	0	
+Karim Adeyemi	Alemana	18-01-2002	180	20	Borussia Dortmund	Mediocampista	0	0	
+Julian Brandt	Alemana	02-05-1996	185	26	Borussia Dortmund	Mediocampista	0	0	
+Niclas Fullkrüg	Alemana	09-02-1993	189	29	Werder Bremen	Mediocampista	0	0	
+Serge Gnabry	Alemana	14-07-1995	176	27	Bayern Munich	Mediocampista	0	0	
+Leon Goretzka	Alemana	06-02-1995	189	27	Bayern Munich	Mediocampista	0	0	
+Mario Götze	Alemana	03-06-1992	176	30	Eintracht Frankfurt	Mediocampista	0	0	
+İlkay Gündoğan	Alemana	24-10-1990	180	32	Manchester City	Mediocampista	0	0	
+Kai Havertz	Alemana	11-06-1999	193	23	Chelsea	Mediocampista	0	0	
+Jonas Hofmann	Alemana	14-07-1992	176	30	Borussia Mönchengladbach	Delantero	0	0	
+Joshua Kimmich	Alemana	08-02-1995	177	27	Bayern Munich	Delantero	0	0	
+Youssoufa Moukoko	Alemana	20-11-2004	179	18	Borussia Dortmund Delantero	0	0	
+Jamal Musiala	Alemana	26-02-2003	184	19	Bayern Munich	Delantero	0	0	
+Thomas Müller	Alemana	13-09-1989	185	32	Bayern Munich	Delantero	0	0	
+Leroy Sané	Alemana	11-01-1996	183	26	Bayern Munich Delantero	0	0	
