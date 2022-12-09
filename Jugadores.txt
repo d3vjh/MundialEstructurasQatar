@@ -53,6 +53,59 @@ James Maclaren	australia	29-07-1993	179	29	Melbourne City	delantero	0	0
 Jason Cummings	australia	01-08-1995	1878	27	Central Coast Mariners	delantero	0	0	
 Mitchell Duke	australia	18-01-1991	185	31	Fagiano Okayama	delantero	0	0	
 Garang Kuol	australia	15-09-2004	175	18	Coast Mariners	delantero	0	0	
+Belgica
+Koen Casteels	belgica	25-06-1992	197	30	Wolfsburgo	portero	0	0	
+Thibaut Courtois	belgica	11-05-1992	200	30	Real Madrid	portero	0	0	
+Simon Mignolet	belgica	06-03-1988	193	34	Brujas	portero	0	0	
+Toby Alderweireld	belgica	02-03-1980	187	33	Antwerp	defensor	0	0	
+Zeno Debast	belgica	24-10-2003	189	19	Anderlecht	defensor	0	0	
+Wout Faes	belgica	03-04-1998	187	24	Leicester City	defensor	0	0	
+Arthur Teate	belgica	25-05-2000	186	22	Rennes	defensor	0	0	
+Jan Vertonghen	belgica	24-04-1987	189	35	Anderlecht	defensor	0	0	
+Timoty Castagne	belgica	05-12-1995	185	27	Leicester City	defensor	0	0	
+Thomas Meunier	belgica	12-09-1991	191	31	Borussia Dortmund	defensor	0	0	
+Yannick Ferreira Carrasco	belgica	04-09-1993	181	29	atletico madrid	mediocampista	0	0	
+Thorgan Hazard	belgica	29-03-1993	175	29	Borussia Dortmund	mediocampista	0	0	
+Kevin de Bruyne	belgica	28-06-1991	181	31	Manchester City	mediocampista	0	0	
+Leander Dendocker	belgica	15-04-1995	188	27	Aston Villa	mediocampista	0	0	
+Amadou Onana	belgica	16-08-2001	192	21	Everton	mediocampista	0	0	
+Yoeri Tielemans	belgica	07-05-1997	176	25	Leicester City	mediocampista	0	0	
+Hans Vanaken	belgica	24-08-1992	195	30	Brujas	mediocampista	0	0	
+Axel Witsel	belgica	12-01-1989	186	33	Atletico Madrid	mediocampista	0	0	
+Charles de Ketelaere	belgica	10-03-2001	192	21	milan	mediocampista	0	0	
+Jeremy Doku	belgica	27-05-2002	171	20	Rennes	mediocampista	0	0	
+Marouane Fellaini	belgica	22-11-1987	194	35	Shandong Luneng	mediocampista	0	0	
+eden hazard	belgica	07-01-1991	175	31	real madrid	delantero	0	0	
+Dries Mertens	belgica	06-05-1987	169	35	Galatasaray	delantero	0	0	
+Michy Batshuayi	belgica	02-10-1993	185	29	Fenerbahce	delantero	0	0	
+Lois Openda	belgica	16-02-2000	177	22	Lens	delantero	0	0	
+Romelu Lukaku	belgica	13-05-1993	191	29	inter Milan	delantero	0	0	
+Brasil
+Alisson Becker	brasil	02-10-1992	191	30	Liverpool	portero	0	0	
+Ederson Moraes	brasil	17-08-1993	188	29	Manchester City	portero	0	0	
+Weverton Pereira	brasil	13-12-1987	189	34	Palmeiras	portero	0	0	
+Dani Alves	brasil	06-05-1983	172	39	Pumas	defensor	0	0	
+Danilo Luiz	brasil	15-07-1991	184	31	Juventus	defensor	0	0	
+Alex Sandro	brasil	26-01-1991	180	31	Juventus	defensor	0	0	
+Alex Telles	brasil	15-12-1992	181	29	Sevilla	defensor	0	0	
+Gleison Bremer	brasil	18-03-1997	188	25	Juventus	defensor	0	0	
+eder Militao	brasil	18-01-1998	186	24	real madrid	defensor	0	0	
+Marcos Aoas	brasil	14-05-1994	183	28	psg	defensor	0	0	
+Thiago Silva	brasil	22-09-1984	181	38	Chelsea	defensor	0	0	
+Carlos Henrique	brasil	23-02-1992	185	30	Manchester United	mediocampista	0	0	
+everton Augusto	brasil	10-04-1989	174	33	Flamengo	mediocampista	0	0	
+Fabio Henrique	brasil	23-10-1993	188	29	Liverpool	mediocampista	0	0	
+Frederico Rodrigues	brasil	05-03-1993	169	29	Manchester United	mediocampista	0	0	
+Lucas Tolentino	brasil	27-08-1997	180	25	West Ham	mediocampista	0	0	
+Antony Matheus	brasil	24-02-2000	174	22	Manchester United	delantero	0	0	
+Gabriel Jesus	brasil	03-04-1997	175	25	Arsenal	delantero	0	0	
+Gabriel Martinelli	brasil	18-06-2001	178	21	Arsenal	delantero	0	0	
+Neymar Jr	brasil	05-02-1992	175	30	psg	delantero	0	0	
+Pedro Guilherme	brasil	20-06-1997	185	25	Flamengo	delantero	0	0	
+Raphael Dias	brasil	14-12-1996	176	25	Barcelona	delantero	0	0	
+Richarlison	brasil	10-05-1997	184	25	Tottenham	delantero	0	0	
+Rodrygo Silva	brasil	09-01-2001	174	21	Real Madrid	delantero	0	0	
+Vinícius José	brasil	12-07-2000	176	22	Real Madrid	delantero	0	0	
 Paises Bajos
 Justin Bijlow	Portero	Feyenoord (Países Bajos)
 Andries Noppert	Portero	Heerenveen (Países Bajos)
