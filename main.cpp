@@ -24,6 +24,7 @@ void promedio();
 void load();
 void loadEstadios();
 void loadPaises();
+void loadJugadores();
 void exit();
 
 List<estadio> listaEstadios;
@@ -32,7 +33,7 @@ estadio EstadioAux;
 List<equipo> listaEquipos;
 equipo EquipoAux;
 
-
+List<jugador> listaJugadores;
 jugador JugadorAux;
 
 
@@ -93,6 +94,8 @@ void enter(){
     	cout << i + 1 << ". " << options[i] << "\n";
   	cout << "Ingresa una opcion: ";
   cin >> option;
+  
+  
   switch (option){
   case 1:
   	
@@ -103,18 +106,19 @@ void enter(){
   	
   	
   	ofstream archivoJugador;
+  	
+  	
   	archivoJugador.open("jugadorTemp.txt", ios::out);
   	if(archivoJugador.fail()){
   		cout<<"Hemos fallado";
+  		menu();
 	}
 	
 	system("cls");
 	cout<<"Ingrese el nombre: ";
 	cin.ignore();
 	getline(cin, seleNuevo);
-	cout<<seleNuevo<<endl;
 	JugadorAux.nombre = seleNuevo;
-	cout<<JugadorAux.nombre;
 	jugaNuevo += seleNuevo + "\t";
 	
 	cout<<"Ingrese la nacionalidad: ";
@@ -128,43 +132,33 @@ void enter(){
 	cout<<"Ingrese la fecha de nacimiento: (dd-mm-aaaa)";
 //	cin.ignore();
 	getline(cin, seleNuevo);
-	cout<<seleNuevo<<endl;
 	JugadorAux.fechaDeNacimiento = seleNuevo;
-	cout<<JugadorAux.fechaDeNacimiento;
 	jugaNuevo += seleNuevo + "\t";
 	
 	cout<<"Ingrese la estatura: (cm)";
 //	cin.ignore();
 	getline(cin, seleNuevo);
-	cout<<seleNuevo<<endl;
 	int aux = atoi(seleNuevo.c_str());
 	JugadorAux.estatura = aux;
-	cout<<JugadorAux.estatura;
 	jugaNuevo += seleNuevo + "\t";
 	
 	cout<<"Ingrese la edad: ";
 //	cin.ignore();
 	getline(cin, seleNuevo);
-	cout<<seleNuevo<<endl;
 	aux = atoi(seleNuevo.c_str());
 	JugadorAux.edad = aux;
-	cout<<JugadorAux.edad;
 	jugaNuevo += seleNuevo + "\t";
 	
 	cout<<"Ingrese el club en el que juega: ";
 //	cin.ignore();
 	getline(cin, seleNuevo);
-	cout<<seleNuevo<<endl;
 	JugadorAux.club = seleNuevo;
-	cout<<JugadorAux.club;
 	jugaNuevo += seleNuevo + "\t";
 	
 	cout<<"Ingrese posicion en la que juega: (AAA)";
 //	cin.ignore();
 	getline(cin, seleNuevo);
-	cout<<seleNuevo<<endl;
 	JugadorAux.posicion = seleNuevo;
-	cout<<JugadorAux.posicion;
 	jugaNuevo += seleNuevo + "\t";
 
 	
@@ -174,18 +168,13 @@ void enter(){
   	archivoJugador.close();
   	
   
-  	EquipoAux = listaEquipos.getData(1);
-  	EquipoAux.futbolistas.insertOnList(JugadorAux, 1);
-  	listaEquipos.deleteFromList(1);
-  	listaEquipos.insertOnList(EquipoAux, 1);
-  	
 
 
   	break;
   
   }
 	
-	//Fin del método
+	//Fin del m?todo
 	cout<<"Presione cualquier tecla..."; getch();
   	menu();
 }
@@ -197,7 +186,7 @@ void exit(){
 	
 	cout<<"\n[+] Guardado con exito"<<endl; 
 	
-	//Fin del método
+	//Fin del m?todo
 	cout<<"Presione cualquier tecla..."; getch();
 	exit(0);
 	
@@ -223,12 +212,12 @@ void loadPaises(){
 		textoPaises.replace(0, 1,"",0);
 		EquipoAux.nombre = textoPaises;	
 //		cout<<textoPaises<<"(Nombre)-> "<<i<<endl;
-		i++;
+		i++; //1
 		
 		getline(archivoPaises,textoPaises,'\t');
 		EquipoAux.confederacion = textoPaises; 
 //		cout<<textoPaises<<"(Confederacion)-> "<<i<<endl;
-		i++;
+		i++; //2
 		
 		
 		if(i%2==0 && i>0){
@@ -301,9 +290,109 @@ void loadEstadios(){
 	
 }
 
+void loadJugadores(){
+	
+	ifstream archivo;
+	string texto;
+
+	archivo.open("Jugadores.txt", ios::in);
+	
+	if(archivo.fail()){
+		cout<<"Hemos fallado con exito";
+	}	
+	int i=0;
+	
+	while(!archivo.eof()){
+				
+		getline(archivo,texto,'\t');
+		texto.replace(0, 1,"",0);
+		JugadorAux.nombre = texto;	
+//		cout<<texto<<"(Nombre)-> "<<i<<endl;
+		i++;
+		
+		getline(archivo,texto,'\t');
+		texto.replace(0, 1,"",0);
+		JugadorAux.nacionalidad = texto;	
+//		cout<<texto<<"(Nombre)-> "<<i<<endl;
+		i++;
+		
+		getline(archivo,texto,'\t');
+		texto.replace(0, 1,"",0);
+		JugadorAux.fechaDeNacimiento = texto;	
+//		cout<<texto<<"(Nombre)-> "<<i<<endl;
+		i++;
+		
+		getline(archivo,texto,'\t');
+		int aux = atoi(texto.c_str());
+		JugadorAux.estatura = aux;	
+//		cout<<texto<<"(Capacidad)-> "<<i<<endl;
+		i++;
+		
+		getline(archivo,texto,'\t');
+		aux = atoi(texto.c_str());
+		JugadorAux.edad = aux;	
+//		cout<<texto<<"(Capacidad)-> "<<i<<endl;
+		i++;
+		
+		getline(archivo,texto,'\t');
+		JugadorAux.club = texto;	
+//		cout<<texto<<"(Ciudad)-> "<<i<<endl;
+		i++;
+		
+		getline(archivo,texto,'\t');
+		JugadorAux.posicion = texto;	
+//		cout<<texto<<"(Ciudad)-> "<<i<<endl;
+		i++;
+		
+		getline(archivo,texto,'\t');
+		aux = atoi(texto.c_str());
+		JugadorAux.golesAnotados = aux;	
+//		cout<<texto<<"(Capacidad)-> "<<i<<endl;
+		i++;
+		
+		getline(archivo,texto,'\t');
+		aux = atoi(texto.c_str());
+		JugadorAux.fechasSancion = aux;	
+//		cout<<texto<<"(Capacidad)-> "<<i<<endl;
+		i++;
+		
+		if(i%9==0 && i>0){
+			listaJugadores.insertOnList(JugadorAux, 1); //= ARGENTINA
+			// intJuga ++;
+		}		
+	}
+
+	archivo.close();
+	
+	for(int j=1; j<=listaJugadores.sizeList(); j++){
+		JugadorAux = listaJugadores.getData(j);
+		cout<<"[+] ------------------------- [+]"<<endl;
+		cout<<JugadorAux.nombre<<endl;
+		cout<<JugadorAux.nacionalidad<<endl;
+		cout<<JugadorAux.fechaDeNacimiento<<endl;
+		cout<<JugadorAux.estatura<<endl;
+		cout<<JugadorAux.edad<<endl;
+		cout<<JugadorAux.club<<endl;
+		cout<<JugadorAux.posicion<<endl;
+		cout<<"--------------------"<<endl;
+		
+	}
+	
+	
+	EquipoAux = listaEquipos.getData(1);
+  	EquipoAux.futbolistas = listaJugadores;
+  	listaEquipos.deleteFromList(1);
+  	listaEquipos.insertOnList(EquipoAux, 1);
+  	
+
+	
+}
+
 void load(){
 	loadEstadios();
 	loadPaises();
+	loadJugadores();
+	getch();
 }
 
 
@@ -345,7 +434,7 @@ do{
 		cout<<"Nombre "<<j<<": "<<EquipoAux.nombre<<endl;	
 		cout<<"Confederacion "<<j<<": "<<EquipoAux.confederacion<<endl;	
 		cout<<"Jugadores: "<<endl;
-		for(int k=1; k<2; k++){
+		for(int k=1; k<EquipoAux.futbolistas.sizeList(); k++){
 			JugadorAux = EquipoAux.futbolistas.getData(k);
 			cout<<"=> Jugador"<<k<<"<="<<endl;
 			cout<<"Nombre: "<<JugadorAux.nombre<<endl;
