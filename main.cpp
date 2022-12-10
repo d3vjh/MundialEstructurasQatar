@@ -301,6 +301,7 @@ void loadJugadores(){
 		cout<<"Hemos fallado con exito";
 	}	
 	int i=0;
+	int contador=0;
 	
 	while(!archivo.eof()){
 				
@@ -311,13 +312,13 @@ void loadJugadores(){
 		i++;
 		
 		getline(archivo,texto,'\t');
-		texto.replace(0, 1,"",0);
+		//texto.replace(0, 1,"",0);
 		JugadorAux.nacionalidad = texto;	
 //		cout<<texto<<"(Nombre)-> "<<i<<endl;
 		i++;
 		
 		getline(archivo,texto,'\t');
-		texto.replace(0, 1,"",0);
+		//texto.replace(0, 1,"",0);
 		JugadorAux.fechaDeNacimiento = texto;	
 //		cout<<texto<<"(Nombre)-> "<<i<<endl;
 		i++;
@@ -357,13 +358,33 @@ void loadJugadores(){
 		i++;
 		
 		if(i%9==0 && i>0){
-			listaJugadores.insertOnList(JugadorAux, 1); //= ARGENTINA
-			// intJuga ++;
-		}		
+			
+			//Error acá
+			listaJugadores.insertOnList(JugadorAux, (listaJugadores.sizeList())+1); 
+				
+
+		}
+	listaJugadores.sizeList();
+		if(i%26==0){
+				
+			contador++;
+			EquipoAux = listaEquipos.getData(contador);
+  			EquipoAux.futbolistas = listaJugadores;
+
+			//Debería borrar acá, ya que se asigna a un equipo ya.
+			  		
+			
+  			listaEquipos.deleteFromList(contador);
+  			listaEquipos.insertOnList(EquipoAux, contador);		
+			}
+		
+
+					
 	}
 
 	archivo.close();
 	
+	//Imprime en el load
 	for(int j=1; j<=listaJugadores.sizeList(); j++){
 		JugadorAux = listaJugadores.getData(j);
 		cout<<"[+] ------------------------- [+]"<<endl;
@@ -378,12 +399,6 @@ void loadJugadores(){
 		
 	}
 	
-	
-	EquipoAux = listaEquipos.getData(1);
-  	EquipoAux.futbolistas = listaJugadores;
-  	listaEquipos.deleteFromList(1);
-  	listaEquipos.insertOnList(EquipoAux, 1);
-  	
 
 	
 }
@@ -434,7 +449,7 @@ do{
 		cout<<"Nombre "<<j<<": "<<EquipoAux.nombre<<endl;	
 		cout<<"Confederacion "<<j<<": "<<EquipoAux.confederacion<<endl;	
 		cout<<"Jugadores: "<<endl;
-		for(int k=1; k<EquipoAux.futbolistas.sizeList(); k++){
+		for(int k=1; k<=EquipoAux.futbolistas.sizeList(); k++){
 			JugadorAux = EquipoAux.futbolistas.getData(k);
 			cout<<"=> Jugador"<<k<<"<="<<endl;
 			cout<<"Nombre: "<<JugadorAux.nombre<<endl;
