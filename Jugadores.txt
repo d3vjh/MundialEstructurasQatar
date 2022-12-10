@@ -336,3 +336,133 @@ Youssoufa Moukoko	Alemana	20-11-2004	179	18	Borussia Dortmund	Delantero	0	0
 Jamal Musiala	Alemana	26-02-2003	184	19	Bayern Munich	Delantero	0	0	
 Thomas Müller	Alemana	13-09-1989	185	32	Bayern Munich	Delantero	0	0	
 Leroy Sané	Alemana	11-01-1996	183	26	Bayern Munich	Delantero	0	0	
+Manaf Nurudeen	Ghana	08-02-1999	199	23	Eupen	Arquero	0	0	
+Danlad Ibrahim	Ghana	02-12-2002	181	20	Asante Kokoto	Arquero	0	0	
+Lawrence Ati Zigi	Ghana	29-11-1996	26	188	FC St. Gallen	Arquero	0	0	
+Denis Odoi	Ghana	27-05-1988	178	34	Club Brugge	Defensor	0	0	
+Tariq Lamptey	Ghana	30-09-2000	164	22	Brighton	Defensor	0	0	
+Alidu Seidu	Ghana	04-06-2000	173	22	Clermont	Defensor	0	0	
+Daniel Amartey	Ghana	21-12-1994	186	28	Leicester City	Defensor	0	0	
+Joseph Aidoo	Ghana	29-09-1995	184	27	Celta Vigo	Defensor	0	0	
+Alexander Djiku	Ghana	09-08-1994	182	28	Strasbourg	Defensor	0	0	
+Mohammed Salisu	Ghana	17-04-1999	191	23	Southampton	Defensor	0	0	
+Abdul-Rahman Baba	Ghana	02-07-1994	180	28	Reading	Defensor	0	0	
+Gideon Mensah	Ghana	18-07-1998	178	28	Auxerre	Defensor	0	0	
+Andre Ayew	Ghana	17-12-1989	176	33	Al Sadd	Mediocampista	0	0	
+Thomas Partey	Ghana	13-06-1996	185	26	Arsenal	Mediocampista	0	0	
+Elisha Owusu	Ghana	07-11-1997	182	25	Gent	Mediocampista	0	0	
+Salis Abdul Samed	Ghana	26-03-2000	179	22	Lens	Mediocampista	0	0	
+Mohammed Kudus	Ghana	02-08-2000	177	22	Ajax	Mediocampista	0	0	
+Daniel Kofi Kyereh	Ghana	08-03-1996	179	26	Freiburg	Mediocampista	0	0	
+Daniel Barnieh Afriyie	Ghana	26-06-2001	170	21	Accra Hearts of Oak	Delantero	0	0	
+Kamal Sowah	Ghana	09-01-2000	179	22	Club Brugge	Delantero	0	0	
+Issahaku Abdul Fatawu	Ghana	08-03-2004	177	18	Sporting CP	Delantero	0	0	
+Osman Bukari	Ghana	13-12-1998	170	24	Red Star Belgrade	Delantero	0	0	
+Inaki Williams	Ghana	15-06-1994	186	28	Athletic Bilbao	Delantero	0	0	
+Antoine Semenyo	Ghana	07-01-2000	172	22	Bristol City	Delantero	0	0	
+Jordan Ayew	Ghana	11-09-1991	182	31	Crystal Palace	Delantero	0	0	
+Kamaldeen Sulemana	Ghana	15-02-2002	174	20	Rennes	Delantero	0	0	
+Alireza Beiranvand	Iran	21-09-1992	194	30	Persepolis	Arquero	0	0	
+Amir Abedzadeh	Iran	26-04-1993	186	29	Ponferradina	Arquero	0	0	
+Hossein Hosseini	Iran	07-11-2000	187	22	Esteghlal FC	Arquero	0	0	
+Payam Niazmand	Iran	08-09-2000	194	22	Sepahan FC	Arquero	0	0	
+Shoja Khalilzadeh	Iran	06-04-1995	183	27	Al-Ahli	Defensa	0	0	
+Hossein Kanaanizadegan	Iran	14-05-1989	187	33	Al-Ahli	Defensa	0	0	
+Milad Mohammadi	Iran	29-09-1993	178	29	AEK Atenas	Defensa	0	0	
+Majid Hosseini	Iran	20-06-1996	187	26	Kayserispor	Defensa	0	0	
+Morteza Pouraliganji	Iran	19-04-1992	187	30	Persepolis	Defensa	0	0	
+Sadegh Moharrami	Iran	01-03-1996	174	26	Dinamo Zagreb	Defensa	0	0	
+Ramin Rezaeian	Iran	21-03-1990	180	32	Sepahan FC	Defensa	0	0	
+Abolfazl Jalali	Iran	26-06-1998	177	24	Esteghlal FC	Defensa	0	0	
+Ehsan Hajsafi	Iran	25-02-1990	178	32	AEK Atenas	Defensa	0	0	
+Saeid Ezatolahi	Iran	01-10-1996	190	26	Vejle Boldklub	Centrocampista	0	0	
+Ali Karimi	Iran	08-11-1978	179	44	Kayserispor	Centrocampista	0	0	
+Saman Ghoddos	Iran	06-09-1993	176	29	Brentford	Centrocampista	0	0	
+Ahmad Nourollahi	Iran	01-02-1993	29	185	Shabab Al-Ahli	Centrocampista	0	0	
+Roozbeh Cheshmi	Iran	24-06-1993	192	29	Esteghlal FC	Centrocampista	0	0	
+Vahid Amiri	Iran	02-04-1988	179	34	Persepolis	Centrocampista	0	0	
+Mehdi Torabi	Iran	10-09-1994	180	28	Persepolis	Centrocampista	0	0	
+Ali Gholizadeh	Iran	10-03-1996	176	26	Charleroi	Centrocampista	0	0	
+Alireza Jahanbakhsh	Iran	11-08-1993	29	180	Feyenoord	Delantero	0	0	
+Mehdi Taremi	Iran	18-07-1992	178	30	Oporto	Delantero	0	0	
+Sardar Azmoun	Iran	01-01-1995	186	27	Bayer Leverkusen	Delantero	0	0	
+Karim Ansarifard	Iran	03-04-1990	184	32	Omonia	Delantero	0	0	
+Mohammad Nosrati	Iran	11-01-2000	180	22	Persepolis	Delantero	0	0	
+Shuichi Gonda	Japon	03-03-1989	187	33	Shimizu S-Pulse	Arquero	0	0	
+Eiji Kawashima	Japon	20-03-1983	185	39	RC Strasbourg	Arquero	0	0	
+Daniel Schmidt	Japon	03-02-1992	197	30	Sint-Truidense VV	Arquero	0	0	
+Yuto Nagatomo	Japon	12-09-1986	170	36	Tokyo	Defensor	0	0	
+Maya Yoshida	Japon	24-08-1988	189	34	Schalke	Defensor	0	0	
+Hiroki Sakai	Japon	12-04-1990	185	32	Urawa Red Diamonds	Defensor	0	0	
+Takehiro Tomiyasu	Japon	05-11-1998	188	24	Arsenal	Defensor	0	0	
+Miki Yamane	Japon	22-12-1993	178	29	Kawasaki Frontale	Defensor	0	0	
+Miki Yamane	Japon	22-12-1993	178	29	Kawasaki Frontale	Defensor	0	0	
+Ko Itakura	Japon	27-01-1997	186	25	Borussia Monchengladbach	Defensor	0	0	
+Hiroki Ito	Japon	12-05-1999	188	23	Stuttgart	Defensor	0	0	
+Gaku Shibasaki	Japon	28-05-1992	175	30	Leganés	Mediocampista	0	0	
+Wataru Endo	Japon	09-02-1993	178	29	Stuttgart	Mediocampista	0	0	
+Takumi Minamino	Japon	16-01-1995	174	27	Mónaco	Mediocampista	0	0	
+Junya Ito	Japon	09-03-1993	176	29	Reims	Mediocampista	0	0	
+Ritsu Doan	Japon	16-06-1998	172	24	Freiburgo	Mediocampista	0	0	
+Daichi Kamada	Japon	05-08-1996	184	26	Eintracht Frankfurt	Mediocampista	0	0	
+Takefusa Kubo	Japon	04-06-2001	173	21	Real Sociedad	Mediocampista	0	0	
+Hidemasa Morita	Japon	10-05-1995	177	27	Sporting	Mediocampista	0	0	
+Ao Tanaka	Japon	10-09-1998	180	24	Fortuna Dusseldorf	Mediocampista	0	0	
+Kaoru Mitoma	Japon	20-05-1997	178	25	Brighton	Mediocampista	0	0	
+Yuki Soma	Japon	25-02-1997	166	25	Nagoya Grampus	Mediocampista	0	0	
+Takuma Asano	Japon	10-11-1994	173	28	Bochum	Delantero	0	0	
+Ayase Ueda	Japon	28-08-1998	182	24	Brujas	Delantero	0	0	
+Daizen Maeda	Japon	20-10-1997	173	25	Celtic	Delantero	0	0	
+Shuto Machino	Japon	30-09-1999	185	23	Shonan Bellmare	Delantero	0	0	
+Kim Seung-gyu	Corea	30-09-1990	187	32	Al-Shabab	Arquero	0	0	
+Song Bum-keun	Corea	15-01-1997	194	25	Jeonbuk	Arquero	0	0	
+Jo Hyeon-woo	Corea	25-09-1991	189	31	Ulsan	Arquero	0	0	
+Kim Min-jae	Corea	15-11-1996	190	26	Napoles	Defensor	0	0	
+Kim Young-gwon	Corea	27-02-1990	187	32	Ulsan	Defensor	0	0	
+Kwon Kyung-won	Corea	31-01-1992	188	30	Gamba Osaka	Defensor	0	0	
+Cho Yu-min	Corea	17-11-1996	182	26	Daejeon	Defensor	0	0	
+Kim Moon-hwan	Corea	01-08-1995	173	27	Jeonbuk	Defensor	0	0	
+Yoon Jong-gyu	Corea	20-03-1998	175	24	FC Seoul	Defensor	0	0	
+Kim Tae-hwan	Corea	24-07-1989	177	33	Ulsan	Defensor	0	0	
+Kim Jin-su	Corea	13-06-1992	177	30	Jeonbuk	Defensor	0	0	
+Hong Chul	Corea	17-09-1990	176	32	Daegu	Defensor	0	0	
+Jung Woo-young	Corea	14-12-1989	186	33	Al Sociedad	Mediocampista	0	0	
+Son Jun-ho	Corea	12-05-1992	178	30	Shandong Taishan	Mediocampista	0	0	
+Paik Seung-ho	Corea	17-03-1997	180	25	Jeonbuk	Mediocampista	0	0	 
+Hwang In-beom	Corea	20-09-1996	177	26	Olympiakos	Mediocampista	0	0	
+Lee Jae-sung	Corea	10-08-1992	180	30	Maguncia	Mediocampista	0	0	
+Kwon Chang-hoon	Corea	30-06-1994	174	28	Gimcheon Sangmu	Mediocampista	0	0	
+Jeong Woo-yeong	Corea	20-09-1999	179	23	Freiburgo	Mediocampista	0	0	
+Lee Kang-in	Corea	19-02-2001	173	21	Mallorca	Mediocampista	0	0	
+Son Heung-min	Corea	08-07-1992	183	30	Tottenham	Mediocampista	0	0	
+Hwang Hee-chan	Corea	26-01-1996	177	26	Wolverhampton	Mediocampista	0	0	
+Na Sang-ho	Corea	12-08-1996	173	26	FC Seoul	Mediocampista	0	0	
+Song Min-kyu	Corea	12-09-1999	180	23	Jeonbuk	Mediocampista	0	0	
+Hwang Ui-jo	Corea	28-08-1992	185	30	Olympiakos	Delantero	0	0	
+Cho Gue-sung	Corea	25-01-1998	189	24	Jeonbuk	Delantero	0	0	
+Guillermo Ochoa	México	13-07-1985	185	37	América	Arquero	0	0	
+Alfredo Talavera	México	18-09-1982	188	40	Juárez	Arquero	0	0	
+Rodolfo Cota	México	03-07-1987	183	35	León	Arquero	0	0	
+Kevin Álvarez	México	15-01-1999	175	23	Pachuca	Defensor	0	0	
+Jesús Angulo	México	30-01-1998	175	24	Tigres	Defensor	0	0	
+Néstor Araujo	México	09-08-1991	188	31	América	Defensor	0	0	
+Gerardo Arteaga	México	07-09-1998	174	24	Genk	Defensor	0	0	
+Jesús Gallardo	México	15-08-1994	176	28	Monterrey	Defensor	0	0	
+Héctor Moreno	México	17-01-1988	182	34	Monterrey	Defensor	0	0	
+César Montes	México	24-02-1997	191	25	Monterrey	Defensor	0	0	
+Jorge Sánchez	México	10-12-1997	174	25	Ajax	Defensor	0	0	
+Johan Vásquez	México	22-10-1998	184	24	Cremonese	Defensor	0	0	
+Edson Álvarez	México	24-10-1997	187	25	Ajax	Mediocampista	0	0	
+Roberto Alvarado	México	07-09-1998	176	24	Guadalajara	Mediocampista	0	0	
+Uriel Antuna	México	21-08-1997	174	25	Cruz Azul	Mediocampista	0	0	
+Luis Chávez	México	15-01-1996	177	24	Pachuca	Mediocampista	0	0	
+Andrés Guardado	México	28-09-1986	169	36	Betis	Mediocampista	0	0	
+Erick Gutiérrez	México	15-06-1995	176	27	PSV	Mediocampista	0	0	
+Héctor Herrera	México	19-04-1990	183	32	Houston Dynamo	Mediocampista	0	0	
+Orbelin Pineda	México	24-03-1996	169	26	AEK Atenas	Mediocampista	0	0	
+Carlos Rodríguez	México	03-01-1997	171	25	Cruz Azul	Mediocampista	0	0	
+Luis Romo	México	05-06-1995	182	27	Monterrey	Mediocampista	0	0	
+Rogelio Funes Mori	México	05-03-1991	190	31	Monterrey	Delantero	0	0	
+Raúl Jiménez	México	05-05-1991	190	31	Wolverhampton	Delantero	0	0	
+Hirving Lozano	México	30-07-1995	174	27	Napoli	Delantero	0	0	
+Henry Martín	México	18-11-1992	177	30	América	Delantero	0	0	

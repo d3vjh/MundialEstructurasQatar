@@ -5,10 +5,22 @@
 
 using namespace std;
 
+
+
 struct estadio{
 	string nombreEstadio;
 	int capacidad;
 	string ciudad;
+};
+
+struct tarjeta{
+
+	string color;
+	int dia;
+	int mes;
+	int anio;
+	string motivo;
+	string contrincante;	
 };
 
 struct jugador{
@@ -21,6 +33,7 @@ struct jugador{
 	string posicion;
 	int golesAnotados;
 	int fechasSancion; //Se almacena N fechas Fifa
+	List<tarjeta> tarjetas;
 };
 
 

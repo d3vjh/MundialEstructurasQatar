@@ -36,6 +36,9 @@ equipo EquipoAux;
 List<jugador> listaJugadores;
 jugador JugadorAux;
 
+List<tarjeta> listaTarjetasIndv;
+tarjeta TarjetaAux;
+
 
 int main(int argc, char** argv) {
 
@@ -88,7 +91,7 @@ void enter(){
 	int option;
 	system("cls");
 	cout<<"[+] = = = = = = INGRESAR = = = = = = [+]"<<endl;
-	string options[] = {"Jugador a Seleccion", "Mostrar", "Modificar", "Volver al menu principal", "Salir y guardar"};
+	string options[] = {"Jugador a Seleccion", "Tarjeta a jugador", "Modificar", "Volver al menu principal", "Salir y guardar"};
   	int size = sizeof(options) / sizeof(*options);
 	for (int i = 0; i < size; i++)	
     	cout << i + 1 << ". " << options[i] << "\n";
@@ -96,17 +99,15 @@ void enter(){
   cin >> option;
   
   
-  switch (option){
-  case 1:
+  switch(option){
   	
-  	string seleNuevo;
+  case 1:
+  	{
+   	string seleNuevo;
   	
   	string jugaNuevo;
-  	
-  	
-  	
+
   	ofstream archivoJugador;
-  	
   	
   	archivoJugador.open("jugadorTemp.txt", ios::out);
   	if(archivoJugador.fail()){
@@ -166,18 +167,67 @@ void enter(){
   	archivoJugador<<jugaNuevo;
   	
   	archivoJugador.close();
-  	
-  
-
 
   	break;
-  
   }
+  case 2:
+  	{
+  		string nombreSeleccion;
+  		cout<<"Ingrese la seleccion a buscar: "<<endl;
+		cin>>nombreSeleccion;
+		//Se crea un metodo para buscar al equipo
+		for(int i=1; i<=listaEquipos.sizeList(); i++){
+			EquipoAux = listaEquipos.getData(i);
+			if(nombreSeleccion == EquipoAux.nombre){
+				cout<<"Siiii es el mismo"<<endl;
+				break;
+			}
+		}
+		
+  		string nombreJugador;
+  		cout<<"Ingrese el jugador a buscar: "<<endl;
+  		cin.ignore();
+		getline(cin, nombreJugador);
+		for(int i=1; i<=EquipoAux.futbolistas.sizeList(); i++){
+			
+			JugadorAux = EquipoAux.futbolistas.getData(i);
+			cout<<JugadorAux.nombre<<endl;
+			if(nombreJugador == JugadorAux.nombre){
+				cout<<"ENCONTRADO"<<endl;
+				
+				TarjetaAux.color = "Roja";
+				TarjetaAux.motivo = "Pelea";
+				TarjetaAux.contrincante = "España";
+				TarjetaAux.dia = 25;
+				TarjetaAux.mes = 12;
+				TarjetaAux.anio = 2022;
+				break;
+			}	
+		}
+		
+	//	listaTarjetasIndv.insertOnList(TarjetaAux, 1);
+		JugadorAux.tarjetas.insertOnList(TarjetaAux, (JugadorAux.tarjetas.sizeList()+1));
+		TarjetaAux = JugadorAux.tarjetas.getData(1);
+		
+		cout<<"Tarjeta Motivo: "<<TarjetaAux.motivo;
+		
+		  
+  		break;
+  	}
+
+  		
+  		default:
+  			break;
+  		
+  }
+  	
+  
 	
 	//Fin del m?todo
 	cout<<"Presione cualquier tecla..."; getch();
   	menu();
 }
+
 
 void modify(){
 	
@@ -420,7 +470,7 @@ void load(){
 	loadEstadios();
 	loadPaises();
 	loadJugadores();
-	//getch();
+	
 }
 
 
