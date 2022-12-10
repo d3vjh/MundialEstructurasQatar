@@ -68,7 +68,7 @@ void menu(){
 
     break;
   case 3:
-    //modify();
+    modify();
     break;
   case 4:
     //promedio();
@@ -179,7 +179,15 @@ void enter(){
   	menu();
 }
 
-
+void modify(){
+	
+	//
+	EquipoAux = listaEquipos.getData(4);
+	cout<<EquipoAux.nombre;
+	JugadorAux = EquipoAux.futbolistas.getData(3);
+	cout<<JugadorAux.nombre;
+	
+}
 
 	
 void exit(){
@@ -360,7 +368,7 @@ void loadJugadores(){
 		if(i%9==0 && i>0){
 			
 			//Error acá
-			listaJugadores.insertOnList(JugadorAux, (listaJugadores.sizeList())+1); 
+			listaJugadores.insertOnList(JugadorAux, (listaJugadores.sizeList()+1)); 
 				
 
 		}
@@ -372,7 +380,12 @@ void loadJugadores(){
   			EquipoAux.futbolistas = listaJugadores;
 
 			//Debería borrar acá, ya que se asigna a un equipo ya.
-			  		
+			
+			for(int m=1; m<27; m++){
+				listaJugadores.deleteFromList(1);	
+			}  		
+			
+			
 			
   			listaEquipos.deleteFromList(contador);
   			listaEquipos.insertOnList(EquipoAux, contador);		
@@ -407,7 +420,7 @@ void load(){
 	loadEstadios();
 	loadPaises();
 	loadJugadores();
-	getch();
+	//getch();
 }
 
 

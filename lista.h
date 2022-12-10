@@ -30,7 +30,7 @@ class List{NodoL<T>*cab = new NodoL<T>;
 			void sortDescendingList();
 			T getData(int pos);
 			void replaceInList(T nuevo, T antiguo);
-
+			void removeAll();
 
 	};
 
@@ -43,14 +43,15 @@ class List{NodoL<T>*cab = new NodoL<T>;
  *
  * 
  */
-//template <class T>	
-//List<T>::~List(){
-//	NodoL<T> *aux;
-//	aux = cab; 
-//	while(aux->sig){
-//	delete aux;
-//	}
-//}
+template <class T>	
+void List<T>::removeAll(){
+	NodoL<T> *aux;
+	aux = cab; 
+	tam=0;
+	while(aux->sig){
+	delete aux;
+	}
+}
 //	
 	
 /** \fn bool List<T>::isEmptyList()

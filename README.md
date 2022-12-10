@@ -12,3 +12,11 @@ A tener en cuenta:
 ## Ejemplo de los espacios
 
 ![Ejemplo](https://github.com/d3vjh/MundialEstructurasQatar/blob/lecturaArchivo/img/ejemplo.png)
+
+## Lectura
+
+Se implementa la lectura hasta Alemania (Germany)
+
+## Falta
+
+- Tarjetas a los jugadores
