@@ -465,4 +465,4 @@ Luis Romo	México	05-06-1995	182	27	Monterrey	Mediocampista	0	0
 Rogelio Funes Mori	México	05-03-1991	190	31	Monterrey	Delantero	0	0	
 Raúl Jiménez	México	05-05-1991	190	31	Wolverhampton	Delantero	0	0	
 Hirving Lozano	México	30-07-1995	174	27	Napoli	Delantero	0	0	
-Henry Martín	México	18-11-1992	177	30	América	Delantero	0	0		
+Henry Martín	México	18-11-1992	177	30	América	Delantero	0	0	
