@@ -648,3 +648,107 @@ Krépin Diatta	Senegal	25-02-1999	175	23	as monaco	mediocampista	0	0
 Boulaye Dia	Senegal	16-11-1996	180	26	us salernitana 1919 	delantero	0	0	
 Bamba Dieng	Senegal	23-03-2000	178	22	olympique de marsella	delantero	0	0	
 Famara Diédhiou	Senegal	15-12-1992	189	29	alanyaspor	delantero	0	0	
+Marko Dmitrović	Serbia	24-1-1992	194	30	Sevilla	Portero	0	0	
+Predrag Rajković Serbia	31-10-1995	191	27	Mallorca	Portero	0	0	
+Vanja Milinković-Savić	Serbia	20-2-1997	202	25	Torino	Portero	0	0	
+Stefan Mitrović	Serbia	22-05-1990	189	32	Getafe	Defensa	0	0	
+Nikola Milenković	Serbia	12-10-1997	195	25	Fiorentina	Defensa	0	0	
+Strahinja Pavlović	Serbia	24-05-2001	194	21	Salzburgo	Defensa	0	0	
+Miloš Veljković	Serbia	26-09-1995	188	27	Werder Bremen	Defensa	0	0	
+Filip Mladenović	Serbia	15-08-1991	181	31	Legia Varsovia	Defensa	0	0	
+Strahinja Eraković	Serbia	22-01-2001	183	21	Estrella Roja	Defensa	0	0	
+Srđan Babić	Serbia	22-04-1996	195	26	Almería	Defensa	0	0	
+Nemanja Gudelj	Serbia	16-11-1991	187	31	Sevilla	Mediocampista	0	0	
+Sergej Milinković-Savić	Serbia	27-02-1995	192	27	Lazio	Mediocampista	0	0	
+Saša Lukić	Serbia	13-08-1996	182	26	Torino	Mediocampista	0	0	
+Marko Grujić	Serbia	13-04-1996	190	26	Porto	Mediocampista	0	0	
+Filip Kostić	Serbia	01-11-1992	184	30	Juventus	Mediocampista	0	0	
+Uroš Račić	Serbia	17-03-1998	193	24	Braga	Mediocampista	0	0	
+Nemanja Maksimović	Serbia	26-01-1995	185	27	Getafe	Mediocampista	0	0	
+Ivan Ilić	Serbia	17-03-2001	182	21	Hellas Verona	Mediocampista	0	0	
+Andrija Živković	Serbia	11-07-1996	PAOK Salonicco	Mediocampista	0	0	
+Darko Lazović	Serbia	15-09-1990	181	32	Hellas Verona	Mediocampista	0	0	
+Dušan Tadić	Serbia	20-11-1988	181	34	Ajax	Delantero	0	0	
+Aleksandar Mitrović	Serbia	16-09-1994	189	28	Fulham	Delantero	0	0	
+Dušan Vlahović	Serbia	28-01-2000	190	22	Juventus	Delantero	0	0	
+Filip Đuričić	Serbia	30-01-1992	181	30	Sampdoria	Delantero	0	0	
+Luka Jović	Serbia	23-12-1997	182	24	Fiorentina	Delantero	0	0	
+Nemanja Radonjić	Serbia	15-02-1996	185	26	Torino	Delantero	0	0	
+Unai Simón Mendibil	Español	11-06-1997	190	25	Athletic Club	Portero	0	0	
+Robert Lynch Sánchez	Español	18-11-1997	197	25	Brighton & Hove Albion F. C.	Portero	0	0	
+David Raya Martin	Español	15-09-1995	183	27	Brentford F. C.	Portero	0	0	
+Jorge Alba Ramos	Español	21-03-1989	170	33	F. C. Barcelona	Defensor	0	0	
+Daniel Carvajal Ramos	Español	11-01-1992	173	30	Real Madrid C. F.	Defensor	0	0	
+Eric García Martret	Español	09-01-2001	182	21	F. C. Barcelona	Defensor	0	0	
+Aymeric Jean Louis Gerard Alphonse Laporte	Español	27-03-1994	190	28	Manchester City F. C.	Defensor	0	0	
+César Azpilicueta Tanco	Español	28-08-1989	178	33	Chelsea F. C.	Defensor	0	0	
+Pau Francisco Torres	Español	16-01-1997	191	25	Villarreal C. F.	Defensor	0	0	
+Alejandro Balde Martínez	Español	18-10-2003	175	19	F. C. Barcelona Atlètic3	Defensor	0	0	
+Hugo Guillamón Sanmartín	Español	31-01-2000	178	22	Valencia C. F.	Defensor	0	0	
+Pedro González López	Español	25-11-2002	174	20	F. C. Barcelona	Mediocampista	0	0	
+Pablo Martín Páez Gavira	Español	05-08-2004	173	18	F. C. Barcelona	Mediocampista	0	0	
+Sergio Busquets Burgos	Español	16-07-1998	189	34	F. C. Barcelona	Mediocampista	0	0	
+Rodrigo Hernández Cascante	Español	22-06-1996	190	26	Manchester City F. C.	Mediocampista	0	0	
+Marcos Llorente Moreno	Español	30-01-1995	184	27	Atlético de Madrid	Mediocampista	0	0	
+Jorge Resurrección Merodio	Español	08-01-1992	176	30	Atlético de Madrid	Mediocampista	0	0	
+Carlos Soler Barragán	Español	02-01-1997	180	25	Paris Saint-Germain F. C.	Mediocampista	0	0	
+Nicholas Williams Arthuer	Español	12-07-2002	175	20	Athletic Club	Delantero	0	0	
+Yéremi Jesús Santos Pino	Español	20-10-2002	182	20	Villarreal C. F.	Delantero	0	0	
+Anssumane Fati Vieira	Español	31-10-2002	178	20	F. C. Barcelona	Delantero	0	0	
+Ferran Torres García	Español	29-02-2000	184	22	F. C. Barcelona	Delantero	0	0	
+Marco Asensio Willemsen 	Español	21-01-1996	182	26	Real Madrid C. F.	Delantero	0	0	
+Álvaro Borja Morata Martín	Español	23-10-1992	190	30	Atlético de Madrid	Delantero	0	0	
+Daniel Olmo Carvajal	Español	07-05-1998	179	24	R. B. Leipzig	Delantero	0	0	
+Pablo Sarabia García	Español	11-05-1992	174	30	París Saint-Germain F. C.	Delantero	0	0	
+Yann Sommer	Suiza	17-12-1988	183	33	Borussia Monchengladbach	Portero	0	0	
+Jonas Omlin	Suiza	10-01-1994	182	28	Montpellier	Portero	0	0	
+Gregor Kobel	Suiza	6-12-1997	 195	25	Borussia Dortmund	Portero	0	0	
+Philipp Kohn	Suiza	2-04-1998	190	24	Salzburgo	Portero	0	0	
+Ricardo Rodriguez	Suiza	25-08-1992	182	30	Torino	Defensa	0	0	
+Fabian Schar	Suiza	20-12-1991	188	30	Newcastle United	Defensa	0	0	
+Manuel Akanji	Suiza	19-07-1995	188	27	Manchester City	Defensa	0	0	
+Nico Elvedi	Suiza	30-09-1996	187	26	Borussia Monchengladbach	Defensa	0	0	
+Silvan Widmer Suiza	05-03-1993	183	29	Mainz 05	Defensa	0	0	
+Eray Comert	Suiza	04-02-1998	183	24	Valencia	Defensa	0	0	
+Xherdan Shaqiri	Suiza	10-10-1991	170	31	Chicago Fire	Mediocampista	0	0	
+Granit Xhaka	Suiza	27-09-1992	186	30	Arsenal	Mediocampista	0	0	
+Remo Freuler	Suiza	15-04-1992	181	30	Nottingham Forest	Mediocampista	0	0	
+Denis Zakaria	Suiza	20-11-1996	191	26	Chelsea	Mediocampista	0	0	
+Djibril Sow	Suiza	06-02-1997	184	25	Eintracht Fráncfort	Mediocampista	0	0	
+Renato Steffen	Suiza	03-11-1991	170	31	Lugano	Mediocampista	0	0	
+Fabian Frei	Suiza	08-01-1989	182	33	Basilea	Mediocampista	0	0	
+Michel Aebischer	Suiza	06-01-1997	183	25	Bolonia	Mediocampista	0	0	
+Ardon Jashari	Suiza	30-07-2002	181	20	Lucerna	Mediocampista	0	0	
+Edimilson Fernandes	Suiza	15-04-1996	190	26	Mainz	Mediocampista	0	0	
+Fabian Rieder	Suiza	16-02-2002	179	20	Young Boys	Mediocampista	0	0	
+Breel Embolo	Suiza	14-02-1997	187	25	Mónaco	Delantero	0	0	
+Ruben Vargas Suiza	05-08-1998	177	24	Augsburgo	Delantero	0	0		
+Noah Okafor Suiza	24-05-2000	185	22	RB Salzburgo	Delantero	0	0	
+Haris Seferovic	Suiza	22-02-1992	189	30	Galatasaray	Delantero	0	0	
+Christian Fassnacht Suiza	11-11-1993	185	29	Young Boys	Delantero	0	0	
+Bechir Ben Said	Tunez	29-11-1992	194	30	Monastir	Portero	0	0	
+Aymen Dahmen	Tunez	28-01-1997	188	25	Sfaxien	Portero	0	0	
+Mouez Hassen	Tunez	05-03-1995	184	27	Africain	Portero	0	0	
+Aymen Balbouli	Tunez	14-09-1984	182	38	Etoile Sportive	Portero	0	0	
+Montassar Talbi	Tunez	26-05-1998	190	24	Lorient	Defensa	0	0	
+Bilel Ifa	Tunez	09-03-1990	185	32	Kuwait	Defensa	0	0	
+Dylan Bronn	Tunez	19-06-1995	186	27	Salernitana	Defensa	0	0	
+Nader Ghandri	Tunez	18-02-1995	194	27	Africain	Defensa	0	0	
+Yassine Meriah	Tunez	02-07-1993	188	29	Esperance Sportive	Defensa	0	0	
+Ali Maaloul	Tunez	01-01-1990	175	32	Al Ahly	Defensa	0	0	
+Mohamed Drager	Tunez	25-06-1996	181	26	Luzern	Defensa	0	0	
+Ali Abdi	Tunez	20-12-1993	183	28	Malherbe Caen	Defensa	0	0	
+Wajdi Kechrida	Tunez	05-11-1995	174	27	Atromitos	Defensa	0	0	
+Ellyes Skhiri	Tunez	10-05-1995	185	27	Colonia	Mediocampista	0	0	
+Aissa Laidouni Tunez	13-12-1996	183	25	Ferencvarosi Torna	Mediocampista	0	0	
+Mohamed Ali Ben Romdhane	Tunez	06-09-1999	186	23 Esperance Sportive	Mediocampista	0	0	
+Anis Slimane	Tunez	16-03-2001	188	21	Brondby	Mediocampista	0	0	
+Ferjani Sassi	Tunez	18-03-1992	186	30	Lekhwiya	Mediocampista	0	0	
+Hannibal Mejbri	Tunez	21-01-2003	177	19	Birmingham city	Mediocampista	0	0	
+Ghaylen Chaaleli	Tunez	28-02-1994	179	28	Esperance Sportive	Mediocampista	0	0	
+Wahbi Khazri	Tunez	08-02-1991	176	31	Montpellier	 Delantero	0	0	
+Youssef Msakni	Tunez	28-10-1990	179	32	Al Arabi	Delantero	0	0	
+Naim Sliti	Tunez	27-07-1992	173	30	Al Ettifaq	Delantero	0	0	
+Issam Jebali	Tunez	25-12-1991	186	30	Odense BK	Delantero	0	0	
+Seifeddine Jaziri	Tunez	12-02-1993	180	29	Zamalek	Delantero	0	0	
+Yassine Khenissi	Tunez	06-01-1992	183	30	Al kuwait	Delantero	0	0	
