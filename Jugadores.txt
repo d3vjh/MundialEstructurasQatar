@@ -466,3 +466,185 @@ Rogelio Funes Mori	México	05-03-1991	190	31	Monterrey	Delantero	0	0
 Raúl Jiménez	México	05-05-1991	190	31	Wolverhampton	Delantero	0	0	
 Hirving Lozano	México	30-07-1995	174	27	Napoli	Delantero	0	0	
 Henry Martín	México	18-11-1992	177	30	América	Delantero	0	0	
+Yassine Bounou	Marruecos	05-04-1991	192	31	Sevilla FC	portero	0	0	
+Ahmed Reda	Marruecos	05-04-1996	192	26	Wydad casablanca	portero	0	0	
+Munir	Marruecos	1005-1989	190	33	AI-wehda FC	portero	0	0	
+Nayef Aguerd	Marruecos	30-03-1996	188	26	West ham united	defensor	0	0	
+Romain Saïss	Marruecos	26-03-1990	188	32	Besiktas jks	defensor	0	0	
+Achraf Dari	Marruecos	06-05-1999	188	23	Stade Brestois	defensor	0	0	
+Jawad el Yamiq	Marruecos	29-02-1992	193	30	Real calladolid CF	defensor	0	0	
+Badr Benoum	Marruecos	30-09-1993	193	29	Qatar sc	defensor	0	0	
+Yahia Attiyat allah	Marruecos	02-03-1995	176	27	Wydad casablanca	delantero	0	0	
+Achraf Hakimi	Marruecos	04-11-1998	181	24	Paris saint-germain FC	delantero	0	0	
+Noussair Mazraoui	Marruecos	14-11-1997	183	25	Bayern múnich	delantero	0	0	
+Sofyan Amrabat	Marruecos	21-08-1996	185	26	Fiorentina	delantero	0	0	
+Yahya Jabrane	Marruecos	18-06-1991	187	31	Wydad casablanca	delantero	0	0	
+Azzedine Ounahi	Marruecos	19-04-2000	182	22	Angers sco	mediocampista	0	0	
+Hakim Ziyech	Marruecos	19-03-1993	181	29	Chelsea FC	mediocampista	0	0	
+Ilias Chair	Marruecos	30-10-1997	160	25	Queens park rangers	mediocampista	0	0	
+Selim Amallah	Marruecos	15-11-1996	186	26	Standard de lieja	mediocampista	0	0	
+Bilial el Khannouss	Marruecos	10-05-2004	180	18	Krc genk	mediocampista	0	0	
+Abdelhamid Sabiri	Marruecos	28-11-1996	186	26	Uc sampdoira	mediocampista	0	0	
+Ez Abde	Marruecos	17-12-2001	177	20	Ca osasuna	delantero	0	0	
+Sofiane Boufal	Marruecos	17-09-1993	175	29	Angers sco	delantero	0	0	
+Anass Zaroury	Marruecos	07-11-2000	176	22	Burnley FC milan	delantero	0	0	
+Zakaria Aboukhlal	Marruecos	18-02-2000	179	22	Toulouse FC	delantero	0	0	
+Youssef En-Nesyri	Marruecos	01-06-1997	192	25	Sevilla FC	delantero	0	0	
+Abderrazak Hamdallah	Marruecos	17-12-1990	182	31	Ai-ittihad club	delantero	0	0	
+Walid Cheddira	Marruecos	22-01-1998	187	24	Ssc bari	delantero	0	0	
+Justin Bijlow	Paises Bajos	22-01-1998	188	24	Feyenoord rotterdam	portero	0	0	
+Andries Noppert	Paises Bajos	07-04-1994	203	28	Sc heerenveen	portero	0	0	
+Remko Pasveer	Paises Bajos	08-11-1983	187	39	Ajax de Ámsterdam	portero	0	0	
+Matthijs de Ligt	Paises Bajos	12-08-1999	189	23	Bayern múnich	defensor	0	0	
+Virgil van Dijk	Paises Bajos	08-07-1991	193	31	Liverpool FC	defensor	0	0	
+Jurrien Timber	Paises Bajos	17-06-2001	182	21	Ajax de Ámsterdam	defensor	0	0	
+Nathan Aké	Paises Bajos	18-02-1995	180	27	Manchester city	defensor	0	0	
+Stefan de Vrij	Paises Bajos	05-02-1992	189	30	inter de Milán	defensa	0	0	
+Tyrell Malacia	Paises Bajos	17-08-1999	169	23	manchester united	defensor	0	0	
+Daley Blind	Paises Bajos	09-03-1990	180	32	ajax de Ámsterdam	defensor	0	0	
+Jeremie Frimpong	Paises Bajos	10-12-2000	171	21	Bayer 04 leverkusen	defensor	0	0	
+Teun Koopmeiners	Paises Bajos	28-02-1998	183	24	atalanta de Bérmago united	mediocampista	0	0	
+Marten de Roon	Paises Bajos	29-03-1991	185	31	atalanta de Bérmago	mediocampista	0	0	
+Frenkie de Jong	Paises Bajos	12-05-1997	181	25	FC barcelona	mediocampista	0	0	
+Kenneth Taylor	Paises Bajos	16-05-2002	182	20	ajax de Ámsterdam	mediocampista	0	0	
+Denzel Dumfries	Paises Bajos	18-04-1996	188	26	inter de milán	mediocampista	0	0	
+Xavi Simons	Paises Bajos	21-04-2003	179	19	psv eindhoven	mediocampista	0	0	
+Steven Berghuis	Paises Bajos	19-12-1991	182	30	ajax de Ámsterdam	mediocampista	0	0	
+Davy Klaassen	Paises Bajos	21-02-1993	179	29	ajax de Ámsterdam	mediocampista	0	0	
+Cody Gakpo	Paises Bajos	07-05-1999	189	23	psv eindhoven	mediocampista	0	0	
+Steven Bergwijim	Paises Bajos	08-10-1997	178	25	ajax de Ámsterdam	mediocampista	0	0	
+Noa Lang	Paises Bajos	17-06-1999	173	23	inter milan	mediocampista	0	0	
+Memphis Depay	Paises Bajos	13-02-1994	178	38	Fc barceelona	delantero	0	0	
+Wout Eghorst	Paises Bajos	07-08-1992	197	30	besiktas JK	delantero	0	0	
+Vincent Janssen	Paises Bajos	15-06-1994	184	28	royal amberes FC	delantero	0	0	
+luuk de Jong	Paises Bajos	27-08-1990	188	32	psv eindhoven	delantero	0	0	
+Wojciech Szczesny	Polonia	18-04-1990	196	32	juventus de turin	portero	0	0	
+Kamil Grabara	Polonia	08-01-1999	195	23	fc copenhauge	portero	0	0	
+Lukasz Skorupski	Polonia	05-05-1991	187	31	bolonia	portero	0	0	
+Jan Bednarek	Polonia	12-04-1996	189	26	aston villa	defensa	0	0	
+Jakub Kiwior	Polonia	15-02-2000	189	22	spezia	defensa	0	0	
+Mateusz Wieteska	Polonia	11-02-1997	187	25	clermont foot 63	defensa	0	0	
+Kamil Glik	Polonia	03-02-1988	190	34	benevento	defensa	0	0	
+Artur Jedrzejczyk	Polonia	04-11-1987	189	35	legia de varsovia	defensa	0	0	
+Matty Cash Polonia	07-08-1997	185	25	Aston villa	defensa	0	0	
+Robert Gumny	Polonia	04-06-1998	182	24	fc ausburgo	defensa	0	0	
+Bartosz Bereszynski	Polonia	12-07-1992	183	30	uc sampdoria	defensa	0	0	
+Grzegorz Krychowiak	Polonia	29-01-1990	187	32	Riyadh	mediocampista	0	0	
+Krystian Bielik	Polonia	04-01-1998	189	24	birmingham city	mediocampista	0	0	
+Szymon Zurkowski	Polonia	25-09-1997	185	25	fiorentina	mediocampista	0	0	
+Damian Szymanski	Polonia	16-06-1995	185	27	aek atenas FC	mediocampista	0	0	
+Przemyslaw Frankowski	Polonia	12-04-1995	175	27	rc lens	mediocampista	0	0	
+Nicola Zalewski	Polonia	23-01-2002	175	20	as roma	mediocampista	0	0	
+Piotr Zielinski	Polonia	20-05-1994	180	28	ssc napoles	mediocampista	0	0	
+Sebastian Szymanski	Polonia	10-05-1999	174	23	feyenoord rotterdam	mediocampista	0	0	
+Jakub Kaminski	Polonia	05-06-2002	179	20	vfl wolfsburgo	mediocampista	0	0	
+Kamil Grosicki	Polonia	08-06-1988	180	34	pogon szczecin	mediocampista	0	0	
+Michal Skoras	Polonia	15-02-200	172	22	lech poznan	delantero	0	0	
+Robert Lewandowski	Polonia	21-08-1988	185	34	fc barcelona	delantero	0	0	
+Krzysztof Piatek	Polonia	01-07-1995	183	27	us salernitana	delantero	0	0	
+Arkadiusz Milik	Polonia	28-02-1994	186	28	juventus de turin	delantero	0	0	
+Karol Swiderski	Polonia	23-01-1997	184	25	charlotte FC	delantero	0	0	
+Diogo Costa	Portugal	19-09-1999	186	23	fc oporto	portero	0	0	
+José Sá	Portugal	17-01-1993	192	29	wolverhampton wanderers	portero	0	0	
+Rui Patrício	Portugal	15-02-1988	190	34	as Roma	portero	0	0	
+Rúben Dias	Portugal	14-05-1997	187	24	manchester city	defensor	0	0	
+António Silva	Portugal	30-10-2003	187	19	sl benfica	defensor	0	0	
+Pepe	Portugal	26-02-1983	187	39	fc oporto	defensor	0	0	
+Raphaël Guerreiro	Portugal	22-12-1993	170	28	borussia dormund	defensor	0	0	
+João Cancelo	Portugal	27-05-1994	182	28	manchester city	defensor	0	0	
+Diogo Dalot	Portugal	18-03-1999	183	23	manchester united	defensor	0	0	
+Rúben Neves	Portugal	13-03-1997	180	25	wolverhampton wanderers	mediocampista	0	0	
+João Palhinha	09-07-1995	190	27	fulham fc	mediocampista	0	0	
+William Carvalho	Portugal	07-04-1992	187	30	real betis balompie	mediocampista	0	0	
+Vitinha	Portugal	13-02-2000	172	22	paris saint-germain fc	mediocampista	0	0	
+Matheus Nunes	27-08-1998	183	24	wolverhampton wanderers	mediocampista	0	0	
+Otávio	Portugal	09-02-1995	172	27	fc oporto	mediocampista	0	0	
+Bernardo Silva allister	Portugal	10-08-1994	173	28	manchester city	mediocampista	0	0	
+Bruno Fernandes	Portugal	08-09-1994	179	28	manchester united	mediocampista	0	0	
+João Mário	Portugal	19-01-1993	179	29	sl benefica	mediocampista	0	0	
+Rafael Leão	Portugal	10-06-1999	188	23	ac milan	mediocampista	0	0	
+Ricardo Horta	Portugal	15-09-1994	173	28	sc braga	mediocampista	0	0	
+João Félix	Portugal	10-11-1999	181	23	atletico de madrid	mediocampista	0	0	
+André Silva	Portugal	06-11-1995	185	27	rb leipzig	delantero	0	0	
+Gonçalo Ramos	Portugal	20-06-2001	185	21	sl benefica	delantero	0	0	
+Cristiano Ronaldo	Portugal	05-02-1985	187	37	agente libre	delantero	0	0	
+Francisco Trincão	Portugal	29-12-1999	184	22	sporting cp	delantero	0	0	
+Pedro Neto	Portugal	09-03-2000	172	22	wolverhampton wanderers	mediocampista	0	0	
+Meshaal Barsham	Catar	14-02-1998	180	24	ai-sadd sc	portero	0	0	
+Meshaal Barsham	Catar	19-02-1990	188	32	ai-sadd sc	portero	0	0	
+Yousef Hassan	Catar	24-05-1996	186	26	ai-gharafa sc	portero	0	0	
+Bassam Al-Rawi	Catar	16-12-1997	175	24	ai-duhail sc	defensor	0	0	
+Tarek Salman	Catar	05-12-1997	179	25	ai-sadd sc	defensor	0	0	
+Boualem Khoukhi	Catar	09-07-1990	180	32	ai-sadd sc	defensor	0	0	
+Pedro Miguel	Catar	06-08-1990	182	32	ai-sadd sc	defensor	0	0	
+Jassem Gaber Abdulsallam	Catar	20-02-2002	183	20	ai-arabi sc	defensor	0	0	
+Abdelkarim Hassan	Catar	28-08-1993	186	29	ai-sadd sc	defensor	0	0	
+Homam Ahmed	Catar	25-08-1999	186	23	ai-gharafa sc	defensor	0	0	
+Musab Khoder	Catar	01-01-1993	174	29	ai-sadd sc	defensor	0	0	
+Karim Boudiaf	Catar	16-09-1990	187	32	ai-duhail sc	mediocampista	0	0	
+Mohammed Waad	Catar	18-09-1999	183	23	lyon	mediocampista	0	0	
+Assim Madibo	22-10-1996	168	26	ai-duhail sc	mediocampista	0	0	
+Salem Al-Hajri	Catar	10-04-1996	183	26	ai-sadd sc	mediocampista	0	0	
+Abdulaziz Hatem	Catar	28-10-1990	183	32	ai-rayyan sc	mediocampista	0	0	
+Mustafa Mashaal	Catar	28-03-2001	174	21	ai-sadd sc	mediocampista	0	0	
+Ali Asad	Catar	19-01-1993	175	29	ai-sadd sc	mediocampista	0	0	
+Akram Afif	Catar	18-11-1996	177	26	ai-sadd sc	mediocampista	0	0	
+Khalid Muneer Mazeed	Catar	24-02-1998	174	24	ai-wakrah sc	mediocampista	0	0	
+Hasan Al-Haydos	Catar	11-12-1990	174	31	ai-sadd sc	mediocampista	0	0	
+Naif Al-Hadhrami	Catar	18-07-2001	180	21	ai-rayyan sc	mediocampista	0	0	
+Ismaeel Mohammed	Catar	05-04-1990	168	32	ai-duhail sc	mediocampista	0	0	
+Almoez Ali	Catar	19-08-1996	180	26	ai-duhail sc	delantero	0	0	
+Ahmed Alaaeldin	Catar	31-01-1993	177	29	ai-gharafa sc	delantero	0	0	
+Mohammed Muntari	Catar	20-12-1993	194	28	ai-duhail sc	delantero	0	0	
+Mohammed Al-Owais	Arabia Saudi	10-10-1991	185	31	ai-hilal saudi fc	portero	0	0	
+Mohammed Al-Rubaie	Arabia Saudi	14-08-1997	190	25	ai-ahli saudi fc	portero	0	0	
+Nawaf Al-Aqidi	Arabia Saudi	10-05-2000	188	22	ai-nassr fc	portero	0	0	
+Abdulelah Al-Amri	Arabia Saudi	15-01-1997	183	25	ai-nassr fc	defensor	0	0	
+Hassan Tambakti	Arabia Saudi	09-02-1999	182	23	ai-shabab club	defensor	0	0	
+Abdullah Madu	Arabia Saudi	15-07-1993	186	29	ai-nassr fc	defensor	0	0	
+Ali Al-Boleahi	Arabia Saudi	21-11-1989	178	33	ai-hilal saudi fc	defensor	0	0	
+Yasser Al-Shahrani	Arabia Saudi	25-05-1992	170	30	ai-hilal saudi fc	defensor	0	0	
+Nasser Al-Dawsari	Arabia Saudi	19-12-1998	178	23	ai-hilal saudi fc	defensor	0	0	
+Sultan Al-Ghannam	Arabia Saudi	06-05-1994	173	28	ai-nassr fc	defensor	0	0	
+Saud Abdulhamid	Arabia Saudi	18-07-1999	178	23	ai-hilal saudi fc	defensor	0	0	
+Mohammed Al-Burayk	Arabia Saudi	15-09-1992	170	30	ai-hilal saudi fc	defensor	0	0	
+Ali Al-Hassan	Arabia Saudi	04-03-1997	176	25	ai-nassr fc	mediocampista	0	0	
+Riad Sharahili	Arabia Saudi	28-04-1993	185	29	abha club	mediocampista	0	0	
+Abdullah Otayf	Arabia Saudi	03-08-1992	177	30	ai-hilal saudi fc	mediocampista	0	0	
+Mohamed Kanno	Arabia Saudi	22-09-1994	192	28	ai-hilal saudi fc	mediocampista	0	0	
+Abdulelah Al-Malki	Arabia Saudi	11-10-1994	170	28	ai-hilal saudi fc	mediocampista	0	0	
+Salman Al-Faraj	Arabia Saudi	01-08-1989	180	33	ai-hilal saudi fc	mediocampista	0	0	
+Sami Al-Najei	Arabia Saudi	07-02-1997	181	25	ai-nassr fc	mediocampista	0	0	
+Nawaf Al-Abed	Arabia Saudi	06-01-1990	170	32	ai-shabab club	mediocampista	0	0	
+Salem Al-Dawsari	Arabia Saudi	19-08-1991	171	31	ai-hilal saudi fc	mediocampista	0	0	
+Abdulrahman Al-Oboud	Arabia Saudi	10-06-1995	174	27	ai-ittihad club	mediocampista	0	0	
+Hattan Bahebri	Arabia Saudi	16-07-1992	170	30	ai-shabab club	mediocampista	0	0	
+Firas Al-Buraikan	Arabia Saudi	14-05-2000	181	22	ai-fateh	delantero	0	0	
+Saleh Al-Shehri	Arabia Saudi	01-11-1993	184	29	ai-hilal saudi fc	delantero	0	0	
+Haitham Asiri	Arabia Saudi	01-07-2001	173	21	ai-ahli saudi fc	delantero	0	0	
+Edouard Mendy	Senegal	01-03-1992	194	30	chelsea fc	portero	0	0	
+Alfred Gomis	Senegal	05-09-1993	196	29	stade rennais fc	portero	0	0	
+Seny Dieng	Senegal	23-11-1994	193	28	queens park rangers	portero	0	0	
+Kalidou Koulibaly	Senegal	20-06-1991	186	31	chelsea fc	defensor	0	0	
+Abdou Diallo	Senegal	04-05-1996	187	26	rb leipzig	defensor	0	0	
+Pape Abou Cissé	Senegal	14-09-1995	198	27	olympiakos el pireo	defensor	0	0	
+Formose Mendy	Senegal	02-01-2001	191	21	amiens sc	defensor	0	0	
+Ismail Jakobs	Senegal	17-08-1999	184	23	as monaco	defensor	0	0	
+Fodé Ballo-Touré	Senegal	03-01-1997	182	25	ac milan	defensor	0	0	
+Moussa N'Diaye	Senegal	18-06-2002	181	20	rsc anderlecht madrid	defensor	0	0	
+Youssouf Sabaly	Senegal	05-03-1993	173	29	real betis balompie	defensor	0	0	
+Pape Gueye	Senegal	24-01-1999	189	23	olympique de marsella	mediocampista	0	0	
+Nampalys Mendy	Senegal	23-06-1992	167	30	leicester city	mediocampista	0	0	
+Mamadou Loum	Senegal	30-12-1996	188	25	fc reading	mediocampista	0	0	
+Cheikhou Kouyaté	Senegal	21-12-1989	189	32	nottingham forest	mediocampista	0	0	
+Pape Matar Sarr	Senegal	14-09-2002	184	20	tettenham hotspur	mediocampista	0	0	
+Idrissa Gueye	Senegal	26-09-1989	174	33	everton fc	mediocampista	0	0	
+Pathé Ciss	Senegal	16-03-1994	186	28	rayo vallecano	mediocampista	0	0	
+Moustapha Name	Senegal	05-05-1995	185	27	pafos fc	mediocampista	0	0	
+Iliman Ndiaye	Senegal	06-03-2000	180	22	sheffield united	mediocampista	0	0	
+Ismaïla Sarr	Senegal	25-02-1998	185	24	watford fc	mediocampista	0	0	
+Nicolas Jackson	Senegal	20-06-2001	188	21	villarreal cf	mediocampista	0	0	
+Krépin Diatta	Senegal	25-02-1999	175	23	as monaco	mediocampista	0	0	
+Boulaye Dia	Senegal	16-11-1996	180	26	us salernitana 1919 	delantero	0	0	
+Bamba Dieng	Senegal	23-03-2000	178	22	olympique de marsella	delantero	0	0	
+Famara Diédhiou	Senegal	15-12-1992	189	29	alanyaspor	delantero	0	0	
