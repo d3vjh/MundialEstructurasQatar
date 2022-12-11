@@ -526,7 +526,7 @@ Jakub Kiwior	Polonia	15-02-2000	189	22	spezia	defensa	0	0
 Mateusz Wieteska	Polonia	11-02-1997	187	25	clermont foot 63	defensa	0	0	
 Kamil Glik	Polonia	03-02-1988	190	34	benevento	defensa	0	0	
 Artur Jedrzejczyk	Polonia	04-11-1987	189	35	legia de varsovia	defensa	0	0	
-Matty Cash Polonia	07-08-1997	185	25	Aston villa	defensa	0	0	
+Matty Cash	Polonia	07-08-1997	185	25	Aston villa	defensa	0	0	
 Robert Gumny	Polonia	04-06-1998	182	24	fc ausburgo	defensa	0	0	
 Bartosz Bereszynski	Polonia	12-07-1992	183	30	uc sampdoria	defensa	0	0	
 Grzegorz Krychowiak	Polonia	29-01-1990	187	32	Riyadh	mediocampista	0	0	
@@ -554,10 +554,10 @@ Raphaël Guerreiro	Portugal	22-12-1993	170	28	borussia dormund	defensor	0	0
 João Cancelo	Portugal	27-05-1994	182	28	manchester city	defensor	0	0	
 Diogo Dalot	Portugal	18-03-1999	183	23	manchester united	defensor	0	0	
 Rúben Neves	Portugal	13-03-1997	180	25	wolverhampton wanderers	mediocampista	0	0	
-João Palhinha	09-07-1995	190	27	fulham fc	mediocampista	0	0	
+João Palhinha	Portugal	09-07-1995	190	27	fulham fc	mediocampista	0	0	
 William Carvalho	Portugal	07-04-1992	187	30	real betis balompie	mediocampista	0	0	
 Vitinha	Portugal	13-02-2000	172	22	paris saint-germain fc	mediocampista	0	0	
-Matheus Nunes	27-08-1998	183	24	wolverhampton wanderers	mediocampista	0	0	
+Matheus Nunes	Portugal	27-08-1998	183	24	wolverhampton wanderers	mediocampista	0	0	
 Otávio	Portugal	09-02-1995	172	27	fc oporto	mediocampista	0	0	
 Bernardo Silva allister	Portugal	10-08-1994	173	28	manchester city	mediocampista	0	0	
 Bruno Fernandes	Portugal	08-09-1994	179	28	manchester united	mediocampista	0	0	
@@ -583,7 +583,7 @@ Homam Ahmed	Catar	25-08-1999	186	23	ai-gharafa sc	defensor	0	0
 Musab Khoder	Catar	01-01-1993	174	29	ai-sadd sc	defensor	0	0	
 Karim Boudiaf	Catar	16-09-1990	187	32	ai-duhail sc	mediocampista	0	0	
 Mohammed Waad	Catar	18-09-1999	183	23	lyon	mediocampista	0	0	
-Assim Madibo	22-10-1996	168	26	ai-duhail sc	mediocampista	0	0	
+Assim Madibo	Catar	22-10-1996	168	26	ai-duhail sc	mediocampista	0	0	
 Salem Al-Hajri	Catar	10-04-1996	183	26	ai-sadd sc	mediocampista	0	0	
 Abdulaziz Hatem	Catar	28-10-1990	183	32	ai-rayyan sc	mediocampista	0	0	
 Mustafa Mashaal	Catar	28-03-2001	174	21	ai-sadd sc	mediocampista	0	0	
