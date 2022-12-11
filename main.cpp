@@ -42,7 +42,8 @@ tarjeta TarjetaAux;
 
 int main(int argc, char** argv) {
 
-	load();
+
+	modify();
 	menu();
 
 	return 0;
@@ -172,6 +173,12 @@ void enter(){
   }
   case 2:
   	{
+  		
+  		
+  		
+  		
+  		
+  		
   		string nombreSeleccion;
   		cout<<"Ingrese la seleccion a buscar: "<<endl;
 		cin>>nombreSeleccion;
@@ -184,6 +191,7 @@ void enter(){
 			}
 		}
 		
+		cout<<"El nombre de la seleccion es: "<<EquipoAux.nombre<<endl;
   		string nombreJugador;
   		cout<<"Ingrese el jugador a buscar: "<<endl;
   		cin.ignore();
@@ -231,11 +239,74 @@ void enter(){
 
 void modify(){
 	
-	//
-	EquipoAux = listaEquipos.getData(4);
-	cout<<EquipoAux.nombre;
-	JugadorAux = EquipoAux.futbolistas.getData(3);
-	cout<<JugadorAux.nombre;
+	
+	//Vamos a cambir los 0 
+	fstream archivo;
+	string texto;
+
+	archivo.open("Jugadores.txt", ios::in | ios::out);
+	
+	if(archivo.fail()){
+		cout<<"Hemos fallado con exito";
+	}	
+	
+	int i=0;
+	int contador=0;
+	
+	while(!archivo.eof()){
+		
+		cout<<"ANTES_ "<<archivo.tellp()<<endl;;
+//		cout<<"La posicion es: "<<archivo.tellp()<<endl;		
+//		cout<<"La posicion es: "<<archivo.tellg()<<endl;
+//		
+		
+		getline(archivo, texto, '\t');
+		cout<<"Esto es texto: "<<texto<<endl;
+		
+		cout<<"La posicion es: "<<archivo.tellp()<<endl;
+		
+		archivo<<"Hola!";
+		cout << "Posición del puntero de escritura: " << archivo.tellp() << endl;
+
+		
+		cout<<"Desde el 5"<<texto<<endl;
+		break;
+		
+
+					
+	}
+
+	archivo.close();
+	
+	
+	
+  		string nombreSeleccion;
+  		cout<<"Ingrese la seleccion a buscar: "<<endl;
+		cin>>nombreSeleccion;
+		//Se crea un metodo para buscar al equipo
+		for(int i=1; i<=listaEquipos.sizeList(); i++){
+			EquipoAux = listaEquipos.getData(i);
+			if(nombreSeleccion == EquipoAux.nombre){
+				cout<<"Siiii es el mismo"<<endl;
+				break;
+			}
+		}
+		
+		cout<<"El nombre de la seleccion es: "<<EquipoAux.nombre<<endl;
+  		string nombreJugador;
+  		cout<<"Ingrese el jugador a buscar: "<<endl;
+  		cin.ignore();
+		getline(cin, nombreJugador);
+		for(int i=1; i<=EquipoAux.futbolistas.sizeList(); i++){
+			
+			JugadorAux = EquipoAux.futbolistas.getData(i);
+			cout<<JugadorAux.nombre<<endl;
+			if(nombreJugador == JugadorAux.nombre){
+				cout<<"ENCONTRADO"<<endl;
+
+				break;
+			}	
+		}
 	
 }
 
