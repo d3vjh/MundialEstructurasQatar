@@ -36,19 +36,27 @@ struct jugador{
 	List<tarjeta> tarjetas;
 };
 
+struct tecnico{
+	string nombre;
+	string nacionalidad;
+	string equipo;
+};
 
-
+struct goleador{
+	string nombre;
+	int goles;
+};
 
 struct equipo{
 	string nombre;
-	string entrenador;
+	tecnico entrenador;
 	string confederacion;
 	
 	List<jugador> futbolistas;
 };
 
 struct programacion{
-	estadio estadio1;
+	string estadio1;
 	equipo equipo1;
 	equipo equipo2;
 	string hora;

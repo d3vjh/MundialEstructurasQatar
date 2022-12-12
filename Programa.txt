@@ -1,0 +1,3 @@
+Estadio Al Bayt;Croacia;Portugal;12:00;
+Estadio Al Bayt;Argentina;Brasil;14:00;
+Estadio Internacional Khalifa;Serbia;Suiza;15:00

@@ -1,0 +1,33 @@
+
+Lionel Scaloni;Argentina;Argentina;
+Graham Arnold;Australiana;Australia;
+Roberto Montoliu;Espanola;Belgica;
+Adenor Bacchim;Brasilena;Brasil;
+Rogobert Bahanag;Camerunesa;Camerun;
+John Herdman;Britanica;Canada;
+Luis Suarez;Colombiana;Costa Rica;
+Zlatko Dalic;Bosnia;Croacia;
+Kasper Hjulmand;Danesa;Dinamarca;
+Gustavo Alfaro;Argentina;Ecuador;
+Gareth Southgate;Britanica;Inglaterra;
+Didier Deschamps;Francesa;Francia;
+Hans Flick;Alemana;Alemania;
+Otto Addo;Alemana;Ghana;
+Carlos Queiroz;Portuguesa;Iran;
+Hajime Moriyasu;Japonesa;Japon;
+Paulo Gomes;Portuguesa;Republica de Corea;
+Gerardo Martino;Argentina;Mexico;
+Hoalid Regragui;Francesa;Marruecos;
+Van Gaal;Holandesa;Paises Bajos;
+Czes Michniewicz;Bielorrusa;Polonia;
+Fernando Costa;Portuguesa;Portugal;
+Felix Sanchez Bas;Espanola;Catar;
+Herv Renard;Francesa;Arabia Saudi;
+Aliou Cissie;Senegalesa;Senegal;
+Jalel Kadri;Tunecina;Tunez;
+Gregg Berhalter;Estadounidense;Estados Unidos;
+Diego Alonso;Uruguaya;Uruguay;
+Robert Page;Britanica;Gales;
+Dragan Stojkovic;Serbia;Serbia;
+Luis Martinez;Espanola;Espana;
+Murat Yakin;Suiza;Suiza
