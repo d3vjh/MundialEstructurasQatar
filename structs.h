@@ -22,6 +22,8 @@ struct tarjeta{
 };
 
 struct jugador{
+	
+	int numero;
 	string nombre;
 	string nacionalidad;
 	string fechaDeNacimiento;
