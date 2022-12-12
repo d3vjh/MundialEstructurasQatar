@@ -1,3 +1,5 @@
+
+
 #include <iostream>
 #include <stdlib.h>
 #include <conio.h>
@@ -20,15 +22,39 @@ using namespace std;
 
 /* programas guias */
 void menu();
+
 void enter();
+
+
+void ingresarTarjeta();
+void ingresarGoles(equipo, int);
+
 void show();
+void listarEstadios();
+void listarPaises();
+void listarJugadores();
+void listarTarjetas();
+
 void modify();
+
 void promedio();
+
 void load();
 void loadEstadios();
 void loadPaises();
 void loadJugadores();
+
 void exit();
+
+// Funciones Auxiliares
+string enteroACadena(int);
+bool isSeleccion(string);
+bool isJugador(string);
+
+
+
+int posicionAbsoluta;
+
 
 List<estadio> listaEstadios;
 estadio EstadioAux;
@@ -43,9 +69,6 @@ List<tarjeta> listaTarjetasIndv;
 tarjeta TarjetaAux;
 
 
-
-
-
 int main(int argc, char** argv) {
 
 	load();
@@ -55,42 +78,54 @@ int main(int argc, char** argv) {
 	return 0;
 }
 
-
+//Menú
 
 
 void menu(){
 	int option;
 	system("cls");
 	cout<<"[+] = = = = = = MENU = = = = = = [+]"<<endl;
-	string options[] = {"Ingresar", "Mostrar", "Modificar", "Volver al menu principal", "Salir y guardar"};
-  	int size = sizeof(options) / sizeof(*options);
+	
+	string options[] = {
+		"Ingresar", 
+		"Mostrar", 
+		"Modificar", 
+		"Volver al menu principal", 
+		"Salir y guardar"};
+		
+		
+	int size = sizeof(options) / sizeof(*options);
 	for (int i = 0; i < size; i++)	
     	cout << i + 1 << ". " << options[i] << "\n";
+    	
+    	
   	cout << "Ingresa una opcion: ";
-  cin >> option;
-  switch (option){
-  case 1:
-    enter();
-    break;
-  case 2:
-
-   show();
-
-    break;
-  case 3:
-    modify();
-    break;
-  case 4:
-    //promedio();
-	break;
-  case 5:
-  	exit();
-  default:
-    menu();
-    break;
+  	cin >> option;
+  	switch (option){
+  		case 1:
+    		enter();
+    		break;
+  		case 2:
+   			show();
+			break;
+  		case 3:
+    		modify();
+   			break;
+  		case 4:
+   			//promedio();
+			break;
+  		case 5:
+  			exit();
+  			break;
+  		default:
+    		menu();
+    		break;
   }
   	
 }
+
+
+
 
 
 void enter(){
@@ -109,123 +144,38 @@ void enter(){
   switch(option){
   	
   case 1:
-  	{
-   	string seleNuevo;
-  	
-  	string jugaNuevo;
-
-  	ofstream archivoJugador;
-  	
-  	archivoJugador.open("jugadorTemp.txt", ios::out);
-  	if(archivoJugador.fail()){
-  		cout<<"Hemos fallado";
-  		menu();
-	}
-	
-	system("cls");
-	cout<<"Ingrese el nombre: ";
-	cin.ignore();
-	getline(cin, seleNuevo);
-	JugadorAux.nombre = seleNuevo;
-	jugaNuevo += seleNuevo + "\t";
-	
-	cout<<"Ingrese la nacionalidad: ";
-//	cin.ignore();
-	getline(cin, seleNuevo);
-	cout<<seleNuevo<<endl;
-	JugadorAux.nacionalidad = seleNuevo;
-	cout<<JugadorAux.nacionalidad;
-	jugaNuevo += seleNuevo + "\t";
-	
-	cout<<"Ingrese la fecha de nacimiento: (dd-mm-aaaa)";
-//	cin.ignore();
-	getline(cin, seleNuevo);
-	JugadorAux.fechaDeNacimiento = seleNuevo;
-	jugaNuevo += seleNuevo + "\t";
-	
-	cout<<"Ingrese la estatura: (cm)";
-//	cin.ignore();
-	getline(cin, seleNuevo);
-	int aux = atoi(seleNuevo.c_str());
-	JugadorAux.estatura = aux;
-	jugaNuevo += seleNuevo + "\t";
-	
-	cout<<"Ingrese la edad: ";
-//	cin.ignore();
-	getline(cin, seleNuevo);
-	aux = atoi(seleNuevo.c_str());
-	JugadorAux.edad = aux;
-	jugaNuevo += seleNuevo + "\t";
-	
-	cout<<"Ingrese el club en el que juega: ";
-//	cin.ignore();
-	getline(cin, seleNuevo);
-	JugadorAux.club = seleNuevo;
-	jugaNuevo += seleNuevo + "\t";
-	
-	cout<<"Ingrese posicion en la que juega: (AAA)";
-//	cin.ignore();
-	getline(cin, seleNuevo);
-	JugadorAux.posicion = seleNuevo;
-	jugaNuevo += seleNuevo + "\t";
-
-	
-
-  	archivoJugador<<jugaNuevo;
-  	
-  	archivoJugador.close();
-
   	break;
-  }
   case 2:
   	{
-  		
-  		
-  		
-  		
-  		
-  		
+		system("cls");
+		cout<<"[+]==============TARJETA===============[+]\n";
   		string nombreSeleccion;
   		cout<<"Ingrese la seleccion a buscar: "<<endl;
-		cin>>nombreSeleccion;
-		//Se crea un metodo para buscar al equipo
-		for(int i=1; i<=listaEquipos.sizeList(); i++){
-			EquipoAux = listaEquipos.getData(i);
-			if(nombreSeleccion == EquipoAux.nombre){
-				cout<<"Siiii es el mismo"<<endl;
-				break;
-			}
-		}
-		
-		cout<<"El nombre de la seleccion es: "<<EquipoAux.nombre<<endl;
-  		string nombreJugador;
-  		cout<<"Ingrese el jugador a buscar: "<<endl;
   		cin.ignore();
+		getline(cin, nombreSeleccion);		
+		if(isSeleccion(nombreSeleccion)){
+			cout<<"Se encontro\t"<<EquipoAux.nombre<<endl;
+		}else{
+			cout<<"\n[!] Información de la seleccion equivocada\nPresione cualquier tecla..."; 
+			getch();		
+			enter();
+		}		
+		
+		
+		string nombreJugador;
+		cout<<"Ingrese el jugador a buscar: ";
 		getline(cin, nombreJugador);
-		for(int i=1; i<=EquipoAux.futbolistas.sizeList(); i++){
-			
-			JugadorAux = EquipoAux.futbolistas.getData(i);
-			cout<<JugadorAux.nombre<<endl;
-			if(nombreJugador == JugadorAux.nombre){
-				cout<<"ENCONTRADO"<<endl;
-				
-				TarjetaAux.color = "Roja";
-				TarjetaAux.motivo = "Pelea";
-				TarjetaAux.contrincante = "España";
-				TarjetaAux.dia = 25;
-				TarjetaAux.mes = 12;
-				TarjetaAux.anio = 2022;
-				break;
-			}	
-		}
-		
-	//	listaTarjetasIndv.insertOnList(TarjetaAux, 1);
-		JugadorAux.tarjetas.insertOnList(TarjetaAux, (JugadorAux.tarjetas.sizeList()+1));
+		cout<<nombreJugador;
+		if(isJugador(nombreJugador) ){
+			cout<<"Se encontro\t"<<JugadorAux.nombre<<endl;
+			ingresarTarjeta();
+		}else{
+			cout<<"\n[!] Información del jugador equivocada\nPresione cualquier tecla..."; 
+			getch();		
+			enter();
+		}		
+	
 		TarjetaAux = JugadorAux.tarjetas.getData(1);
-		
-		cout<<"Tarjeta Motivo: "<<TarjetaAux.motivo;
-		
-		  
   		break;
   	}
 
@@ -242,7 +192,195 @@ void enter(){
   	menu();
 }
 
+void ingresarTarjeta(){
+	
+		string Color;
+		string Motivo;
+		equipo Contrincante; //Buscar equipo por nombre
+		string Fecha;
 
+		
+		cout<<"Ingrese el color de la tarjeta: ";
+		getline(cin, Color);
+		
+		cout<<"\nIngrese el motivo de la amonestación: ";
+		getline(cin, Motivo);
+		
+		cout<<"\nIngrese el día de la amonestación: ";
+		getline(cin, Fecha);
+
+	
+			cout<<"ENCONTRADO"<<endl;
+			TarjetaAux.color = Color;
+			TarjetaAux.motivo = Motivo;
+			TarjetaAux.contrincante = "España";
+			TarjetaAux.fecha = Fecha;
+
+		
+	
+		
+	//	listaTarjetasIndv.insertOnList(TarjetaAux, 1);
+		cout<<"ANTES"<<JugadorAux.tarjetas.sizeList()<<endl;
+		JugadorAux.tarjetas.insertOnList(TarjetaAux, (JugadorAux.tarjetas.sizeList()+1));
+		cout<<"Despues"<<JugadorAux.tarjetas.sizeList()<<endl;
+		cout<<"[!] Amonestación asignada a: "<<JugadorAux.nombre<<endl;
+		
+		EquipoAux.futbolistas.deleteFromList(posicionAbsoluta);
+  		EquipoAux.futbolistas.insertOnList(JugadorAux, posicionAbsoluta);			
+		
+}
+
+void show(){
+	int option;
+	system("cls");
+	do{
+		system("cls");
+		cout<<"[+] = = = = = = SHOW = = = = = = [+]"<<endl;
+		string options[] = {
+			"Estadios", 
+			"Paises", 
+			"", 
+			"Tarjetas", 
+			"", 
+			"Volver al menu principal"};
+			
+  		int size = sizeof(options) / sizeof(*options);
+		for(int i = 0; i < size; i++)	
+    		cout << i + 1 << "." << options[i] << "\n";
+  		cout << "Ingresa una opcion: ";
+  		cin >> option;
+  
+  
+  switch (option){
+  	case 1:{
+  		listarEstadios();
+		cout<<"Presione cualquier tecla..."; 
+		getch();
+		
+		break;
+	  }
+		
+	case 2:{
+		listarJugadores();
+		cout<<"Presione cualquier tecla...";
+		getch();cout<<endl;
+		break;
+	}
+	case 3:{
+		break;
+	}
+	case 4:{
+		system("cls");
+		string nombreSeleccion;
+		cout<<"Ingrese la seleccion a consultar las tarjetas: ";
+		cin>>nombreSeleccion;
+		if(isSeleccion(nombreSeleccion)){
+			listarTarjetas();	
+		}else{
+			cout<<"\n[!] Información de la seleccion equivocada\nPresione cualquier tecla..."; 
+			getch();		
+			enter();
+		}
+		
+		getch();
+		break;	
+	}	
+  		
+	
+	
+  }
+}while(option!=6);	
+
+	system("cls");
+	cout<<"[!] Regresando al menu "<<endl;
+	system("timeout 1");
+	
+	menu();
+}
+
+void listarEstadios(){
+	  	system("cls");
+  		cout<<"ESTADIOS"<<endl<<endl;
+  		for(int j=1; j<=listaEstadios.sizeList(); j++){
+			EstadioAux = listaEstadios.getData(j);
+			cout<<"Nombre del estadio "<<j<<": "<<EstadioAux.nombreEstadio<<endl;	
+			cout<<"Capacidad del estadio "<<j<<": "<<EstadioAux.capacidad<<endl;	
+			cout<<"Ciudad del estadio "<<j<<": "<<EstadioAux.ciudad<<endl;			
+			cout<<endl;
+	}
+}
+
+void listarPaises(){
+		system("cls");
+  		cout<<"PAISES Y CONFEDERACIONES"<<endl<<endl;
+		for(int j=1; j<=listaEquipos.sizeList(); j++){
+			EquipoAux = listaEquipos.getData(j);
+			cout<<"[+] ---------------------------------- [+]"<<endl;
+			cout<<"Nombre "<<j<<": "<<EquipoAux.nombre<<endl;	
+			cout<<"Confederacion "<<j<<": "<<EquipoAux.confederacion<<endl;	
+			cout<<"Jugadores: "<<endl;
+		for(int k=1; k<=EquipoAux.futbolistas.sizeList(); k++){
+			JugadorAux = EquipoAux.futbolistas.getData(k);
+			cout<<"=> Jugador"<<k<<"<="<<endl;
+			cout<<"Nombre: "<<JugadorAux.nombre<<endl;
+			cout<<"Nacionalidad: "<<JugadorAux.nacionalidad<<endl;			
+			cout<<"Fecha: "<<JugadorAux.fechaDeNacimiento<<endl;
+			cout<<"Estatura: "<<JugadorAux.estatura<<endl;
+			cout<<"Edad: "<<JugadorAux.edad<<endl;
+			cout<<"Club: "<<JugadorAux.club<<endl;
+			cout<<"Posicion: "<<JugadorAux.posicion<<endl;
+			cout<<"Goles: "<<JugadorAux.golesAnotados<<endl;
+			cout<<"Fechas Sancion: "<<JugadorAux.fechasSancion<<endl;
+		}
+	}
+}
+
+void listarTarjetas(){
+	
+	cout<<"Este es el equipo:  "<<EquipoAux.nombre;
+	
+	for(int i=0; i<=EquipoAux.futbolistas.sizeList(); i++ ){
+		JugadorAux = EquipoAux.futbolistas.getData(i);
+		cout<<"Este es el jugadooor1 :"<<JugadorAux.nombre<<" "<<JugadorAux.tarjetas.sizeList()<<endl;	
+		
+		if(JugadorAux.tarjetas.sizeList() !=0 ){
+			cout<<"Entro"<<endl;
+			//Un ciclo hasta tarjetas.sizeList();
+			TarjetaAux = JugadorAux.tarjetas.getData(1);
+			cout<<TarjetaAux.color<<"\n";
+			cout<<TarjetaAux.motivo<<"\n";
+			cout<<TarjetaAux.contrincante<<"\n";
+			cout<<TarjetaAux.fecha<<"\n";
+			
+		}
+	}
+	
+}
+
+void listarJugadores(){
+			system("cls");
+  		cout<<"PAISES Y CONFEDERACIONES"<<endl<<endl;
+		for(int j=1; j<=listaEquipos.sizeList(); j++){
+		EquipoAux = listaEquipos.getData(j);
+		cout<<"[+] ---------------------------------- [+]"<<endl;
+		cout<<"Nombre "<<j<<": "<<EquipoAux.nombre<<endl;	
+		cout<<"Confederacion "<<j<<": "<<EquipoAux.confederacion<<endl;	
+		cout<<"Jugadores: "<<endl;
+		for(int k=1; k<=EquipoAux.futbolistas.sizeList(); k++){
+			JugadorAux = EquipoAux.futbolistas.getData(k);
+			cout<<"=> Jugador"<<k<<"<="<<endl;
+			cout<<"Nombre: "<<JugadorAux.nombre<<endl;
+			cout<<"Nacionalidad: "<<JugadorAux.nacionalidad<<endl;			
+			cout<<"Fecha: "<<JugadorAux.fechaDeNacimiento<<endl;
+			cout<<"Estatura: "<<JugadorAux.estatura<<endl;
+			cout<<"Edad: "<<JugadorAux.edad<<endl;
+			cout<<"Club: "<<JugadorAux.club<<endl;
+			cout<<"Posicion: "<<JugadorAux.posicion<<endl;
+			cout<<"Goles: "<<JugadorAux.golesAnotados<<endl;
+			cout<<"Fechas Sancion: "<<JugadorAux.fechasSancion<<endl;
+		}
+	}
+}
 
 void modify(){	
 
@@ -348,15 +486,6 @@ void modify(){
 				
 	getch();
 	menu();
-}
-
-string enteroACadena(int entero)
-{
-    std::string numeroComoCadena = "";
-    std::stringstream ss;
-    ss << entero;
-    ss >> numeroComoCadena;
-    return numeroComoCadena;
 }
 	
 void exit(){
@@ -482,8 +611,6 @@ void loadPaises(){
 	
 	
 }
-
-
 
 void loadEstadios(){
 	
@@ -662,68 +789,37 @@ void load(){
 }
 
 
-void show(){
-	int option;
-	system("cls");
-do{
-	system("cls");
-	cout<<"[+] = = = = = = SHOW = = = = = = [+]"<<endl;
-	string options[] = {"Estadios", "Paises", "Modificar", "", "", "Volver al menu principal"};
-  	int size = sizeof(options) / sizeof(*options);
-	for (int i = 0; i < size; i++)	
-    	cout << i + 1 << "." << options[i] << "\n";
-  	cout << "Ingresa una opcion: ";
-  cin >> option;
-  
-  
-  switch (option){
-  	case 1:
-  		system("cls");
-  		cout<<"ESTADIOS"<<endl<<endl;
-  		for(int j=1; j<=listaEstadios.sizeList(); j++){
-		EstadioAux = listaEstadios.getData(j);
-		cout<<"Nombre del estadio "<<j<<": "<<EstadioAux.nombreEstadio<<endl;	
-		cout<<"Capacidad del estadio "<<j<<": "<<EstadioAux.capacidad<<endl;	
-		cout<<"Ciudad del estadio "<<j<<": "<<EstadioAux.ciudad<<endl;			
-		cout<<endl;
-	}
-	cout<<"Presione cualquier tecla..."; getch();cout<<endl;
-	
-	break;
-  	
-	case 2:
-		system("cls");
-  		cout<<"PAISES Y CONFEDERACIONES"<<endl<<endl;
-		for(int j=1; j<=listaEquipos.sizeList(); j++){
-		EquipoAux = listaEquipos.getData(j);
-		cout<<"[+] ---------------------------------- [+]"<<endl;
-		cout<<"Nombre "<<j<<": "<<EquipoAux.nombre<<endl;	
-		cout<<"Confederacion "<<j<<": "<<EquipoAux.confederacion<<endl;	
-		cout<<"Jugadores: "<<endl;
-		for(int k=1; k<=EquipoAux.futbolistas.sizeList(); k++){
-			JugadorAux = EquipoAux.futbolistas.getData(k);
-			cout<<"=> Jugador"<<k<<"<="<<endl;
-			cout<<"Nombre: "<<JugadorAux.nombre<<endl;
-			cout<<"Nacionalidad: "<<JugadorAux.nacionalidad<<endl;			
-			cout<<"Fecha: "<<JugadorAux.fechaDeNacimiento<<endl;
-			cout<<"Estatura: "<<JugadorAux.estatura<<endl;
-			cout<<"Edad: "<<JugadorAux.edad<<endl;
-			cout<<"Club: "<<JugadorAux.club<<endl;
-			cout<<"Posicion: "<<JugadorAux.posicion<<endl;
-			cout<<"Goles: "<<JugadorAux.golesAnotados<<endl;
-			cout<<"Fechas Sancion: "<<JugadorAux.fechasSancion<<endl;
-		}
-	}
-	
-  	cout<<"Presione cualquier tecla..."; getch();cout<<endl;
-	
-	break;
-  }
-}while(option!=6);	
-
-	system("cls");
-	cout<<"[!] Regresando al menu "<<endl;
-	system("timeout 1");
-	
-	menu();
+string enteroACadena(int entero){
+    std::string numeroComoCadena = "";
+    std::stringstream ss;
+    ss << entero;
+    ss >> numeroComoCadena;
+    return numeroComoCadena;
 }
+
+
+bool isSeleccion(string nombreSeleccion){
+	for(int i=1; i<=listaEquipos.sizeList(); i++){
+			EquipoAux = listaEquipos.getData(i);
+			if(nombreSeleccion == EquipoAux.nombre){
+				return true;
+			}				
+		}
+		return false;
+}
+
+bool isJugador(string nombreJugador){
+
+	for(int i=1; i<=EquipoAux.futbolistas.sizeList(); i++){	
+		JugadorAux = EquipoAux.futbolistas.getData(i);
+		if(nombreJugador == JugadorAux.nombre){
+			posicionAbsoluta = i;
+			return true;
+		}	
+	}
+	return false;
+	
+}
+
+
+

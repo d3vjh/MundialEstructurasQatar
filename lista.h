@@ -1,7 +1,7 @@
 /**
- * \mainpage pilasEjercicio2
- * \author Jhonatan Moreno - Santiago Avila
- * \date Octubre - 2022
+ * \mainpage 
+ * \author Jhonatan Moreno - Santiago Avila - Hanna Sarmiento
+ * \date Diciembre - 2022
  */
 
 

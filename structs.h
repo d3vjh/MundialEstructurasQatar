@@ -16,9 +16,7 @@ struct estadio{
 struct tarjeta{
 
 	string color;
-	int dia;
-	int mes;
-	int anio;
+	string fecha;
 	string motivo;
 	string contrincante;	
 };
@@ -66,9 +64,12 @@ struct primeraFase{
 	List<programacion> p;
 };
 
-struct segundaFase{
-	programacion pr;
-	List<equipo> e; //Solo dos equipos
+//Arbol
+
+struct nodoArbol{
+	
+	equipo Equipo1; 
+	bool esGanador;	
 	
 };
 
