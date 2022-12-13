@@ -58,7 +58,7 @@ void show(){
 	system("cls");
 do{
 	system("cls");
-	cout<<"[+] = = = = = = SHOW = = = = = = [+]"<<endl;
+	cout<<"=///// = = = = = = SHOW = = = = = = =\\\\\\\\"<<endl;
 	string options[] = {"Estadios", "Paises", "Entrenadores", "Programa", "Volver al menu principal"};
   	int size = sizeof(options) / sizeof(*options);
 	for (int i = 0; i < size; i++)	
@@ -130,7 +130,12 @@ do{
     		cout << setw(2) << setfill(' ') << Jugadores_.golesAnotados<< " | ";
 			cout << setw(2) << setfill(' ')<< Jugadores_.fechasSancion<< " | "<<endl;
 		}
+		
 	}
+	
+	cout<<"Presione cualquier tecla..."; getch();cout<<endl;
+	break;
+	
 	case 3:
 		system("cls");
 		cout<<"-----------------TECNICO--------------------------"<<endl<<endl;
@@ -156,7 +161,7 @@ do{
     		cout << setw(5) << setfill(' ') << "Equipo 2"<< " | ";
     		cout << setw(5) << setfill(' ') << "Hora"<< " | "<<endl;
     		cout << setw(42) << setfill('-') << "" << endl;
-    	for(int m=1;m<=listaPartidos.sizeList();m++){
+    	for(int m=2;m<=listaPartidos.sizeList();m++){
 
 	    		Partidos_ = listaPartidos.getData(m);
 
@@ -167,8 +172,17 @@ do{
 
 		}
 		cout<<"Presione cualquier tecla..."; getch();cout<<endl;
+		break;
+		
+	case 5:
+  	
+	  menu();	
+	  break;	
 		
   }
+  
+  
+  
   
 }while(option!=6);	
 

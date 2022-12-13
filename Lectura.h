@@ -207,16 +207,17 @@ void lecturaTecnicos(){
 
 void lecturaPrograma(){
 	
-	ifstream archivo;
+	fstream archivo;
 	string textPrograma;
 
-	archivo.open("Programa.txt", ios::in);
+	archivo.open("Programa.txt", ios::in|ios::out);
 	
 	if(archivo.fail()){
 		cout<<"Hemos fallado con exito";
 	}	
 	int i=0;
-	
+	int j=0;
+   					
 	while(!archivo.eof()){
 				
 		getline(archivo,textPrograma,';');
@@ -244,12 +245,18 @@ void lecturaPrograma(){
 		}	
 		i++;
 		getline(archivo,textPrograma,';');
+		//cout<<"ACA -----> "<<textPrograma<<endl;
 		Partidos_.hora = textPrograma;
+		//getch();
 		i++;
+		
 		if(i%4==0 && i>0){
 			listaPartidos.insertOnList(Partidos_, listaPartidos.sizeList()+1);
-		}		
+			
+		}	
+
 	}
+		 
 
 	archivo.close();	
 

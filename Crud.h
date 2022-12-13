@@ -169,7 +169,6 @@ void enter(){
   		int eleccion;
 		string textGuardar ="";
 		pos = archivoPrograma.tellp();
-		cout<<"posicion disponible de escritra"<<pos<<endl;
 		archivoPrograma.seekp(pos, ios::end);
 	
 	
@@ -257,6 +256,11 @@ void enter(){
 		}
 		Partidos_.equipo2 = Equipos_;
 		
+		
+		
+		textGuardar +=';';
+		textGuardar += '\n';
+		
 		cout<<"Ingrese la hora (00:00)";
 		cin>>hora;
 		Partidos_.hora = hora;
@@ -268,11 +272,17 @@ void enter(){
 		textGuardar += Partidos_.equipo2.nombre;
 		textGuardar += ';';
 		textGuardar += Partidos_.hora;
-		textGuardar += ';';
-		textGuardar += '\n';
+
 		
 		
 		archivoPrograma<<textGuardar;
+		
+	
+	
+		
+		
+		
+		
 		archivoPrograma.close();
 		
 
@@ -284,6 +294,7 @@ void enter(){
 //			  }
 //  		
 		}
+		
   		default:
   			break;
   		
