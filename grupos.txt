@@ -1,0 +1,33 @@
+
+paises bajos;
+senegal;
+ecuador;
+catar;
+inglaterra;
+estados unidos;
+iran;
+gales;
+argentina;
+polonia;
+mexico;
+arabia saudi;
+francia;
+australia;
+tunez;
+dinamarca;
+japon;
+españa;
+alemania;
+costa rica;
+marruecos;
+croacia;
+canada;
+belgica;
+brasil;
+suiza;
+camerun;
+serbia;
+portugal;
+corea del sur;
+uruguay;
+ghana
