@@ -3,7 +3,8 @@
 #define CRUD_H
 
 #include <iostream>
-
+#include <cstdlib>  // Para rand() y srand()
+#include <ctime>
 #include "Menus.h"
 #include "Ordenamiento.h"
 
@@ -172,7 +173,8 @@ void enter(){
 		archivoPrograma.seekp(pos, ios::end);
 	
 	
- 		string Estadio, equipo1, equipo2, hora;
+ 		string Estadio, equipo1, equipo2, hora,fecha,sgol1,sgol2;
+ 		int goles_1,goles_2,opcion;
  		cout<<"En que estadio va realizar el partido? :"<<endl;
 		for(int j=1; j<=listaEstadios.sizeList(); j++){
 			Estadios_ = listaEstadios.getData(j);
@@ -256,15 +258,44 @@ void enter(){
 		}
 		Partidos_.equipo2 = Equipos_;
 		
+		cout<<"Ingrese la hora (00:00)";
+		cin>>hora;
+		Partidos_.hora = hora;
 		
+		cout<<"Ingrese la fecha (DD/MM)";
+		cin>>fecha;
+		Partidos_.fecha = fecha;
+		
+		cout<<"Desea ingresar el marcador de manera Manual o Aleatorio?"<<endl;
+		cout<<"1.Manual"<<endl<<"2.Aleatorio"<<endl;
+		cin>>opcion;
+		switch(opcion){
+			case 1:
+				cout<<"Cuando goles marco "<<Partidos_.equipo1.nombre<<" :";
+				cin>>goles_1;
+				Partidos_.goles1 = goles_1;
+				cout<<"Cuando goles marco "<<Partidos_.equipo2.nombre<<" :";
+				cin>>goles_2;
+				Partidos_.goles2 = goles_2;
+				break;
+			case 2:
+				srand((unsigned) time(NULL));
+				goles_1 = rand() % 10 + 1;
+				Partidos_.goles1 = goles_1;
+				cout<<"El equipo "<<Partidos_.equipo1.nombre<<" marco: "<<goles_1<<endl;
+				goles_2 = rand() % 10 + 1;
+				Partidos_.goles2 = goles_2;
+				cout<<"El equipo "<<Partidos_.equipo2.nombre<<" marco: "<<goles_2<<endl;
+				
+		}
+		
+		listaPartidos.insertOnList(Partidos_, listaPartidos.sizeList()+1);
 		
 		textGuardar +=';';
 		textGuardar += '\n';
 		
-		cout<<"Ingrese la hora (00:00)";
-		cin>>hora;
-		Partidos_.hora = hora;
-		listaPartidos.insertOnList(Partidos_, listaPartidos.sizeList()+1);
+
+		
 		textGuardar += Partidos_.estadio1;
 		textGuardar += ';';
 		textGuardar += Partidos_.equipo1.nombre;
@@ -272,6 +303,17 @@ void enter(){
 		textGuardar += Partidos_.equipo2.nombre;
 		textGuardar += ';';
 		textGuardar += Partidos_.hora;
+		textGuardar += ';';
+		textGuardar += Partidos_.fecha;
+		sgol1 = enteroACadena(Partidos_.goles1);
+		textGuardar += ';';
+		textGuardar += sgol1;
+		sgol2 = enteroACadena(Partidos_.goles2);
+		textGuardar += ';';
+		textGuardar += sgol2;
+		
+		
+
 
 		
 		
@@ -295,7 +337,9 @@ void enter(){
 //  		
 		}
 		
-  		default:
+  		
+			
+		default:
   			break;
   		
   }
@@ -487,7 +531,7 @@ void Consultar(){
 	int option;
 	system("cls");
 	cout<<"[+] = = = = = = CONSULTAS = = = = = = [+]"<<endl;
-	string options[] = {"Pais-> Entrenador y equipo ", "Goleadores", "Programa de estadio", "Volver al menu principal"};
+	string options[] = {"Pais-> Entrenador y equipo ", "Goleadores", "Programa de estadio","Partido en fecha","Resultado pais", "Volver al menu principal"};
   	int size = sizeof(options) / sizeof(*options);
 	for (int i = 0; i < size; i++)	
     	cout << i + 1 << ". " << options[i] << "\n";
@@ -579,12 +623,159 @@ void Consultar(){
 						cout<<setw(10) << setfill(' ')<<Goles[j].nombre;
 						cout<<setw(20) << setfill(' ')<<Goles[j].goles<<endl;
 			}
-		}
+		
 			cout << setw(42) << setfill('-') << "" << endl;
 		cout<<"Presione cualquier tecla..."; getch(); menu();
+	break;
+}
+	case 3:{
+		int eleccion;
+		system("cls");
+ 		cout<<"De que estadio desea ver la programacion? :"<<endl;
+		for(int j=1; j<=listaEstadios.sizeList(); j++){
+			Estadios_ = listaEstadios.getData(j);
+			cout<<"Opcion "<<j<< " "<<Estadios_.nombreEstadio<<endl;
+		}
 		
+		cin>>eleccion;
+		switch(eleccion){
+			case 1:
+				{
+					Estadios_ = listaEstadios.getData(eleccion);
+					
+					break;
+				}
+			case 2:
+				{
+					Estadios_ = listaEstadios.getData(eleccion);
+					
+					break;
+				}
+			case 3:
+				{
+					Estadios_ = listaEstadios.getData(eleccion);
+					
+					break;
+				}
+			case 4:
+				{
+					Estadios_ = listaEstadios.getData(eleccion);
+				
+					break;
+				}
+			case 5:
+				{
+					Estadios_ = listaEstadios.getData(eleccion);
+					
+					break;
+				}
+			case 6:
+				{
+					Estadios_ = listaEstadios.getData(eleccion);
+				
+					break;
+				}
+			case 7:
+				{
+					Estadios_ = listaEstadios.getData(eleccion);
+					
+					break;
+				}
+			case 8:
+				{
+					Estadios_ = listaEstadios.getData(eleccion);
+					
+					break;
+				}
+			default:
+				break;
+		}
 		
+		system("cls");
+		cout<<"--------------PARTIDOS PROGRAMADOS EN EL "<<Estadios_.nombreEstadio<<"----------------------"<<endl<<endl;
+    		cout << setw(10) << setfill(' ') << "Equipo 1"<< " | ";
+    		cout << setw(5) << setfill(' ') << "Equipo 2"<< " | ";
+    		cout << setw(5) << setfill(' ') << "Hora"<< " | "<<endl;
+    		cout << setw(42) << setfill('-') << "" << endl;
+    	for(int m=2;m<=listaPartidos.sizeList();m++){
+    		Partidos_ = listaPartidos.getData(m);
+    		if(Estadios_.nombreEstadio == Partidos_.estadio1 ){
+	    		cout << setw(5) << setfill(' ') << Partidos_.equipo1.nombre<< " | ";
+	    		cout << setw(5) << setfill(' ') << Partidos_.equipo2.nombre<< " | ";
+	    		cout << setw(5) << setfill(' ') << Partidos_.hora<<endl;
+			}	   	
 
+		}
+		cout<<"Presione cualquier tecla..."; getch();cout<<endl;
+		menu();
+	
+		
+		break;
+	}
+		
+	case 4:{
+		string fecha_;
+		system("cls");
+ 		cout<<"De cual fecha desea ver la programacion? (DD/MM): ";
+ 		cin>>fecha_;
+		system("cls");
+		cout<<"--------------PARTIDOS PROGRAMADOS PARA EL DIA "<<fecha_<<"----------------------"<<endl<<endl;
+    		cout << setw(10) << setfill(' ') << "Estadio"<< "   | ";
+			cout << setw(10) << setfill(' ') << "Equipo 1"<< " | ";
+    		cout << setw(5) << setfill(' ') << "Equipo 2"<< " | ";
+    		cout << setw(5) << setfill(' ') << "Hora"<< " | "<<endl;
+    		cout << setw(42) << setfill('-') << "" << endl;
+    	for(int m=2;m<=listaPartidos.sizeList();m++){
+    		Partidos_ = listaPartidos.getData(m);
+    		if(fecha_ == Partidos_.fecha ){
+    			cout << setw(10) << setfill(' ') << Partidos_.estadio1<< "   | ";
+	    		cout << setw(5) << setfill(' ') << Partidos_.equipo1.nombre<< " | ";
+	    		cout << setw(5) << setfill(' ') << Partidos_.equipo2.nombre<< " | ";
+	    		cout << setw(5) << setfill(' ') << Partidos_.hora<<endl;
+			}	   	
+
+		}
+		cout<<"Presione cualquier tecla..."; getch();cout<<endl;
+		menu();
+		
+		break;
+	}
+	
+	case 5:{
+		string nombreSeleccion;
+  		cout<<"Ingrese la seleccion a buscar: "<<endl;
+		cin>>nombreSeleccion;
+		//Se crea un metodo para buscar al equipo
+		
+		for(int i=1; i<=listaEquipos.sizeList(); i++){
+			Equipos_ = listaEquipos.getData(i);
+			if(nombreSeleccion == Equipos_.nombre){
+				break;
+			}
+		}
+		system("cls");
+		cout<<"--------------RESULTADOS PARA EL EQUIPO "<<Equipos_.nombre<<"----------------------"<<endl<<endl;
+    		cout << setw(10) << setfill(' ') << "Partido"<< "   | ";
+			cout << setw(15) << setfill(' ') << "Marcador"<< " | "<<endl;
+    		cout << setw(42) << setfill('-') << "" << endl;
+    	for(int m=2;m<=listaPartidos.sizeList();m++){
+    		Partidos_ = listaPartidos.getData(m);
+    		if(Equipos_.nombre == Partidos_.equipo1.nombre ){
+	    		cout << setw(5) << setfill(' ') << Partidos_.equipo1.nombre<< " VS ";
+	    		cout << setw(5) << setfill(' ') << Partidos_.equipo2.nombre<< "  ";
+	    		cout << setw(5) << setfill(' ') << Partidos_.goles1<<"-"<<Partidos_.goles2<<endl;
+			}else if(Equipos_.nombre == Partidos_.equipo2.nombre){
+				cout << setw(5) << setfill(' ') << Partidos_.equipo1.nombre<< " VS ";
+	    		cout << setw(5) << setfill(' ') << Partidos_.equipo2.nombre<< "  ";
+	    		cout << setw(5) << setfill(' ') << Partidos_.goles1<<"-"<<Partidos_.goles2<<endl;
+			}	   	
+
+		}
+		cout<<"Presione cualquier tecla..."; getch();cout<<endl;
+		menu();
+		
+		break;
+	}
 		
 		default:
 	break;

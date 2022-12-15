@@ -245,12 +245,24 @@ void lecturaPrograma(){
 		}	
 		i++;
 		getline(archivo,textPrograma,';');
-		//cout<<"ACA -----> "<<textPrograma<<endl;
 		Partidos_.hora = textPrograma;
-		//getch();
 		i++;
 		
-		if(i%4==0 && i>0){
+		getline(archivo,textPrograma,';');
+		Partidos_.fecha = textPrograma;
+		i++;
+		
+		getline(archivo,textPrograma,';');
+		int gol1 = atoi(textPrograma.c_str());
+		Partidos_.goles1 = gol1;
+		i++;
+		
+		getline(archivo,textPrograma,';');
+		int gol2 = atoi(textPrograma.c_str());
+		Partidos_.goles2 = gol2;
+		i++;
+		
+		if(i%7==0 && i>0){
 			listaPartidos.insertOnList(Partidos_, listaPartidos.sizeList()+1);
 			
 		}	

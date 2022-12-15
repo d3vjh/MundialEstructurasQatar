@@ -159,7 +159,9 @@ do{
   			cout << setw(10) << setfill(' ') << "Estadio"<< "   | ";
     		cout << setw(10) << setfill(' ') << "Equipo 1"<< " | ";
     		cout << setw(5) << setfill(' ') << "Equipo 2"<< " | ";
-    		cout << setw(5) << setfill(' ') << "Hora"<< " | "<<endl;
+    		cout << setw(5) << setfill(' ') << "Hora"<< " | ";
+    		cout << setw(5) << setfill(' ') << "Fecha"<< " | ";
+    		cout << setw(5) << setfill(' ') << "Marcador"<< " | "<<endl;
     		cout << setw(42) << setfill('-') << "" << endl;
     	for(int m=2;m<=listaPartidos.sizeList();m++){
 
@@ -168,7 +170,9 @@ do{
 	    		cout << setw(10) << setfill(' ') << Partidos_.estadio1<< "   | ";
 	    		cout << setw(5) << setfill(' ') << Partidos_.equipo1.nombre<< " | ";
 	    		cout << setw(5) << setfill(' ') << Partidos_.equipo2.nombre<< " | ";
-	    		cout << setw(5) << setfill(' ') << Partidos_.hora<<endl;
+	    		cout << setw(5) << setfill(' ') << Partidos_.hora<<" | ";;
+	    		cout << setw(5) << setfill(' ') << Partidos_.fecha<<" | ";	
+	    		cout << setw(5) << setfill(' ') << Partidos_.goles1<<"-"<<Partidos_.goles2<<endl;
 
 		}
 		cout<<"Presione cualquier tecla..."; getch();cout<<endl;

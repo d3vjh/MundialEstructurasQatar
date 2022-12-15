@@ -60,6 +60,9 @@ struct programacion{
 	equipo equipo1;
 	equipo equipo2;
 	string hora;
+	string fecha;
+	int goles1;
+	int goles2;
 		
 };
 

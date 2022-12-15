@@ -1,3 +1,12 @@
-ESTADIO;EQUIPO1;EQUIPO2;HORA;
-Estadio Al Thumama;Ghana;Marruecos;12:50;
-Estadio Al Janoub;Argentina;Brasil;11:20
+ESTADIO;EQUIPO1;EQUIPO2;HORA;dd/mm;MARCADOR1;MARCADOR2;
+Estadio Al Thumama;Ghana;Marruecos;12:50;20/11;0;0;
+Estadio Al Janoub;Argentina;Brasil;11:20;15/12;0;0;
+Estadio Education City;Marruecos;Francia;14:00;15/12;0;0;
+Estadio Al Janoub;Argentina;Francia;11:20;16/12;0;0;
+Estadio Al Janoub;Argentina;Francia;11:20;16/12;0;0;
+Estadio Internacional Khalifa;Serbia;Mexico;13:00;25/12;0;0;
+Estadio Ahmad Bin Ali;Senegal;Polonia;15:00;24/12;0;0;
+Estadio Ahmad Bin Ali;Senegal;Polonia;13:00;24/12;2;3;
+Estadio 974;Ghana;Uruguay;56:00;12/12;5;5;
+Estadio 974;Camerun;Suiza;12:00;26/12;9;7;
+Estadio Al Thumama;Argentina;Ghana;16:00;12/02;4;9
