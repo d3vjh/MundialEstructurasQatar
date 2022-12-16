@@ -3,6 +3,7 @@
 #define MENUS_H
 
 #include "Crud.h"
+#include "Lectura.h"
 
 using namespace std;
 
@@ -18,7 +19,21 @@ void menu(){
 
 	int option;
 	system("cls");
-	cout<<"[+] = = = = = = MENU = = = = = = [+]"<<endl;
+	cout<< setw(80) << setfill(' ')<<"      ...                           s                                                                                          "<<endl;
+	cout<< setw(80) << setfill(' ')<<"   xH88\"`~ .x8X                    :8                               .--~*teu.        .n~~%x.       .--~*teu.      .--~*teu.    "<<endl;
+	cout<< setw(80) << setfill(' ')<<" :8888   .f\"8888Hf                .88                   .u    .    dF     988Nx    x88X   888.    dF     988Nx   dF     988Nx  "<<endl;
+	cout<< setw(80) << setfill(' ')<<"':8888>  X8L  ^""`        u       :888ooo       u      .d88B :@8c  d888b   `8888>  X888X   8888L  d888b   `8888> d888b   `8888> "<<endl;
+	cout<< setw(79) << setfill(' ')<<" X8888  X888h         us888u.  -*8888888    us888u.  =\"8888f8888r ?8888>  98888F X8888X   88888  ?8888>  98888F ?8888>  98888F "<<endl;
+	cout<< setw(80) << setfill(' ')<<"88888  !88888.     .@88 \"8888\"   8888    .@88 \"8888\"   4888>'88\"   \"**\"  x88888~ 88888X   88888X  \"**\"  x88888~  \"**\"  x88888~ "<<endl;
+	cout<< setw(80) << setfill(' ')<<"88888   %88888     9888  9888    8888    9888  9888    4888> '          d8888*`  88888X   88888X       d8888*`        d8888*`  "<<endl;	
+	cout<< setw(80) << setfill(' ')<<"88888 '> `8888>    9888  9888    8888    9888  9888    4888>          z8**\"`   : 88888X   88888f     z8**\"`   :     z8**\"`   : "<<endl;	
+	cout<< setw(80) << setfill(' ')<<"`8888L %  ?888   ! 9888  9888   .8888Lu= 9888  9888   .d888L .+     :?.....  ..F 48888X   88888    :?.....  ..F   :?.....  ..F "<<endl;
+	cout<< setw(80) << setfill(' ')<<" `8888  `-*\"\"   /  9888  9888   ^%888*   9888  9888   ^\"8888*\"     <\"\"888888888~  ?888X   8888\"   <\"\"888888888~  <\"\"888888888~ "<<endl;
+	cout<< setw(80) << setfill(' ')<<"   \"888.      :\"   \"888*\"\"888\"    'Y\"    \"888*\"\"888\"     \"Y\"       8:  \"888888*    \"88X   88*`    8:  \"888888*   8:  \"888888*  "<<endl;
+	cout<< setw(80) << setfill(' ')<<"     `\"\"***~\"`      ^Y\"   ^Y'             ^Y\"   ^Y'                \"\"    \"**\"`       ^\"===\"`      \"\"    \"**\"`    \"\"    \"**\"` "<<endl;
+	cout<< setw(120) << setfill('-')<<"";
+	cout<<endl<<endl;
+	cout<<"-_-_-_-_-_-_-_-_-_-_-_-_-_- MENU -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl;
 	string options[] = {"Ingresar", "Mostrar", "Modificar","Consultas", "Salir y guardar"};
   	int size = sizeof(options) / sizeof(*options);
 	for (int i = 0; i < size; i++)	
@@ -56,8 +71,8 @@ void show(){
 	system("cls");
 do{
 	system("cls");
-	cout<<"=///// = = = = = = SHOW = = = = = = =\\\\\\\\"<<endl;
-	string options[] = {"Estadios", "Paises", "Entrenadores", "Programa", "Volver al menu principal"};
+	cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_ SHOW  -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl;
+	string options[] = {"Estadios", "Paises", "Entrenadores", "Programa","Tabla de grupos", "Volver al menu principal"};
   	int size = sizeof(options) / sizeof(*options);
 	for (int i = 0; i < size; i++)	
     	cout << i + 1 << "." << options[i] << "\n";
@@ -68,7 +83,7 @@ do{
   switch (option){
   	case 1:
   		system("cls");
-  		cout<<"-----------------ESTADIOS--------------------------"<<endl<<endl;
+  		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_ESTADIOS -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
   		cout << setw(10) << setfill(' ') << "Nombre del estadio"<<"\t\t" <<"   | ";
     	cout << setw(5) << setfill(' ') <<"\t"<< "Capacidad"<<"\t"<< " | ";
     	cout << setw(8) << setfill(' ') << "Ubicacion" << endl;
@@ -92,7 +107,7 @@ do{
   	
 	case 2:
 		system("cls");
-  		cout<<"PAISES Y CONFEDERACIONES"<<endl<<endl;
+  		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_PAISES Y CONFEDERACIONES -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
 		for(int j=1; j<=listaEquipos.sizeList(); j++){
 		Equipos_ = listaEquipos.getData(j);
 		cout << setw(50) << setfill('-') << "" << endl;
@@ -136,7 +151,7 @@ do{
 	
 	case 3:
 		system("cls");
-		cout<<"-----------------TECNICO--------------------------"<<endl<<endl;
+		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_TECNICO -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
   			cout << setw(10) << setfill(' ') << "Nombre del tecnico"<<"\t" <<"   | ";
     		cout << setw(5) << setfill(' ') << "Nacionalidad"<< " | ";
     		cout << setw(8) << setfill(' ') << "Seleccion" << endl;
@@ -153,7 +168,7 @@ do{
 	break;
 	case 4:
 		system("cls");
-		cout<<"-----------------PARTIDOS PROGRAMADOS------------------------"<<endl<<endl;
+		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_PARTIDOS PROGRAMADOS -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
   			cout << setw(10) << setfill(' ') << "Estadio"<< "   | ";
     		cout << setw(10) << setfill(' ') << "Equipo 1"<< " | ";
     		cout << setw(5) << setfill(' ') << "Equipo 2"<< " | ";
@@ -175,8 +190,29 @@ do{
 		}
 		cout<<"Presione cualquier tecla..."; getch();cout<<endl;
 		break;
-		
 	case 5:
+		system("cls");
+		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_TABLA DE GRUPOS -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
+		cout << setw(7) << setfill(' ') << "Grupo"<< "   | ";
+		cout << setw(5) << setfill(' ') << "Equipo "<< " | "<<endl;
+	
+	
+    	for(int m=1;m<=listaFase1.sizeList();m++){
+
+	    		Fase1_ = listaFase1.getData(m);
+
+	    		cout << setw(7) << setfill(' ') << Fase1_.grupo<< "   | ";
+	    		cout << setw(5) << setfill(' ') << Fase1_.equips.nombre<< " | "<<endl;
+	    		
+
+		}
+			
+		cout<<endl;
+		
+		cout<<"Presione cualquier tecla..."; getch();cout<<endl;
+		break;
+		
+	case 6:
   	
 	  menu();	
 	  break;	

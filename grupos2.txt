@@ -1,0 +1,33 @@
+
+A;Paises Bajos;
+A;Senegal;
+A;Ecuador;
+A;Catar;
+B;Inglaterra;
+B;Estados Unidos;
+B;Iran;
+B;Gales;
+C;Argentina;
+C;Polonia;
+C;Mexico;
+C;Arabia Saudi;
+D;Francia;
+D;Australia;
+D;Tunez;
+D;Dinamarca;
+E;Japon;
+E;Espana;
+E;Alemania;
+E;Costa Rica;
+F;Marruecos;
+F;Croacia;
+F;Canada;
+F;Belgica;
+G;Brasil;
+G;Suiza;
+G;Camerun;
+G;Serbia;
+H;Portugal;
+H;Corea;
+H;Uruguay;
+H;Ghana

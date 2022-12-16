@@ -27,10 +27,10 @@ void cargarArchivos();
 
 
 int main(int argc, char** argv) {
-
+	system("color 4F");
 	cargarArchivos();
 	menu();
-
+	
 	return 0;
 }
 

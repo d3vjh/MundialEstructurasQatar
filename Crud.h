@@ -24,11 +24,11 @@ string enteroACadena(int entero)
 }
 
 
-void enter(){
+void enter(){	
 	int pos;
 	int option;
 	system("cls");
-	cout<<"[+] = = = = = = INGRESAR = = = = = = [+]"<<endl;
+	cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_INGRESAR -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl;
 	string options[] = {"Jugador a Seleccion", "Tarjeta a jugador", "Partido", "Iniciar partido","Volver al menu principal", "Salir y guardar"};
   	int size = sizeof(options) / sizeof(*options);
 	for (int i = 0; i < size; i++)	
@@ -331,7 +331,7 @@ void enter(){
   		
 	do{
 		string seguiremos;
-		cout<<"--------------PARTIDOS PROGRAMADOS----------------------"<<endl;
+		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_PARTIDOS PROGRAMADOS -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl;
 			cout << setw(10) << setfill(' ') << "Indice"<< " | ";
     		cout << setw(10) << setfill(' ') << "Estadio"<<"\t"<< " | ";
 			cout << setw(10) << setfill(' ') << "Equipo 1"<< " | ";
@@ -531,7 +531,7 @@ void modify(){
 
 	int option;
 	system("cls");
-	cout<<"[+] = = = = = = MODIFICAR MUNIDAL = = = = = = [+]"<<endl;
+	cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_MODIFICAR MUNIDAL -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl;
 	string options[] = {"Goles Anotados", "Fechas de Sancion", "---", "Volver al menu principal"};
   	int size = sizeof(options) / sizeof(*options);
 	for (int i = 0; i < size; i++)	
@@ -704,8 +704,8 @@ void exit(){
 void Consultar(){
 	int option;
 	system("cls");
-	cout<<"[+] = = = = = = CONSULTAS = = = = = = [+]"<<endl;
-	string options[] = {"Pais-> Entrenador y equipo ", "Goleadores", "Programa de estadio","Partido en fecha","Resultado pais", "Volver al menu principal"};
+	cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_CONSULTAS -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl;
+	string options[] = {"Pais-> Entrenador y equipo ", "Goleadores", "Programa de estadio","Partido en fecha","Resultado pais","Resultados grupo", "Volver al menu principal"};
   	int size = sizeof(options) / sizeof(*options);
 	for (int i = 0; i < size; i++)	
     	cout << i + 1 << ". " << options[i] << "\n";
@@ -731,7 +731,7 @@ void Consultar(){
 		
   		system("cls");
 
-		cout<<"-----------------TECNICO--------------------------"<<endl<<endl;
+		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_TECNICO -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
 		cout << setw(10) << setfill(' ') << "Nombre del tecnico"<<"   | ";
 		cout << setw(5) << setfill(' ') << "Nacionalidad"<< " | ";
 		cout << setw(8) << setfill(' ') << "Seleccion" << endl;
@@ -786,7 +786,7 @@ void Consultar(){
 			
 			int size = sizeof(Goles) / sizeof(*Goles);
 			orden(Goles,size);
-			cout<<"-----------------TABLA DE GOLEADORES------------------------"<<endl<<endl;
+			cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_TABLA DE GOLEADORES -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
   			cout << setw(10) << setfill(' ') << "Nombre del jugador"<< "   | ";
     		cout << setw(5) << setfill(' ') << "Cantidad de goles"<< " | "<<endl;
     		cout << setw(42) << setfill('-') << "" << endl;
@@ -866,7 +866,7 @@ void Consultar(){
 		}
 		
 		system("cls");
-		cout<<"--------------PARTIDOS PROGRAMADOS EN EL "<<Estadios_.nombreEstadio<<"----------------------"<<endl<<endl;
+		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_PARTIDOS PROGRAMADOS EN EL "<<Estadios_.nombreEstadio<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
     		cout << setw(10) << setfill(' ') << "Equipo 1"<< " | ";
     		cout << setw(5) << setfill(' ') << "Equipo 2"<< " | ";
     		cout << setw(5) << setfill(' ') << "Hora"<< " | "<<endl;
@@ -890,7 +890,7 @@ void Consultar(){
  		cout<<"De cual fecha desea ver la programacion? (DD/MM): ";
  		cin>>fecha_;
 		system("cls");
-		cout<<"--------------PARTIDOS PROGRAMADOS PARA EL DIA "<<fecha_<<"----------------------"<<endl<<endl;
+		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_PARTIDOS PROGRAMADOS PARA EL DIA "<<fecha_<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
     		cout << setw(10) << setfill(' ') << "Estadio"<< "   | ";
 			cout << setw(10) << setfill(' ') << "Equipo 1"<< " | ";
     		cout << setw(5) << setfill(' ') << "Equipo 2"<< " | ";
@@ -922,7 +922,7 @@ void Consultar(){
 			}
 		}
 		system("cls");
-		cout<<"--------------RESULTADOS PARA EL EQUIPO "<<Equipos_.nombre<<"----------------------"<<endl<<endl;
+		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_HISTORIAL PARA EL EQUIPO "<<Equipos_.nombre<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
     		cout << setw(10) << setfill(' ') << "Partido"<< "   | ";
 			cout << setw(15) << setfill(' ') << "Marcador"<< " | "<<endl;
     		cout << setw(42) << setfill('-') << "" << endl;
@@ -942,7 +942,32 @@ void Consultar(){
 
 		break;
 	}
-		case 6:{
+	case 6:{
+		string nombregrupo;
+  		cout<<"Ingrese el grupo a buscar: "<<endl;
+		cin>>nombregrupo;
+
+		//Se crea un metodo para buscar al equipo
+
+		system("cls");
+		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_RESULTADOS PARA EL EQUIPO "<<nombregrupo<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
+    		cout << setw(10) << setfill(' ') << "Equipo"<< "   | ";
+			cout << setw(5) << setfill(' ') << "Puntaje"<< " | ";
+			cout << setw(15) << setfill(' ') << "Diferencia de goles"<< " | "<<endl;
+    		cout << setw(42) << setfill('-') << "" << endl;
+    	for(int m=1;m<=listaFase1.sizeList();m++){
+    		Fase1_ = listaFase1.getData(m);
+  
+    		if(nombregrupo == Fase1_.grupo ){
+	    		cout << setw(5) << setfill(' ') << Fase1_.equips.nombre<< "   | ";
+	    		cout << setw(5) << setfill(' ') << Fase1_.Puntaje<< "   | ";
+	    		cout << setw(5) << setfill(' ') << Fase1_.goles<< "   | "<<endl;
+			}
+		}
+		
+		break;
+	}
+		case 7:{
 			menu();
 			break;
 		}
@@ -950,6 +975,7 @@ void Consultar(){
 	break;
 }	
 	cout<<"Presione cualquier tecla..."; getch();
+	menu();
 	
 }
 

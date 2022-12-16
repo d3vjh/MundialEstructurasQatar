@@ -26,4 +26,7 @@ tecnico Tecnicos_;
 
 List<programacion> listaPartidos;
 programacion Partidos_;
+
+List<primeraFase> listaFase1;
+primeraFase Fase1_;
 #endif

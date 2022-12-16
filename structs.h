@@ -66,15 +66,11 @@ struct programacion{
 		
 };
 
-
-
-//
-
-
 struct primeraFase{
-	char grupo;
-	List<equipo> e;
-	List<programacion> p;
+	string grupo;
+	equipo equips;
+	int Puntaje;
+	int goles;
 };
 
 struct segundaFase{

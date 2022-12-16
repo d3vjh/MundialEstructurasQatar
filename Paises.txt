@@ -15,7 +15,7 @@ Alemania;UEFA;
 Ghana;CAF;
 Iran;AFC;
 Japon;AFC;
-Republica de Corea;AFC;
+Corea;AFC;
 Mexico;CONCACAF;
 Marruecos;CAF;
 Paises Bajos;UEFA;

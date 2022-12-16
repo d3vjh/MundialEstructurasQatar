@@ -6,8 +6,10 @@
 
 
 #include "Definicion.h"
-using namespace std;
+#include "Crud.h"
 
+using namespace std;
+void enteroACadena();
 void lecturaEstadios(){	
 	ifstream archivo;
 	string textEstadios;
@@ -273,12 +275,134 @@ void lecturaPrograma(){
 	archivo.close();	
 
 }
+
+void lecturaGrupos(){
+	lecturaPrograma();
+	fstream archivo;
+	string textGrupos;
+	
+	archivo.open("grupos2.txt", ios::in|ios::out);
+	
+	if(archivo.fail()){
+		cout<<"Hemos fallado con exito";
+	}
+	
+	int i=0;
+	int j=0;
+   	string textGuardar ="";		
+	while(!archivo.eof()){
+				
+		getline(archivo,textGrupos,';');
+		textGrupos.replace(0, 1,"",0);
+		Fase1_.grupo = textGrupos;	
+		i++;
+		
+		getline(archivo,textGrupos,';');
+		for(int i=1; i<=listaEquipos.sizeList(); i++){
+			Equipos_ = listaEquipos.getData(i);
+			if(textGrupos == Equipos_.nombre){
+				Fase1_.equips = Equipos_;
+				break;
+			}
+		}			
+		i++;
+			
+		for(int i=2; i<=listaPartidos.sizeList(); i++){
+			Partidos_ = listaPartidos.getData(i);
+			if(Fase1_.equips.nombre == Partidos_.equipo1.nombre){
+				if(Partidos_.goles1 > Partidos_.goles2){
+					Fase1_.Puntaje += 3;
+					Fase1_.goles += Partidos_.goles1;
+				
+		
+				}else if(Partidos_.goles1 == Partidos_.goles2){
+					Fase1_.Puntaje += 1;
+					Fase1_.goles += Partidos_.goles1;
+			
+				}
+			
+			}else if(Fase1_.equips.nombre == Partidos_.equipo2.nombre){
+				if(Partidos_.goles1 < Partidos_.goles2){
+					Fase1_.Puntaje += 3;
+					Fase1_.goles += Partidos_.goles2;
+				
+				}else if(Partidos_.goles1 == Partidos_.goles2){
+					Fase1_.Puntaje += 1;
+					Fase1_.goles += Partidos_.goles2;
+		
+				}
+				
+			}
+				
+		}
+
+		i++;
+		if(i%3==0 && i>0){
+			listaFase1.insertOnList(Fase1_, listaFase1.sizeList()+1);
+			Fase1_.Puntaje=0;
+			Fase1_.goles=0;
+			}
+		}
+		
+		int ultimo;
+		for(int m=1;m<listaFase1.sizeList();m++){
+			Fase1_ = listaFase1.getData(m);
+			textGuardar += Fase1_.grupo;
+			textGuardar += ';';
+			textGuardar += Fase1_.equips.nombre;
+			textGuardar += ';';
+			textGuardar +=  enteroACadena(Fase1_.Puntaje);
+			textGuardar += ';';
+			textGuardar +=  enteroACadena(Fase1_.goles);
+			textGuardar += ';';
+			textGuardar += '\n';
+			ultimo = m;
+		}
+		Fase1_ = listaFase1.getData(ultimo+1);
+			textGuardar += Fase1_.grupo;
+			textGuardar += ';';
+			textGuardar += Fase1_.equips.nombre;
+			textGuardar += ';';
+			textGuardar +=  enteroACadena(Fase1_.Puntaje);
+			textGuardar += ';';
+			textGuardar +=  enteroACadena(Fase1_.goles);
+		
+		system("copy grupos.txt grupos.txt.backup");
+		ofstream archivoGrupos;	
+  		archivoGrupos.open("gruposTemp.txt", ios::out);
+  	
+  		if(archivoGrupos.fail()){
+  			cout<<"Hemos fallado";
+		}
+		
+		archivoGrupos<<textGuardar;
+		archivoGrupos.close();
+		archivo.close();
+		system("move gruposTemp.txt grupos.txt");
+	
+	
+		
+
+		
+		
+		
+		
+	
+
+
+		 
+
+	archivo.close();	
+
+	
+}
 void cargarArchivos(){
 	lecturaEstadios();
 	lecturaPaises();
 	lecturaJugadores();
 	lecturaTecnicos();
-	lecturaPrograma();
+	
+	lecturaGrupos();
 }
 #endif
 

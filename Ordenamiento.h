@@ -50,4 +50,7 @@ void orden(goleador gol[],int tam)
 }
 
 
+
+
+
 #endif
