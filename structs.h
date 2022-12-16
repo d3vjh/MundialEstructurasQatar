@@ -25,6 +25,7 @@ struct tarjeta{
 	string idNomPais;
 	string idNumJugador;
 	string idNombreJugador;
+	
 	string color;
 	string fecha;
 	string motivo;

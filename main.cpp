@@ -16,8 +16,10 @@
 #include <string>
 #include <sstream>
 
+
 #include "structs.h"
 #include "lista.h"
+#include "rbolBinarioOrdenadoArreglo.h"
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
@@ -39,6 +41,7 @@ void listarEstadios();
 void listarPaises();
 void listarJugadores();
 void listarTarjetas();
+void listarOctavos();
 
 void modify();
 
@@ -48,7 +51,7 @@ void load();
 void loadEstadios();
 void loadPaises();
 void loadJugadores();
-void loadTarjetas();
+void loadTarjetas(string paisJugador, int numeroJugador, string nombreJugador);
 
 void exit();
 
@@ -75,11 +78,26 @@ jugador JugadorAux;
 List<tarjeta> listaTarjetasIndv;
 tarjeta TarjetaAux;
 
+arbolBinarioOrdenadoArreglo<string> ArbolOctavos(32);
+
 
 int main(int argc, char** argv) {
+	
 
+	
+//	system("curl wttr.in/Quatar?0 ");
 
+	cout<<"Antes del isSelection()"<<EquipoAux.nombre<<endl;
+	
+	
+	system("timeout 5");
 	load();
+	cout<<"Antes del isSelection()"<<EquipoAux.nombre<<endl;
+	isSeleccion("Brasils");
+	cout<<"Despues del isSelection()"<<EquipoAux.nombre<<endl;
+	getch();
+	
+	getch();
 	menu();
 	cout<<"\a"<<endl;
 	
@@ -243,7 +261,6 @@ void ingresarTarjeta(int posicionAbs, string Color, string Motivo, string Contri
 		cout<<"Jugador N. "<<posicionAbs<<endl;
 		cout<<"Pertenece al equipo"<<EquipoAux.nombre<<endl;
 			
-		
 }
 
 void show(){
@@ -315,6 +332,13 @@ void show(){
 		
 		getch();
 		break;	
+	}
+	case 5:{
+		
+		system("cls");
+		listarOctavos();
+		getch();
+		break;
 	}	
   		
 	
@@ -386,6 +410,50 @@ void listarTarjetas(){
 			
 		}
 	}
+	
+}
+
+//El arbol se implementa
+void listarOctavos(){
+	
+	string seleccionClasificada;
+	
+	seleccionClasificada = "Korea del sur";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Brasil";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Croacia";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Japon";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Australia";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Argentina";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Estados Unidos";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Paises Bajos";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Suiza";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Portugal";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "España";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Marruecos";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Polonia";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Francia";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Senegal";
+	ArbolOctavos.insertar(seleccionClasificada);
+	seleccionClasificada = "Inglaterra";
+	ArbolOctavos.insertar(seleccionClasificada);
+	
+	string prueba = ArbolOctavos.getData(17);
+	cout<<prueba;
+	
 	
 }
 
@@ -622,14 +690,11 @@ void loadEstadios(){
 }
 
 void loadJugadores(){
-	
+	EquipoAux = listaEquipos.getData(1);
 	int posicionPuntero =0;
 
 	ifstream archivo;
 	string texto;
-
-	fstream archivoTarjetas;
-	archivoTarjetas.open("JugadorTarjeta.txt", ios::in | ios::out);
 			
 	archivo.open("Jugadores.txt", ios::in);
 	
@@ -652,55 +717,43 @@ void loadJugadores(){
 		JugadorAux.numero = aux;
 				
 		getline(archivo,texto,'\t');
-//		texto.replace(0, 1,"",0);
 		JugadorAux.nombre = texto;	
-//		cout<<texto<<"(Nombre)-> "<<i<<endl;
 		i++;
 		
 		getline(archivo,texto,'\t');
-		//texto.replace(0, 1,"",0);
 		JugadorAux.nacionalidad = texto;	
-//		cout<<texto<<"(Nombre)-> "<<i<<endl;
 		i++;
 		
 		getline(archivo,texto,'\t');
-		//texto.replace(0, 1,"",0);
 		JugadorAux.fechaDeNacimiento = texto;	
-//		cout<<texto<<"(Nombre)-> "<<i<<endl;
 		i++;
 		
 		getline(archivo,texto,'\t');
 		aux = atoi(texto.c_str());
 		JugadorAux.estatura = aux;	
-//		cout<<texto<<"(Capacidad)-> "<<i<<endl;
 		i++;
 		
 		getline(archivo,texto,'\t');
 		aux = atoi(texto.c_str());
 		JugadorAux.edad = aux;	
-//		cout<<texto<<"(Capacidad)-> "<<i<<endl;
 		i++;
 		
 		getline(archivo,texto,'\t');
 		JugadorAux.club = texto;	
-//		cout<<texto<<"(Ciudad)-> "<<i<<endl;
 		i++;
 		
 		getline(archivo,texto,'\t');
 		JugadorAux.posicion = texto;	
-//		cout<<texto<<"(Ciudad)-> "<<i<<endl;
 		i++;
 		
 		getline(archivo,texto,'\t');
 		aux = atoi(texto.c_str());
 		JugadorAux.golesAnotados = aux;	
-//		cout<<texto<<"(Capacidad)-> "<<i<<endl;
 		i++;
 		
 		getline(archivo,texto,'\t');
 		aux = atoi(texto.c_str());
 		JugadorAux.fechasSancion = aux;	
-//		cout<<texto<<"(Capacidad)-> "<<i<<endl;
 		i++;
 		
 		if(i%9==0 && i>0){
@@ -710,6 +763,9 @@ void loadJugadores(){
 			
 			//Error acá
 			listaJugadores.insertOnList(JugadorAux, (listaJugadores.sizeList()+1)); 
+			
+			
+			loadTarjetas(EquipoAux.nombre, JugadorAux.numero, JugadorAux.nombre);
 				
 
 		}
@@ -718,100 +774,6 @@ void loadJugadores(){
 			contador++;
 			EquipoAux = listaEquipos.getData(contador);
   			EquipoAux.futbolistas = listaJugadores;
-  		
-  	
-  			/*
-			  Lee el archivo de las tarjetas, y lo agrega en la casilla correspondiente			  
-			  */	
-			string tarAux;
-			
-			archivoTarjetas.seekg(0, ios::beg);
-			
-			while(!archivoTarjetas.eof()){
-				
-				archivoTarjetas.seekg(posicionPuntero, ios::beg);
-			
-
-				getline(archivoTarjetas, tarAux, '\t');
-				tarAux.replace(0, 1,"",0);
-				TarjetaAux.idNomPais = tarAux;
-				cout<<"\n\nEsto recibe de primeras: "<<tarAux;
-				
-				
-				if(tarAux==""){
-					cout<<"tarAux ta vacio"<<endl;
-					break;
-					
-				}else{
-					variableEquipoNombre = tarAux;	
-				}
-				
-				
-	
-				
-				if(EquipoAux.nombre == variableEquipoNombre){
-				
-								
-				
-				string numeroString;
-				getline(archivoTarjetas,numeroString,'\t');
-				int numberJugador = atoi(numeroString.c_str());
-				cout<<"Numero del jugador: "<<numberJugador<<endl;
-				TarjetaAux.idNombreJugador = numberJugador;
-				
-				string NombJuga;
-				getline(archivoTarjetas, NombJuga, '\t');
-				cout<<"Nombre del man"<<NombJuga<<endl;
-				TarjetaAux.idNombreJugador = NombJuga;
-				
-				string col;
-				getline(archivoTarjetas, col, '\t');
-				cout<<"color de la tarjeta"<<col<<endl;
-				TarjetaAux.color = col;
-				
-				string mot;
-				getline(archivoTarjetas, mot, '\t');
-				cout<<"Motivo"<<mot<<endl;
-				TarjetaAux.motivo= mot;
-				
-				string fecha;
-				getline(archivoTarjetas, fecha, '\t');
-				cout<<"Fechaaaa"<<fecha<<endl;
-				TarjetaAux.fecha = fecha;
-				
-				string cont;
-				getline(archivoTarjetas, cont, '\t');
-				cout<<"Contrincante: "<<cont<<endl;
-				TarjetaAux.contrincante = cont;
-				
-				posicionPuntero = archivoTarjetas.tellp();
-				cout<<archivoTarjetas.tellp()<<"<<<---------POSICION"<<endl;
-				getch();
-				
-				JugadorAux = EquipoAux.futbolistas.getData(numberJugador);
-				cout<<"Antes de ingresarlo al pais: "<<EquipoAux.nombre;
-				cout<<JugadorAux.nombre<<"Mi nombre";
-				ingresarTarjeta(numberJugador, col, mot, cont, fecha);
-				
-				
-				getch();
-			
-					
-				}else{
-					
-						
-					cout<<"No es el mismo nombre del equipo"<<endl;
-						
-					break;
-					
-				}		
-				//	
-				
-			}
-			
-getch();
-
-//  	
   			
 //  			JugadorAux= EquipoAux.futbolistas.getData(/*De donde lee el archivo*/) 
 			
@@ -832,14 +794,63 @@ getch();
 	}
 }
 	archivo.close();
-	
-	//Imprime en el load
 
-	archivoTarjetas.close();
 
 	
 }
 
+void loadTarjetas(string paisJugador, int numeroJugador, string nombreJugador){
+	
+	ifstream archivoTarjeta;
+	archivoTarjeta.open("JugadorTarjeta.txt", ios::in);
+	string paisAux="";
+	int numeroAux;
+	string nomAux;
+	
+	string aux;
+	
+	if(archivoTarjeta.fail()){
+		
+	}else{
+		
+		
+		getline(archivoTarjeta, paisAux, '\t');
+		paisAux.replace(0, 1,"",0);
+		TarjetaAux.idNomPais = paisAux;
+		cout<<"\n\nEsto recibe de primeras: "<<paisAux;
+		
+		getline(archivoTarjeta, aux, '\t');
+		numeroAux = atoi(aux.c_str());
+		cout<<"\n\nEsto recibe en numero jugador: "<<numeroAux;
+		TarjetaAux.idNumJugador = numeroAux;
+		
+		getline(archivoTarjeta, nomAux, '\t');
+		TarjetaAux.idNombreJugador = nomAux;
+		cout<<"\n\nEste es el jugador: "<<nomAux;
+		
+		if(paisJugador == paisAux && nomAux == nombreJugador){
+			cout<<"Si entro";
+			getch();
+			
+			cout<<EquipoAux.nombre<<endl;
+			ingresarTarjeta(numeroAux, "Color", "Motivo", "Contrincante", "Fecha");
+			cout<<"[!] Ingresada la tarjeta!"<<endl;
+			getch();
+			
+		}
+		
+		
+		
+	}
+	
+	
+	cout<<"El pais a llenar es: "<<EquipoAux.nombre<<endl;
+	cout<<"El jugador a llenar es: "<<JugadorAux.nombre<<endl;
+	
+	archivoTarjeta.close();
+	
+	
+}
 
 
 void load(){
@@ -959,17 +970,9 @@ void guardarJugadores(){
 		for(int k=1; k<=EquipoAux.futbolistas.sizeList(); k++){
 		
 			JugadorAux = EquipoAux.futbolistas.getData(k);
-			cout<<JugadorAux.tarjetas.sizeList()<<endl;
-			getch();
+
 			
-			if(JugadorAux.tarjetas.sizeList() > 0){
-				
-				cout<<"El jugador a guardar tarjetas es: "<<JugadorAux.nombre<<endl;
-				cout<<"El tamano de la lista es: "<<JugadorAux.tarjetas.sizeList()<<endl;
-				getch();
-				guardarTarjetas();
-			
-			}
+
 			
 			string ent = enteroACadena(k);
 			textGuardar += ent;
@@ -1009,6 +1012,19 @@ void guardarJugadores(){
 		
 			textGuardar += '\n';
 			
+			
+			if(JugadorAux.tarjetas.sizeList() > 0){
+				
+				cout<<JugadorAux.tarjetas.sizeList()<<endl;
+				getch();
+				cout<<"name"<<JugadorAux.nombre;
+				cout<<"El jugador a guardar tarjetas es: "<<JugadorAux.nombre<<endl;
+				cout<<"El tamano de la lista es: "<<JugadorAux.tarjetas.sizeList()<<endl;
+				getch();
+				guardarTarjetas();
+			
+			}
+			
 //			
 
 								
@@ -1046,7 +1062,7 @@ void exit(){
 	guardarJugadores();
 	system("timeout 1");
 	//Fin del m?todo
-	cout<<"Hasta luego...";
+	cout<<"\a Hasta luego...";
 	exit(0);
 	
 
