@@ -1,9 +1,7 @@
-/**
- * \mainpage pilasEjercicio2
- * \author Jhonatan Moreno - Santiago Avila
- * \date Octubre - 2022
- */
-
+/*----------------Integrantes-----------------
+Sebastian Morales Tarapues 20182020039
+Sergio Andres Vega 20191020
+Juan Velazques 20191020 */
 
 #ifndef LIST_H
 #define LIST_H

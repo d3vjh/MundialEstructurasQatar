@@ -1,51 +1,61 @@
-
+/*----------------Integrantes-----------------
+Sebastian Morales Tarapues 20182020039
+Sergio Andres Vega 20191020
+Juan Velazques 20191020 */
 #ifndef LECTURA_H
 #define LECTURA_H
 
 #include<iostream>
-
+//Libreria importada
 
 #include "Definicion.h"
 #include "Crud.h"
 
 using namespace std;
-void enteroACadena();
-void lecturaEstadios(){	
-	ifstream archivo;
-	string textEstadios;
+void enteroACadena();//define el metodo local
 
-	archivo.open("Estadios.txt", ios::in);
-	
+//Metodo que permite la lectura del archivo plano de los estadios
+void lecturaEstadios(){	
+	ifstream archivo;//Variable de tipo ifstream para el archivo
+	string textEstadios;//String para ir guardando la informacion leida
+
+	archivo.open("Estadios.txt", ios::in);//Funcion que permite abrir el archivo plano en modo lectura
+	//If para validar en caso de que no se pueda abrir el archivo o no exista
 	if(archivo.fail()){
-		cout<<"Hemos fallado con exito";
+		cout<<"ERROR ARCHIVO PLANO :( !!!!!!!!!!!!";//Impresion para notificar el error
 	}	
-	int i=0;
+	int i=0;//Int que nos permite controlar el ingreso de los datos a la lista
 	
-	while(!archivo.eof()){
-				
+	while(!archivo.eof()){//While que valida que el archivo tenga informacion que leer
+		/*Metodo que permite leer la  informacion del archivo plano hasta encontrar el caracter ';'
+		y pasar esta informacion al string que guarda la informacion */		
 		getline(archivo,textEstadios,';');
-		textEstadios.replace(0, 1,"",0);
-		Estadios_.nombreEstadio = textEstadios;	
-		i++;
-		
+		textEstadios.replace(0, 1,"",0);//Metodo que reemplaza el primer carácter de la cadena textEstadios por una cadena vacía.
+		Estadios_.nombreEstadio = textEstadios;	//Asignamos a la estructura auxiliar de tipo estadio en su campo para el nombre del estadio
+		i++;//Aumentamos en uno el contador de control
+		/*Metodo que permite leer la  informacion del archivo plano hasta encontrar el caracter ';'
+		y pasar esta informacion al string que guarda la informacion */		
 		getline(archivo,textEstadios,';');
-		int aux = atoi(textEstadios.c_str());
-		Estadios_.capacidad = aux;	
+		int aux = atoi(textEstadios.c_str());//Declaramos un Int auxiliar y convertimos la cadena textEstadios en entero para poder asignarsela
+		Estadios_.capacidad = aux;	//Asignamos a la estructura auxiliar de tipo estadio en su campo para la capacidad del estadio
 		i++;
-		
+			/*Metodo que permite leer la  informacion del archivo plano hasta encontrar el caracter ';'
+		y pasar esta informacion al string que guarda la informacion */		
 		getline(archivo,textEstadios,';');
-		Estadios_.ciudad = textEstadios;	
+		Estadios_.ciudad = textEstadios;	//Asignamos a la estructura auxiliar de tipo estadios en su campo para el nombre del estadio	
 		i++;
-		
+		//If que valida el contador para la insercion en la lista
 		if(i%3==0 && i>0){
-			listaEstadios.insertOnList(Estadios_, listaEstadios.sizeList()+1);
+			listaEstadios.insertOnList(Estadios_, listaEstadios.sizeList()+1);//Insertamos en la lista de estadios la estructura auxiliar en la posicion 1
 		}		
 	}
 
-	archivo.close();	
+	archivo.close();	//Cerramos el archivo plano 
 }
+
+//Metodo que permite la lectura de los jugadores
 void lecturaJugadores(){
-	
+	/*Metodos y varibles necesarias para la lectura del archivo plano e insercion a la lista de jugadores*/
 	ifstream archivo;
 	string text;
 
@@ -103,25 +113,27 @@ void lecturaJugadores(){
 		if(i%9==0 && i>0){	
 			listaJugadores.insertOnList(Jugadores_, (listaJugadores.sizeList()+1)); 	
 		}
+		
 	listaJugadores.sizeList();
 		if(i%26==0){
-				
+			//Seccion de codigo que limpia la lista de equipos para la proxima insercion de jugadores para su respectivo equipo
 			contador++;
-			Equipos_ = listaEquipos.getData(contador);
-  			Equipos_.futbolistas = listaJugadores;
+			Equipos_ = listaEquipos.getData(contador);//Toma el equipo en la estructura auxiliar de la lista de equipos en la posicion contador
+  			Equipos_.futbolistas = listaJugadores; //Le asigna a la estructura en su campo futbolista la lista de jugadores
 			
+			//Limpia las listas
 			for(int m=1; m<27; m++){
 				listaJugadores.deleteFromList(1);	
 			}  		
   			listaEquipos.deleteFromList(contador);
-  			listaEquipos.insertOnList(Equipos_, contador);		
+  			listaEquipos.insertOnList(Equipos_, contador);//Inserta equipo en la lista de equipos
 			}
 				
 	}
 
 	archivo.close();
 }
-
+//Metodo que permite la lectura de los paises y llena la lista de equipos
 void lecturaPaises(){
 	
 	ifstream archivoPaises,archivoTecnicos;
@@ -168,7 +180,7 @@ void lecturaPaises(){
 
 			
 }
-
+//Metodo que permite la asigancion del tecnico a la lista de equipos y llena la lista de directores tecnicos
 void lecturaTecnicos(){
 	ifstream archivo;
 	string textTecnicos;
@@ -206,7 +218,7 @@ void lecturaTecnicos(){
 	archivo.close();
 	
 }
-
+//Metodo que permite la lectura del programa y llena la lista de partidos programados
 void lecturaPrograma(){
 	
 	fstream archivo;
@@ -275,7 +287,7 @@ void lecturaPrograma(){
 	archivo.close();	
 
 }
-
+//Metodo que permite la lectura y la actualizacion de los grupos con sus respectivos puntos a partir de la lectura del programa
 void lecturaGrupos(){
 	lecturaPrograma();
 	fstream archivo;
@@ -343,7 +355,7 @@ void lecturaGrupos(){
 			Fase1_.goles=0;
 			}
 		}
-		
+		//Iteradores que recorresn la lista de la fase 1 y escribe el mensaje que actualizara el archivo plano de los grupos
 		int ultimo;
 		for(int m=1;m<listaFase1.sizeList();m++){
 			Fase1_ = listaFase1.getData(m);
@@ -366,7 +378,10 @@ void lecturaGrupos(){
 			textGuardar +=  enteroACadena(Fase1_.Puntaje);
 			textGuardar += ';';
 			textGuardar +=  enteroACadena(Fase1_.goles);
+			
+			
 		
+		//Secuencia de codigo que permite crear un respaldo de los grupos y llena un archivo temporal de grupos para despues sobreescribir el archivo original de grupos
 		system("copy grupos.txt grupos.txt.backup");
 		ofstream archivoGrupos;	
   		archivoGrupos.open("gruposTemp.txt", ios::out);
@@ -379,29 +394,19 @@ void lecturaGrupos(){
 		archivoGrupos.close();
 		archivo.close();
 		system("move gruposTemp.txt grupos.txt");
-	
-	
-		
-
-		
-		
-		
-		
-	
-
-
 		 
 
 	archivo.close();	
 
 	
 }
+
+//Metodo que realiza la lectura de todos los archivos planos y llena las lista en la memoria principal
 void cargarArchivos(){
 	lecturaEstadios();
 	lecturaPaises();
 	lecturaJugadores();
 	lecturaTecnicos();
-	
 	lecturaGrupos();
 }
 #endif

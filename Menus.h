@@ -1,3 +1,8 @@
+/*----------------Integrantes-----------------
+Sebastian Morales Tarapues 20182020039
+Sergio Andres Vega 20191020
+Juan Velazques 20191020 */
+
 #include <iostream>
 #ifndef MENUS_H
 #define MENUS_H
@@ -6,7 +11,7 @@
 #include "Lectura.h"
 
 using namespace std;
-
+//Metodos locales de crud
 void enter();
 void show();
 void modify();
@@ -14,9 +19,10 @@ void Consultar();
 void exit();
 void cargarArchivos();
 
+//Impresion del menu principal 
 
 void menu(){
-
+	
 	int option;
 	system("cls");
 	cout<< setw(80) << setfill(' ')<<"      ...                           s                                                                                          "<<endl;
@@ -40,22 +46,27 @@ void menu(){
     	cout << i + 1 << ". " << options[i] << "\n";
   	cout << "Ingresa una opcion: ";
   	cin >> option;
+  	//Casos para cada opcion del menu
   switch (option){
   case 1:
+  	//Implementacion de Ingresar de la libreria crud
     enter();
     break;
   case 2:
-
+	//Mostrar
    show();
 
     break;
   case 3:
+  	//Implementacion de Modificar de la libreria crud
     modify();
     break;
   case 4:
+  	//Implementacion de Consutar de la libreria crud
     Consultar();	
 	break;
   case 5:
+  	//Implementacion de Salir de la libreria crud
   		exit();
  	break;
   default:
@@ -64,13 +75,14 @@ void menu(){
   }
   	
 }
-
+//Este metodo imprime y ejecuta el menu de mostrar
 void show(){
 
 	int option;
 	system("cls");
 do{
 	system("cls");
+	
 	cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_ SHOW  -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl;
 	string options[] = {"Estadios", "Paises", "Entrenadores", "Programa","Tabla de grupos", "Volver al menu principal"};
   	int size = sizeof(options) / sizeof(*options);
@@ -81,6 +93,7 @@ do{
   
   
   switch (option){
+  	//Este caso muestra la lista de estadios y sus datos
   	case 1:
   		system("cls");
   		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_ESTADIOS -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
@@ -106,6 +119,7 @@ do{
 	break;
   	
 	case 2:
+		//Este caso muestra la lista de Equipos y sus datos
 		system("cls");
   		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_PAISES Y CONFEDERACIONES -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
 		for(int j=1; j<=listaEquipos.sizeList(); j++){
@@ -150,6 +164,7 @@ do{
 	break;
 	
 	case 3:
+		//Este caso muestra la lista de tecnicos y sus datos
 		system("cls");
 		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_TECNICO -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
   			cout << setw(10) << setfill(' ') << "Nombre del tecnico"<<"\t" <<"   | ";
@@ -167,6 +182,7 @@ do{
 	
 	break;
 	case 4:
+			//Este caso muestra la lista de partidos programados y sus datos
 		system("cls");
 		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_PARTIDOS PROGRAMADOS -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
   			cout << setw(10) << setfill(' ') << "Estadio"<< "   | ";
@@ -191,6 +207,7 @@ do{
 		cout<<"Presione cualquier tecla..."; getch();cout<<endl;
 		break;
 	case 5:
+			//Este caso muestra la lista de grupos y sus datos
 		system("cls");
 		cout<<" -_-_-_-_-_-_-_-_-_-_-_-_-_-_TABLA DE GRUPOS -_-_-_-_-_-_-_-_-_-_-_-_-_-_"<<endl<<endl;
 		cout << setw(7) << setfill(' ') << "Grupo"<< "   | ";
@@ -213,7 +230,7 @@ do{
 		break;
 		
 	case 6:
-  	
+  	//Menu
 	  menu();	
 	  break;	
 		
