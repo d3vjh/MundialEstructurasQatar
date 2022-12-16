@@ -61,6 +61,7 @@ bool isSeleccion(string);
 bool isJugador(string);
 
 string variableEquipoNombre;
+arbolBinarioOrdenadoArreglo<equipo> ArbolOctavos(32);
 
 int posicionAbsoluta;
 string textTarjetaGuardar="";
@@ -78,7 +79,7 @@ jugador JugadorAux;
 List<tarjeta> listaTarjetasIndv;
 tarjeta TarjetaAux;
 
-arbolBinarioOrdenadoArreglo<string> ArbolOctavos(32);
+
 
 
 int main(int argc, char** argv) {
@@ -87,17 +88,9 @@ int main(int argc, char** argv) {
 	
 //	system("curl wttr.in/Quatar?0 ");
 
-	cout<<"Antes del isSelection()"<<EquipoAux.nombre<<endl;
+	setlocale(LC_ALL, "");
 	
-	
-	system("timeout 5");
 	load();
-	cout<<"Antes del isSelection()"<<EquipoAux.nombre<<endl;
-	isSeleccion("Brasils");
-	cout<<"Despues del isSelection()"<<EquipoAux.nombre<<endl;
-	getch();
-	
-	getch();
 	menu();
 	cout<<"\a"<<endl;
 	
@@ -113,7 +106,7 @@ void menu(){
 	cout<<"[+] = = = = = = MENU = = = = = = [+]"<<endl;
 	
 	string options[] = {
-		"Ingresar", 
+		"Iniciar Simulación", 
 		"Mostrar", 
 		"Modificar", 
 		"Volver al menu principal", 
@@ -155,85 +148,200 @@ void enter(){
 	
 	int option;
 	system("cls");
-	cout<<"[+] = = = = = = INGRESAR = = = = = = [+]"<<endl;
-	string options[] = {"Jugador a Seleccion", "Tarjeta a jugador", "Modificar", "Volver al menu principal", "Salir y guardar"};
-  	int size = sizeof(options) / sizeof(*options);
-	for (int i = 0; i < size; i++)	
-    	cout << i + 1 << ". " << options[i] << "\n";
-  	cout << "Ingresa una opcion: ";
-  cin >> option;
+//	cout<<"[+] = = = = = = INGRESAR = = = = = = [+]"<<endl;
+//	string options[] = {"Jugador a Seleccion", "Tarjeta a jugador", "Modificar", "Volver al menu principal", "Salir y guardar"};
+//  	int size = sizeof(options) / sizeof(*options);
+//	for (int i = 0; i < size; i++)	
+//    	cout << i + 1 << ". " << options[i] << "\n";
+//  	cout << "Ingresa una opcion: ";
+//  cin >> option;
   
+  	int marcadorSeleccion1;
+  	int marcadorSeleccion2;
+  	int prorrogaSeleccion1;
+  	int prorrogaSeleccion2;
+	int penaltiesSeleccion1;
+	int penaltiesSeleccion2;
   
-  switch(option){
-  	
-  case 1:
-  	break;
-  case 2:
-  	{
-		system("cls");
-		cout<<"[+]==============TARJETA===============[+]\n";
-  		string nombreSeleccion;
-  		cout<<"Ingrese la seleccion a buscar: "<<endl;
-  		cin.ignore();
-		getline(cin, nombreSeleccion);		
-		if(isSeleccion(nombreSeleccion)){
-			cout<<"Se encontro\t"<<EquipoAux.nombre<<endl;
-			
-			
-		}else{
-			cout<<"\n[!] Información de la seleccion equivocada\nPresione cualquier tecla..."; 
-			getch();		
-			enter();
-		}		
-		
-		
-		string nombreJugador;
-		cout<<"Ingrese el jugador a buscar: ";
-		getline(cin, nombreJugador);
-		cout<<nombreJugador;
-		if(isJugador(nombreJugador) ){
-			cout<<"Se encontro\t"<<JugadorAux.nombre<<endl;
-			string Color;
-			string Motivo;
-			string Contrincante; //Buscar equipo por nombre
-			string Fecha;
-	
-			
-			cout<<"\nIngrese el color de la tarjeta: ";
-			getline(cin, Color);
-			
-			cout<<"\nIngrese el motivo de la amonestación: ";
-			getline(cin, Motivo);
-			
-			cout<<"\nIngrese el contrincante: ";
-			getline(cin, Contrincante);
-					
-			cout<<"\nIngrese el día de la amonestación: ";
-			getline(cin, Fecha);
-			cout<<JugadorAux.nombre;
-	
-			cout<<"posicion Absoluta:  "<<posicionAbsoluta<<endl;
+  cout<<"Iniciando Simulación..."<<endl;
+  system("timeout 3");
+    string nombreSeleccion1;
+ 	cout<<"Ingrese la Primera selección: \n";
+	cin.ignore();
+	getline(cin, nombreSeleccion1);		
+	if(isSeleccion(nombreSeleccion1)){
+		cout<<"Se encontro\t"<<EquipoAux.nombre<<endl;
+}
+    string nombreSeleccion2;
+ 	cout<<"Ingrese la Segunda selección: \n";
+	cin.ignore();
+	getline(cin, nombreSeleccion2);		
+	if(isSeleccion(nombreSeleccion2)){
+		cout<<"Se encontro\t"<<EquipoAux.nombre<<endl;
+}
 
-			
-			ingresarTarjeta(posicionAbsoluta, Color, Motivo, Contrincante, Fecha);
-	
-		}else{
-			cout<<"\n[!] Información del jugador equivocada\nPresione cualquier tecla..."; 
-			getch();		
-			enter();
-		}		
-	
-		
-  		break;
-  	}
 
-  		
-  		default:
-  			break;
-  		
-  }
-  	
-  
+	string estadio;
+	cout<<"Ingrese el estadio donde se va a disputar el partido\n";
+	cin.ignore();
+	getline(cin, estadio);
+	cout<<"Se encontró\t"<<estadio;
+	
+	string hora;
+	cout<<"Ingrese la hora del encuentro\n";
+	cin.ignore();
+	getline(cin, hora);
+	cout<<"Hora asignada: "<<hora;
+	
+	cout<<"Guardando información..."<<endl;
+	cout<<"Oprima cualquier tecla para contnuar....."<<endl;
+	getch();
+	system("cls");
+	cout<<"Iniciando el partido"<<endl;
+	system("timeout 5");
+	cout<<"Finalizó el partido...\n\n"<<endl;
+	
+	
+	cout<<"Ingrese el marcador de la seleccion "<<nombreSeleccion1<<endl;
+//	isSeleccion(nombreSeleccion1);
+	cin>>marcadorSeleccion1;
+	
+	
+	marcadorSeleccion2;
+	cout<<"\nIngrese el marcador de la seleccion "<<nombreSeleccion2<<endl;
+	isSeleccion(nombreSeleccion2);
+	cin>>marcadorSeleccion2;
+	
+	if(marcadorSeleccion1 == marcadorSeleccion2){
+		cout<<"Calculando...."<<endl;
+		cout<<"Prorroga iniciando...."<<endl;
+		system("timeout 3");
+		cout<<"Prorroga finalizada..."<<endl;
+		
+		prorrogaSeleccion1;
+		cout<<"Ingrese el marcador de la seleccion en prorroga: "<<nombreSeleccion1<<endl;
+		cin>>prorrogaSeleccion1;
+		
+		prorrogaSeleccion2;
+		cout<<"Ingrese el marcador de la seleccion en prorroga: "<<nombreSeleccion2<<endl;
+		cin>>prorrogaSeleccion2;
+		
+		if(prorrogaSeleccion1 == prorrogaSeleccion2){
+			
+			cout<<"Calculando...."<<endl;
+			cout<<"Penalties iniciando...."<<endl;
+			system("timeout 3");
+			cout<<"Penalties finalizando...."<<endl;
+			
+		
+			cout<<"Ingrese los penalties de la seleccion: "<<nombreSeleccion1<<endl;
+			cin>>penaltiesSeleccion1;
+			
+			penaltiesSeleccion2;
+			cout<<"Ingrese los penalties de la seleccion: "<<nombreSeleccion2<<endl;
+			cin>>penaltiesSeleccion2;
+			
+			
+		}else if(penaltiesSeleccion1 > penaltiesSeleccion2){
+			cout<<"Felicitaciones a la seleccion de "<<nombreSeleccion1;
+			getch();
+		}else{
+			
+			cout<<"Felicitaciones a la seleccion de "<<nombreSeleccion2;
+			getch();
+		}
+		
+		
+	}else if(marcadorSeleccion1 > marcadorSeleccion2){
+		
+		cout<<"Felicitaciones a la seleccion de "<<nombreSeleccion1;
+		
+		
+	}else{
+		
+		cout<<"Felicitaciones a la seleccion de "<<nombreSeleccion2;
+	}
+	
+	
+	cout<<"Ingrese los goleadores"<<endl;
+	
+	
+	
+
+
+
+//  
+//  
+//  switch(option){
+//  	
+//  case 1:
+//  	break;
+//  case 2:
+//  	{
+//		system("cls");
+//		cout<<"[+]==============TARJETA===============[+]\n";
+//  		string nombreSeleccion;
+//  		cout<<"Ingrese la seleccion a buscar: "<<endl;
+//  		cin.ignore();
+//		getline(cin, nombreSeleccion);		
+//		if(isSeleccion(nombreSeleccion)){
+//			cout<<"Se encontro\t"<<EquipoAux.nombre<<endl;
+//			
+//			
+//		}else{
+//			cout<<"\n[!] Información de la seleccion equivocada\nPresione cualquier tecla..."; 
+//			getch();		
+//			enter();
+//		}		
+//		
+//		
+//		string nombreJugador;
+//		cout<<"Ingrese el jugador a buscar: ";
+//		getline(cin, nombreJugador);
+//		cout<<nombreJugador;
+//		if(isJugador(nombreJugador) ){
+//			cout<<"Se encontro\t"<<JugadorAux.nombre<<endl;
+//			string Color;
+//			string Motivo;
+//			string Contrincante; //Buscar equipo por nombre
+//			string Fecha;
+//	
+//			
+//			cout<<"\nIngrese el color de la tarjeta: ";
+//			getline(cin, Color);
+//			
+//			cout<<"\nIngrese el motivo de la amonestación: ";
+//			getline(cin, Motivo);
+//			
+//			cout<<"\nIngrese el contrincante: ";
+//			getline(cin, Contrincante);
+//					
+//			cout<<"\nIngrese el día de la amonestación: ";
+//			getline(cin, Fecha);
+//			cout<<JugadorAux.nombre;
+//	
+//			cout<<"posicion Absoluta:  "<<posicionAbsoluta<<endl;
+//
+//			
+//			ingresarTarjeta(posicionAbsoluta, Color, Motivo, Contrincante, Fecha);
+//	
+//		}else{
+//			cout<<"\n[!] Información del jugador equivocada\nPresione cualquier tecla..."; 
+//			getch();		
+//			enter();
+//		}		
+//	
+//		
+//  		break;
+//  	}
+//
+//  		
+//  		default:
+//  			break;
+//  		
+//  }
+//  	
+//  
 	
 	//Fin del m?todo
 	cout<<"Presione cualquier tecla..."; getch();
@@ -327,7 +435,7 @@ void show(){
 		}else{
 			cout<<"\n[!] Información de la seleccion equivocada\nPresione cualquier tecla..."; 
 			getch();		
-			enter();
+			menu();
 		}
 		
 		getch();
@@ -336,6 +444,7 @@ void show(){
 	case 5:{
 		
 		system("cls");
+		cout<<"[+]      ARBOL         [+]";
 		listarOctavos();
 		getch();
 		break;
@@ -416,43 +525,57 @@ void listarTarjetas(){
 //El arbol se implementa
 void listarOctavos(){
 	
-	string seleccionClasificada;
+	isSeleccion("Republica de Corea");
+	ArbolOctavos.insertar(EquipoAux);
 	
-	seleccionClasificada = "Korea del sur";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Brasil";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Croacia";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Japon";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Australia";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Argentina";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Estados Unidos";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Paises Bajos";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Suiza";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Portugal";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "España";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Marruecos";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Polonia";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Francia";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Senegal";
-	ArbolOctavos.insertar(seleccionClasificada);
-	seleccionClasificada = "Inglaterra";
-	ArbolOctavos.insertar(seleccionClasificada);
+	isSeleccion("Brasil");
+	ArbolOctavos.insertar(EquipoAux);
+	isSeleccion("Croacia");
+	ArbolOctavos.insertar(EquipoAux);
+	isSeleccion("Japon");
+	ArbolOctavos.insertar(EquipoAux);
+	isSeleccion("Australia");
+	ArbolOctavos.insertar(EquipoAux);
+	isSeleccion("Argentina");
+	ArbolOctavos.insertar(EquipoAux);
+	isSeleccion("Estados Unidos");
+	ArbolOctavos.insertar(EquipoAux);
+	isSeleccion("Paises Bajos");
+	ArbolOctavos.insertar(EquipoAux);
+	isSeleccion("Suiza");
+	ArbolOctavos.insertar(EquipoAux);
+		isSeleccion("Portugal");
+	ArbolOctavos.insertar(EquipoAux);
+	isSeleccion("Espana");
+	ArbolOctavos.insertar(EquipoAux);
+		isSeleccion("Marruecos");
+	ArbolOctavos.insertar(EquipoAux);
+		isSeleccion("Polonia");
+	ArbolOctavos.insertar(EquipoAux);
+		isSeleccion("Francia");
+	ArbolOctavos.insertar(EquipoAux);
+		isSeleccion("Senegal");
+	ArbolOctavos.insertar(EquipoAux);
+		isSeleccion("Inglaterra");
+	ArbolOctavos.insertar(EquipoAux);
 	
-	string prueba = ArbolOctavos.getData(17);
-	cout<<prueba;
+	
+	isSeleccion("Brasil");
+	ArbolOctavos.subirGanador(EquipoAux);
+	
+	
+	EquipoAux = ArbolOctavos.getData(17);
+	cout<<EquipoAux.nombre<<endl;
+
+	
+	for(int i=1; i<=32; i++){
+		EquipoAux = ArbolOctavos.getData(i);
+		cout<<EquipoAux.nombre<<endl;
+			
+		
+	}
+	EquipoAux = ArbolOctavos.getData(1);
+	
 	
 	
 }
@@ -678,13 +801,13 @@ void loadEstadios(){
 
 	archivo.close();
 	
-	for(int j=1; j<=listaEstadios.sizeList(); j++){
-		EstadioAux = listaEstadios.getData(j);
-		cout<<"[+] --- --- --- --- [+]"<<endl;
-		cout<<"Nombre del estadio "<<j<<": "<<EstadioAux.nombreEstadio<<endl;	
-		cout<<"Capacidad del estadio "<<j<<": "<<EstadioAux.capacidad<<endl;	
-		cout<<"Ciudad del estadio del estadio "<<j<<": "<<EstadioAux.ciudad<<endl;			
-	}
+//	for(int j=1; j<=listaEstadios.sizeList(); j++){
+//		EstadioAux = listaEstadios.getData(j);
+//		cout<<"[+] --- --- --- --- [+]"<<endl;
+//		cout<<"Nombre del estadio "<<j<<": "<<EstadioAux.nombreEstadio<<endl;	
+//		cout<<"Capacidad del estadio "<<j<<": "<<EstadioAux.capacidad<<endl;	
+//		cout<<"Ciudad del estadio del estadio "<<j<<": "<<EstadioAux.ciudad<<endl;			
+//	}
 	
 	
 }
@@ -765,7 +888,7 @@ void loadJugadores(){
 			listaJugadores.insertOnList(JugadorAux, (listaJugadores.sizeList()+1)); 
 			
 			
-			loadTarjetas(EquipoAux.nombre, JugadorAux.numero, JugadorAux.nombre);
+			//loadTarjetas(EquipoAux.nombre, JugadorAux.numero, JugadorAux.nombre);
 				
 
 		}

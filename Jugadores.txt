@@ -180,8 +180,8 @@
 23	Joel Nathaniel Campbell Samuels	Costarricense	26-06-1992	178	30	Club León	Delantero	0	0	
 24	Anthony Daniel Contreras Enríquez	Costarricense	29-02-2000	180	22	Club Sport Herediano	Delantero	0	0	
 25	Johan Alberto Venegas Ulloa	Costarricense	27-11-1988	183	34	L. D. Alajuelense	Delantero	0	0	
-26	Dominik Livaković	Croata	09-01-1995	187	27	G. N. K. Dinamo de Zagreb	Portero	0	0	
-1	Ivica Ivušić	Croata	01-02-1995	195	27	Osijek	Portero	0	0	
+26	Dominik Livaković	Costarricense	09-01-1995	187	27	G. N. K. Dinamo de Zagreb	Delantero	0	0	
+1	Hanna Sarmiento	Croata	01-02-1995	195	27	Osijek	Portero	0	0	
 2	Ivo Grbic	Croata	18-01-1996	195	26	Atlético de Madrid	Portero	0	0	
 3	Josip Stanisic	Croata	02-04-2000	187	22	Bayern de Múnich	Defensa	0	0	
 4	Borna Barišić	Croata	10-11-1992	186	30	Rangers F. C.	Defensa	0	0	

@@ -31,7 +31,6 @@ class List{NodoL<T>*cab = new NodoL<T>;
 			T getData(int pos);
 			void replaceInList(T nuevo, T antiguo);
 			void removeAll();
-
 	};
 
 //Se comenta, porque al momento de inicializar una variable de tipo List, se queda pensando y finaliza el programa

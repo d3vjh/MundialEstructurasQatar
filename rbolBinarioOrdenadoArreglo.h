@@ -39,21 +39,27 @@ template <class T>
 void arbolBinarioOrdenadoArreglo <T>::insertar (T info){
 	int posicionLibre = arbol[0].derecha;
 	int aux;
-	estadio estadioAux;
+	equipo estadioAux;
 	arbol[posLlenar].clave=info;
 	posLlenar--;	
 }
 
+//template <class T>
+//void printLevelOrder(int root)
+//{
+//	
+//}
+
 template <class T>
 void arbolBinarioOrdenadoArreglo<T>::subirGanador(T info){
 	int i=1;
- 	estadio nodoBusca,otro;
+ 	equipo nodoBusca,otro;
  	otro=info;
  	nodoBusca = arbol[i].clave;
-	while(otro.nombreEstadio != nodoBusca.nombreEstadio){
+	while(otro.nombre != nodoBusca.nombre){
 		nodoBusca = arbol[i].clave;
 		i++;
-		if(otro.nombreEstadio == nodoBusca.nombreEstadio){
+		if(otro.nombre == nodoBusca.nombre){
 			i=i/2;
 			arbol[i].clave=otro;
 		}	
