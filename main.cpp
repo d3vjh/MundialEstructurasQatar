@@ -1,3 +1,8 @@
+/**
+ * \mainpage 
+ * \author Jhonatan Moreno - Santiago Avila - Hanna Sarmiento
+ * \date Diciembre - 2022
+ */
 
 
 #include <iostream>
@@ -26,7 +31,7 @@ void menu();
 void enter();
 
 
-void ingresarTarjeta();
+void ingresarTarjeta(int, string, string, string, string);
 void ingresarGoles(equipo, int);
 
 void show();
@@ -43,6 +48,7 @@ void load();
 void loadEstadios();
 void loadPaises();
 void loadJugadores();
+void loadTarjetas();
 
 void exit();
 
@@ -51,7 +57,7 @@ string enteroACadena(int);
 bool isSeleccion(string);
 bool isJugador(string);
 
-
+string variableEquipoNombre;
 
 int posicionAbsoluta;
 string textTarjetaGuardar="";
@@ -72,9 +78,10 @@ tarjeta TarjetaAux;
 
 int main(int argc, char** argv) {
 
+
 	load();
 	menu();
-
+	cout<<"\a"<<endl;
 	
 	return 0;
 }
@@ -126,9 +133,6 @@ void menu(){
 }
 
 
-
-
-
 void enter(){
 	
 	int option;
@@ -156,6 +160,8 @@ void enter(){
 		getline(cin, nombreSeleccion);		
 		if(isSeleccion(nombreSeleccion)){
 			cout<<"Se encontro\t"<<EquipoAux.nombre<<endl;
+			
+			
 		}else{
 			cout<<"\n[!] Información de la seleccion equivocada\nPresione cualquier tecla..."; 
 			getch();		
@@ -169,14 +175,37 @@ void enter(){
 		cout<<nombreJugador;
 		if(isJugador(nombreJugador) ){
 			cout<<"Se encontro\t"<<JugadorAux.nombre<<endl;
-			ingresarTarjeta();
+			string Color;
+			string Motivo;
+			string Contrincante; //Buscar equipo por nombre
+			string Fecha;
+	
+			
+			cout<<"\nIngrese el color de la tarjeta: ";
+			getline(cin, Color);
+			
+			cout<<"\nIngrese el motivo de la amonestación: ";
+			getline(cin, Motivo);
+			
+			cout<<"\nIngrese el contrincante: ";
+			getline(cin, Contrincante);
+					
+			cout<<"\nIngrese el día de la amonestación: ";
+			getline(cin, Fecha);
+			cout<<JugadorAux.nombre;
+	
+			cout<<"posicion Absoluta:  "<<posicionAbsoluta<<endl;
+
+			
+			ingresarTarjeta(posicionAbsoluta, Color, Motivo, Contrincante, Fecha);
+	
 		}else{
 			cout<<"\n[!] Información del jugador equivocada\nPresione cualquier tecla..."; 
 			getch();		
 			enter();
 		}		
 	
-		TarjetaAux = JugadorAux.tarjetas.getData(1);
+		
   		break;
   	}
 
@@ -193,41 +222,27 @@ void enter(){
   	menu();
 }
 
-void ingresarTarjeta(){
-	
-		string Color;
-		string Motivo;
-		equipo Contrincante; //Buscar equipo por nombre
-		string Fecha;
-
+void ingresarTarjeta(int posicionAbs, string Color, string Motivo, string Contrincante, string Fecha){
 		
-		cout<<"Ingrese el color de la tarjeta: ";
-		getline(cin, Color);
-		
-		cout<<"\nIngrese el motivo de la amonestación: ";
-		getline(cin, Motivo);
-		
-		cout<<"\nIngrese el día de la amonestación: ";
-		getline(cin, Fecha);
-
-	
-			cout<<"ENCONTRADO"<<endl;
 			TarjetaAux.color = Color;
 			TarjetaAux.motivo = Motivo;
-			TarjetaAux.contrincante = "España";
+			TarjetaAux.contrincante = Contrincante;
 			TarjetaAux.fecha = Fecha;
 
+	//	listaTarjetasIndv.insertOnList(TarjetaAux, 1);
+		
+		JugadorAux.tarjetas.insertOnList(TarjetaAux, (JugadorAux.tarjetas.sizeList()+1));
 		
 	
 		
-	//	listaTarjetasIndv.insertOnList(TarjetaAux, 1);
-		cout<<"ANTES"<<JugadorAux.tarjetas.sizeList()<<endl;
-		JugadorAux.tarjetas.insertOnList(TarjetaAux, (JugadorAux.tarjetas.sizeList()+1));
-		cout<<"Despues"<<JugadorAux.tarjetas.sizeList()<<endl;
-		cout<<"[!] Amonestación asignada a: "<<JugadorAux.nombre<<endl;
-		
-		EquipoAux.futbolistas.deleteFromList(posicionAbsoluta);
-  		EquipoAux.futbolistas.insertOnList(JugadorAux, posicionAbsoluta);			
+		EquipoAux.futbolistas.deleteFromList(posicionAbs);
+  		EquipoAux.futbolistas.insertOnList(JugadorAux, posicionAbs);
+		  
+		  	
+		cout<<"\n[!] Amonestación asignada a: "<<JugadorAux.nombre<<endl;
+		cout<<"Jugador N. "<<posicionAbs<<endl;
+		cout<<"Pertenece al equipo"<<EquipoAux.nombre<<endl;
+			
 		
 }
 
@@ -402,6 +417,8 @@ void listarJugadores(){
 		}
 	
 }
+
+
 
 void modify(){	
 
@@ -606,18 +623,28 @@ void loadEstadios(){
 
 void loadJugadores(){
 	
+	int posicionPuntero =0;
+
 	ifstream archivo;
 	string texto;
 
+	fstream archivoTarjetas;
+	archivoTarjetas.open("JugadorTarjeta.txt", ios::in | ios::out);
+			
 	archivo.open("Jugadores.txt", ios::in);
 	
 	if(archivo.fail()){
 		cout<<"Hemos fallado con exito";
-	}	
+	}else{
+		
+		
 	int i=0;
 	int contador=0;
 	
+	
 	while(!archivo.eof()){
+		
+		
 				
 		getline(archivo, texto, '\t');
 		texto.replace(0, 1,"",0);
@@ -678,18 +705,117 @@ void loadJugadores(){
 		
 		if(i%9==0 && i>0){
 			
+
+			
+			
 			//Error acá
 			listaJugadores.insertOnList(JugadorAux, (listaJugadores.sizeList()+1)); 
 				
 
 		}
-	listaJugadores.sizeList();
 		if(i%26==0){
 				
 			contador++;
 			EquipoAux = listaEquipos.getData(contador);
   			EquipoAux.futbolistas = listaJugadores;
+  		
+  	
+  			/*
+			  Lee el archivo de las tarjetas, y lo agrega en la casilla correspondiente			  
+			  */	
+			string tarAux;
+			
+			archivoTarjetas.seekg(0, ios::beg);
+			
+			while(!archivoTarjetas.eof()){
+				
+				archivoTarjetas.seekg(posicionPuntero, ios::beg);
+			
 
+				getline(archivoTarjetas, tarAux, '\t');
+				tarAux.replace(0, 1,"",0);
+				TarjetaAux.idNomPais = tarAux;
+				cout<<"\n\nEsto recibe de primeras: "<<tarAux;
+				
+				
+				if(tarAux==""){
+					cout<<"tarAux ta vacio"<<endl;
+					break;
+					
+				}else{
+					variableEquipoNombre = tarAux;	
+				}
+				
+				
+	
+				
+				if(EquipoAux.nombre == variableEquipoNombre){
+				
+								
+				
+				string numeroString;
+				getline(archivoTarjetas,numeroString,'\t');
+				int numberJugador = atoi(numeroString.c_str());
+				cout<<"Numero del jugador: "<<numberJugador<<endl;
+				TarjetaAux.idNombreJugador = numberJugador;
+				
+				string NombJuga;
+				getline(archivoTarjetas, NombJuga, '\t');
+				cout<<"Nombre del man"<<NombJuga<<endl;
+				TarjetaAux.idNombreJugador = NombJuga;
+				
+				string col;
+				getline(archivoTarjetas, col, '\t');
+				cout<<"color de la tarjeta"<<col<<endl;
+				TarjetaAux.color = col;
+				
+				string mot;
+				getline(archivoTarjetas, mot, '\t');
+				cout<<"Motivo"<<mot<<endl;
+				TarjetaAux.motivo= mot;
+				
+				string fecha;
+				getline(archivoTarjetas, fecha, '\t');
+				cout<<"Fechaaaa"<<fecha<<endl;
+				TarjetaAux.fecha = fecha;
+				
+				string cont;
+				getline(archivoTarjetas, cont, '\t');
+				cout<<"Contrincante: "<<cont<<endl;
+				TarjetaAux.contrincante = cont;
+				
+				posicionPuntero = archivoTarjetas.tellp();
+				cout<<archivoTarjetas.tellp()<<"<<<---------POSICION"<<endl;
+				getch();
+				
+				JugadorAux = EquipoAux.futbolistas.getData(numberJugador);
+				cout<<"Antes de ingresarlo al pais: "<<EquipoAux.nombre;
+				cout<<JugadorAux.nombre<<"Mi nombre";
+				ingresarTarjeta(numberJugador, col, mot, cont, fecha);
+				
+				
+				getch();
+			
+					
+				}else{
+					
+						
+					cout<<"No es el mismo nombre del equipo"<<endl;
+						
+					break;
+					
+				}		
+				//	
+				
+			}
+			
+getch();
+
+//  	
+  			
+//  			JugadorAux= EquipoAux.futbolistas.getData(/*De donde lee el archivo*/) 
+			
+	
 			
 			for(int m=1; m<27; m++){
 				listaJugadores.deleteFromList(1);	
@@ -704,15 +830,17 @@ void loadJugadores(){
 
 					
 	}
-
+}
 	archivo.close();
 	
 	//Imprime en el load
 
-	
+	archivoTarjetas.close();
 
 	
 }
+
+
 
 void load(){
 	loadEstadios();
@@ -755,15 +883,28 @@ bool isJugador(string nombreJugador){
 }
 
 
+
+
 void guardarTarjetas(){
 	
 	
-	
-	for(int i=0; i<=JugadorAux.tarjetas.sizeList(); i++){
+	for(int i=1; i<=JugadorAux.tarjetas.sizeList(); i++){
+		
+		cout<<"Jugador a guardar tarjetas:: "<<JugadorAux.nombre<<endl;
 		TarjetaAux = JugadorAux.tarjetas.getData(i);
+		cout<<TarjetaAux.motivo<<endl;
+		cout<<TarjetaAux.idNombreJugador<<endl;
+		
+		
+		textTarjetaGuardar += '\n';
+		textTarjetaGuardar += EquipoAux.nombre;
+		textTarjetaGuardar += '\t';
 		
 		string entero = enteroACadena(JugadorAux.numero);
 		textTarjetaGuardar += entero;
+		textTarjetaGuardar += '\t';
+		
+		textTarjetaGuardar += JugadorAux.nombre;
 		textTarjetaGuardar += '\t';
 		
 		textTarjetaGuardar += TarjetaAux.color;
@@ -779,6 +920,7 @@ void guardarTarjetas(){
 		textTarjetaGuardar += '\t';
 		
 		
+		
 	}
 	
 	
@@ -791,9 +933,7 @@ void guardarTarjetas(){
   	if(archivoJugador.fail()){
   		cout<<"Hemos fallado";
 	}
-	
-	
-	
+
 	archivoJugador<<textTarjetaGuardar;
 	
 	
@@ -804,9 +944,7 @@ void guardarTarjetas(){
 	
 }
 
-
-
-//	Guarda los jugadores en el archivo plano de texto
+// Guarda los jugadores en el archivo plano de texto
 void guardarJugadores(){
 	
 	
@@ -821,6 +959,17 @@ void guardarJugadores(){
 		for(int k=1; k<=EquipoAux.futbolistas.sizeList(); k++){
 		
 			JugadorAux = EquipoAux.futbolistas.getData(k);
+			cout<<JugadorAux.tarjetas.sizeList()<<endl;
+			getch();
+			
+			if(JugadorAux.tarjetas.sizeList() > 0){
+				
+				cout<<"El jugador a guardar tarjetas es: "<<JugadorAux.nombre<<endl;
+				cout<<"El tamano de la lista es: "<<JugadorAux.tarjetas.sizeList()<<endl;
+				getch();
+				guardarTarjetas();
+			
+			}
 			
 			string ent = enteroACadena(k);
 			textGuardar += ent;
@@ -828,6 +977,7 @@ void guardarJugadores(){
 			
 			textGuardar += JugadorAux.nombre;
 			textGuardar += '\t';
+			
 			
 			textGuardar += JugadorAux.nacionalidad;
 			textGuardar += '\t';
@@ -860,18 +1010,12 @@ void guardarJugadores(){
 			textGuardar += '\n';
 			
 //			
-//			if(JugadorAux.tarjetas.sizeList() > 0){
-//				
-//				guardarTarjetas();
-//				textTarjetaGuardar = "";
-//			}
-			
-		//	cout<<textGuardar;
-					
+
+								
 	}
 }
 	
-	system("copy Jugadores.txt JugadoresBKCP.txt.backup");
+	system("copy Jugadores.txt JugadoresBKCP2.txt");
 	
 	
 	ofstream archivoJugador;
@@ -891,8 +1035,10 @@ void guardarJugadores(){
 	system("move jugadorTemp.txt Jugadores.txt");	
 	
 	
-	cout<<"[+] Jugadores guardados correctamente";
+	cout<<"\a [+] Jugadores guardados correctamente";
 }
+
+
 
 void exit(){
 

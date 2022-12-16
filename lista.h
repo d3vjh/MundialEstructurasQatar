@@ -1,5 +1,5 @@
 /**
- * \mainpage 
+ * \lista.h 
  * \author Jhonatan Moreno - Santiago Avila - Hanna Sarmiento
  * \date Diciembre - 2022
  */

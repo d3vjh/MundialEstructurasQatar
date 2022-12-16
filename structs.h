@@ -1,3 +1,10 @@
+/**
+ * \structs.h
+ * \author Jhonatan Moreno - Santiago Avila - Hanna Sarmiento
+ * \date Diciembre - 2022
+ */
+
+
 #ifndef STRUCTS_H
 #define STRUCTS_H
 #include <cstring>
@@ -14,7 +21,10 @@ struct estadio{
 };
 
 struct tarjeta{
-
+	
+	string idNomPais;
+	string idNumJugador;
+	string idNombreJugador;
 	string color;
 	string fecha;
 	string motivo;
