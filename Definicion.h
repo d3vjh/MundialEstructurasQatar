@@ -15,6 +15,7 @@ List<equipo> listaEquipos;
 equipo Equipos_;
 
 List<jugador> listaJugadores;
+List<jugador> losOnce;
 jugador Jugadores_;
 
 List<tarjeta> listaTarjetasIndv;

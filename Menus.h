@@ -19,7 +19,7 @@ void menu(){
 	int option;
 	system("cls");
 	cout<<"[+] = = = = = = MENU = = = = = = [+]"<<endl;
-	string options[] = {"Ingresar", "Mostrar", "Modificar","Consultas", "Volver al menu principal", "Salir y guardar"};
+	string options[] = {"Ingresar", "Mostrar", "Modificar","Consultas", "Salir y guardar"};
   	int size = sizeof(options) / sizeof(*options);
 	for (int i = 0; i < size; i++)	
     	cout << i + 1 << ". " << options[i] << "\n";
@@ -41,10 +41,8 @@ void menu(){
     Consultar();	
 	break;
   case 5:
+  		exit();
  	break;
-	case 6:
-		exit();
-	break;
   default:
     menu();
     break;

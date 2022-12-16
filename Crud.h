@@ -29,13 +29,14 @@ void enter(){
 	int option;
 	system("cls");
 	cout<<"[+] = = = = = = INGRESAR = = = = = = [+]"<<endl;
-	string options[] = {"Jugador a Seleccion", "Tarjeta a jugador", "Partido", "Volver al menu principal", "Salir y guardar"};
+	string options[] = {"Jugador a Seleccion", "Tarjeta a jugador", "Partido", "Iniciar partido","Volver al menu principal", "Salir y guardar"};
   	int size = sizeof(options) / sizeof(*options);
 	for (int i = 0; i < size; i++)	
     	cout << i + 1 << ". " << options[i] << "\n";
   	cout << "Ingresa una opcion: ";
   cin >> option;
-  
+	  
+	  bool seguir = false;
   
   switch(option){
   	
@@ -280,10 +281,10 @@ void enter(){
 				break;
 			case 2:
 				srand((unsigned) time(NULL));
-				goles_1 = rand() % 10 + 1;
+				goles_1 = rand() % 5 ;
 				Partidos_.goles1 = goles_1;
 				cout<<"El equipo "<<Partidos_.equipo1.nombre<<" marco: "<<goles_1<<endl;
-				goles_2 = rand() % 10 + 1;
+				goles_2 = rand() % 5 ;
 				Partidos_.goles2 = goles_2;
 				cout<<"El equipo "<<Partidos_.equipo2.nombre<<" marco: "<<goles_2<<endl;
 				
@@ -318,27 +319,200 @@ void enter(){
 		
 		
 		archivoPrograma<<textGuardar;
-		
-	
-	
-		
-		
-		
-		
 		archivoPrograma.close();
-		
-
-//	
-//	archivoJugador<<textGuardar;
-//	archivoJugador.close();
-//	system("move jugadorTemp.txt Jugadores.txt");
-//	
-//			  }
-//  		
+		break;
 		}
 		
+  	case 4:{
+  		string portero="POR";
+  		string defensa="DEF";
+  		string medio="MED";
+  		string delantero="DEL";
   		
+	do{
+		string seguiremos;
+		cout<<"--------------PARTIDOS PROGRAMADOS----------------------"<<endl;
+			cout << setw(10) << setfill(' ') << "Indice"<< " | ";
+    		cout << setw(10) << setfill(' ') << "Estadio"<<"\t"<< " | ";
+			cout << setw(10) << setfill(' ') << "Equipo 1"<< " | ";
+    		cout << setw(5) << setfill(' ') << "Equipo 2"<< " | ";
+    		cout << setw(5) << setfill(' ') << "Hora"<< " | "<<endl;
+    		cout << setw(42) << setfill('-') << "" << endl;
+    	for(int m=2;m<=listaPartidos.sizeList();m++){
+    		Partidos_ = listaPartidos.getData(m);
+    		cout<<setw(5) << setfill(' ') << m-1 <<" | ";
+    		cout << setw(5) << setfill(' ') << Partidos_.estadio1<< " | ";
+	    	cout << setw(5) << setfill(' ') << Partidos_.equipo1.nombre<< " | ";
+	    	cout << setw(5) << setfill(' ') << Partidos_.equipo2.nombre<< " | ";
+	    	cout << setw(5) << setfill(' ') << Partidos_.hora<<endl;	   	
+
+		}
+		int simular;
+		cout<<"Por favor indique el indice del partido que desa simular: ";
+		cin>>simular;
+		Partidos_= listaPartidos.getData(simular+1);
+  		cout<<"Esta a punto de iniciar el partido "<<Partidos_.equipo1.nombre<<" VS "<<Partidos_.equipo2.nombre<<" ..."<<endl;
+  		cout<<"Presione cualquier tecla para continuar.....";
+		  getch();
+  		system("cls");
+  		
+  		for(int i=1; i<=listaEquipos.sizeList(); i++){
+			Equipos_ = listaEquipos.getData(i);
+			if(Partidos_.equipo1.nombre == Equipos_.nombre){
+				break;
+			}
+		}
+  		cout<<"Entrenador del equipo "<<Equipos_.nombre<<" : "<<Equipos_.entrenador.nombre<<endl;
+  		int seleccionados = 1;
+  		int cont =1;
+  		int contPOR=0;
+		int contDEF=0;
+		int contMED=0;
+
+  		int escogido;
+  		//PORTEROS FOR
+  		while(seleccionados != 12){
+  			for(int k=1; k<=Equipos_.futbolistas.sizeList(); k++){
+			Jugadores_ = Equipos_.futbolistas.getData(k);
+			if(Jugadores_.posicion==portero){
+				cout<<cont<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.nombre<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.posicion<< " | "<<endl;
+				cont++;
+				contPOR++;
+			}
 			
+		}
+		cout<<"Seleccione uno de los indices de los anteriores porteros:";
+		cin>>escogido;
+		Jugadores_ = Equipos_.futbolistas.getData(escogido);
+		cout<<"El seleccionado "<<Jugadores_.nombre<<endl<<endl;
+		seleccionados++;
+	//	losOnce.insertOnList(Jugadores_,(losOnce.sizeList()+1));
+	
+	//FOR Para el resto
+		cont=1;
+		for(int k=1; k<=Equipos_.futbolistas.sizeList(); k++){
+			Jugadores_ = Equipos_.futbolistas.getData(k);
+			if(Jugadores_.posicion==defensa){
+				cout<<cont<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.nombre<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.posicion<< " | "<<endl;
+				cont++;
+			}
+			if(Jugadores_.posicion==medio){
+				cout<<cont<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.nombre<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.posicion<< " | "<<endl;
+				cont++;
+			}
+			if(Jugadores_.posicion==delantero){
+				cout<<cont<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.nombre<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.posicion<< " | "<<endl;
+				cont++;
+			}
+			
+		}
+			while(seleccionados!=12){
+			cout<<"Seleccione el indice para el siguiente jugador:";
+		
+			cin>>escogido;
+			escogido += contPOR;
+			Jugadores_ = Equipos_.futbolistas.getData(escogido);
+			cout<<"El seleccionado "<<Jugadores_.nombre<<endl<<endl;
+			seleccionados++;
+	  			
+			}
+			
+		cout<<"Equipo completo..."<<endl;
+		
+		  }
+		system("cls");
+		for(int i=1; i<=listaEquipos.sizeList(); i++){
+			Equipos_ = listaEquipos.getData(i);
+			if(Partidos_.equipo2.nombre == Equipos_.nombre){
+				break;
+			}
+		}
+  		cout<<"Entrenador del equipo "<<Equipos_.nombre<<" : "<<Equipos_.entrenador.nombre<<endl;;
+  		seleccionados = 1;
+  		cont =1;
+		contPOR = 0;  
+
+  		//PORTEROS FOR
+  		while(seleccionados != 12){
+  			for(int k=1; k<=Equipos_.futbolistas.sizeList(); k++){
+			Jugadores_ = Equipos_.futbolistas.getData(k);
+			if(Jugadores_.posicion==portero){
+				cout<<cont<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.nombre<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.posicion<< " | "<<endl;
+				cont++;
+				contPOR++;
+			}
+			
+		}
+		cout<<"Seleccione uno de los indices de los anteriores porteros:";
+		cin>>escogido;
+		Jugadores_ = Equipos_.futbolistas.getData(escogido);
+		cout<<"el seleccionado "<<Jugadores_.nombre<<endl<<endl;
+		seleccionados++;
+	//	losOnce.insertOnList(Jugadores_,(losOnce.sizeList()+1));
+	
+	//FOR Para el resto
+		cont=1;
+		for(int k=1; k<=Equipos_.futbolistas.sizeList(); k++){
+			Jugadores_ = Equipos_.futbolistas.getData(k);
+			if(Jugadores_.posicion==defensa){
+				cout<<cont<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.nombre<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.posicion<< " | "<<endl;
+				cont++;
+			}
+			if(Jugadores_.posicion==medio){
+				cout<<cont<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.nombre<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.posicion<< " | "<<endl;
+				cont++;
+			}
+			if(Jugadores_.posicion==delantero){
+				cout<<cont<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.nombre<<"  | ";
+				cout << setw(5) << setfill(' ') << Jugadores_.posicion<< " | "<<endl;
+				cont++;
+			}
+			
+		}
+			while(seleccionados!=12){
+			cout<<"Seleccione el indice para el siguiente jugador:";
+		
+			cin>>escogido;
+			escogido += contPOR;
+			Jugadores_ = Equipos_.futbolistas.getData(escogido);
+			cout<<"el seleccionado "<<Jugadores_.nombre<<endl<<endl;
+			seleccionados++;
+	  			
+			}
+			
+		cout<<"Equipo completo..."<<endl;
+		
+		  }
+  		  		
+  		cout<<"Desea continuar con el siguiente partido (Y/N)"<<endl;
+  		cin>>seguiremos;
+  		if(seguiremos=="N"||seguiremos=="n"){
+  			seguir = true;
+		  }
+	}while(seguir == false);
+		
+  		break;
+	  }
+		
+		case 5:{
+			menu();
+			break;
+		}
 		default:
   			break;
   		
@@ -582,7 +756,7 @@ void Consultar(){
     		cout << setw(5) << setfill(' ') << Jugadores_.posicion<< " | "<<endl;
 
 	}
-	cout<<"Presione cualquier tecla..."; getch(); menu();
+
 	
 		break;
 
@@ -706,9 +880,6 @@ void Consultar(){
 			}	   	
 
 		}
-		cout<<"Presione cualquier tecla..."; getch();cout<<endl;
-		menu();
-	
 		
 		break;
 	}
@@ -735,9 +906,6 @@ void Consultar(){
 			}	   	
 
 		}
-		cout<<"Presione cualquier tecla..."; getch();cout<<endl;
-		menu();
-		
 		break;
 	}
 	
@@ -771,15 +939,18 @@ void Consultar(){
 			}	   	
 
 		}
-		cout<<"Presione cualquier tecla..."; getch();cout<<endl;
-		menu();
-		
+
 		break;
 	}
-		
+		case 6:{
+			menu();
+			break;
+		}
 		default:
 	break;
 }	
+	cout<<"Presione cualquier tecla..."; getch();
+	
 }
 
 #endif

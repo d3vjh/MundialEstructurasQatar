@@ -1,4 +1,5 @@
-iano Martinez;Argentina;02/09/1992;195;30;aston villa;POR;0;0;
+
+Emiliano Martinez;Argentina;02/09/1992;195;30;aston villa;POR;0;0;
 Geronimo Rulli;Argentina;20/05/1992;189;30;villarreal;POR;0;0;
 Franco Armani;Argentina;16/08/1986;189;36;river;POR;0;0;
 Nahuel Molina;Argentina;06/04/1998;175;24;atletico madrid;DEF;0;0;
@@ -7,11 +8,11 @@ Marcos Acuna;Argentina;28/08/1991;172;31;sevilla;DEF;0;0;
 Nicolas Otamendi;Argentina;12/02/1988;34;183;benfica;DEF;0;0;
 German Pezzella;Argentina;26/06/1991;187;31;betis;DEF;0;0;
 Cristian Romero;Argentina;27/04/1998;185;24;tottenham;DEF;0;0;
-Rodrigo de Paul;Argentina;24/05/1994;180;28;atletico madrid;MED;0;0;
-Angel di Maria;Argentina;14/02/1988;180;34;juventus;MED;0;0;
 Lisandro Martinez;Argentina;18/01/1998;175;24;manchester united;DEF;0;0;
 Nicolas Tagliafico;Argentina;31/08/1992;172;30;lyon;DEF;0;0;
 Juan Foyth;Argentina;12/01/1998;187;24;villarreal;DEF;0;0;
+Rodrigo de Paul;Argentina;24/05/1994;180;28;atletico madrid;MED;0;0;
+Angel di Maria;Argentina;14/02/1988;180;34;juventus;MED;0;0;
 Leandro Paredes;Argentina;26/06/1994;180;28;juventus;MED;0;0;
 Alexis mac Allister;Argentina;24/12/1998;176;23;brighton;MED;0;0;
 Guido Rodriguez;Argentina;12/04/1994;187;28;Betis;MED;0;0;
